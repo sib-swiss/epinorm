@@ -1,0 +1,1001 @@
+Event.ID	Disease	Serotype	Diagnosis.source	Diagnosis.status	Animal.type	Species	Observation.date..dd.mm.yyyy.	Report.date..dd.mm.yyyy.	Humans.affected	Human.deaths	Latitude	Longitude	Original location	Country	Admin. level 1	Locality	Country OSM ID	Admin. level 1 OSM ID	Locality OSM ID
+322674	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	18/05/2022	21/05/2022			43.65	-116.65							
+322838	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	15/05/2022	24/05/2022			44.726756	0.257752							
+323532	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	13/05/2022	26/05/2022			43.576	-116.354							
+322440	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	09/05/2022	19/05/2022			46.518168	19.678617							
+322477	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	07/05/2022	19/05/2022			46.532906	19.82251							
+321629	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	01/05/2022	06/05/2022			49.89	-112.7							
+322695	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	01/05/2022	24/05/2022			46.49305	19.77214							
+322840	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	25/04/2022	24/05/2022			46.713722	-0.497662							
+321571	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	23/04/2022	06/05/2022			53.51	-110.14							
+321136	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	21/04/2022	02/05/2022			44.676438	1.105486							
+321064	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	18/04/2022	02/05/2022			46.910901	-0.701332							
+320363	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	15/04/2022	25/04/2022			42.5512	141.3558							
+321049	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	14/04/2022	02/05/2022			47.077094	-0.459752							
+320352	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	10/04/2022	22/04/2022			42.593	-82.864							
+320991	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	10/04/2022	02/05/2022			46.777878	-0.2583							
+320995	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	07/04/2022	02/05/2022			45.045448	0.806607							
+320524	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Large-Billed Crow (Corvus Macrorhynchos)	06/04/2022	27/04/2022			43.8032	143.8947							
+319722	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Turkey	04/04/2022	15/04/2022			45.146	-94.501							
+319716	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Turkey	01/04/2022	15/04/2022			44.023	-97.129							
+321694	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	01/04/2022	09/05/2022			15.051898	120.83952							
+321026	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	31/03/2022	02/05/2022			47.156192	-1.073024							
+319648	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Incognita)	28/03/2022	14/04/2022			48.981	10.133							
+318420	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Guinea Fowl	24/03/2022	04/04/2022			46.977375	-1.23065							
+318382	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Guinea Fowl	22/03/2022	04/04/2022			47.208133	-0.962604							
+321110	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	19/03/2022	02/05/2022			47.125401	-0.797827							
+316022	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Gull	14/03/2022	18/03/2022			45.248296	27.950795							
+317799	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified):Anatidae (Incognita)(Anatidae)	14/03/2022	30/03/2022			50.972	13.904							
+318771	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Buzzard	14/03/2022	05/04/2022			51.29	6.07							
+318859	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Large-Billed Crow (Corvus Macrorhynchos)	14/03/2022	07/04/2022			45.1239	142.36							
+316247	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Great Cormorant (Phalacrocorax Carbo)	09/03/2022	22/03/2022			55.157665	-8.08925							
+315800	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	04/03/2022	14/03/2022			47.096946	-1.952194							
+316954	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Unspecified Bird	04/03/2022	27/03/2022			37.5772	126.8268							
+316019	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Herring Gull:larus Argentatus(Laridae)	02/03/2022	17/03/2022			55.2202	10.119							
+319643	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Incognita)	01/03/2022	12/04/2022			54.47	9.513889							
+315194	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	28/02/2022	07/03/2022			46.938704	-1.596935							
+315163	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	26/02/2022	07/03/2022			46.805289	-1.128513							
+314527	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	25/02/2022	28/02/2022			53	8.05							
+314535	Influenza - Avian	HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	24/02/2022	25/02/2022			41.89	-74.26							
+316016	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Barnacle Goose:branta Leucopsis(Anatidae)	18/02/2022	17/03/2022			55.6019	12.5762							
+323548	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Vulture	17/02/2022	26/05/2022			28.554	-80.846							
+314230	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Gull	16/02/2022	18/02/2022			52.18	5.9866							
+314381	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	13/02/2022	23/02/2022			40.937	-72.702							
+313515	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	12/02/2022	15/02/2022			36.8937	127.825							
+314341	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Barnacle Goose:branta Leucopsis(Anatidae)	12/02/2022	20/02/2022			55.3	11.3							
+316256	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Greater White-Fronted Goose (Anser Albifrons)	12/02/2022	22/03/2022			40.1907	141.7755							
+323581	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Canada Goose:branta Canadensis(Anatidae)	12/02/2022	27/05/2022			45.57	-65.71							
+314227	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Barnacle Goose:branta Leucopsis(Anatidae)	11/02/2022	18/02/2022			51.57	6.08							
+314215	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Barnacle Goose:branta Leucopsis(Anatidae)	09/02/2022	18/02/2022			52.46	6.01							
+313100	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	07/02/2022	10/02/2022			36.8944	127.4676							
+314196	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Greylag Goose:anser Anser(Anatidae)	07/02/2022	18/02/2022			51.99	5.67							
+313520	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Turkey	06/02/2022	15/02/2022			37.3749	-6.6616							
+313400	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Accipitridae (Accipitridae)	03/02/2022	11/02/2022			52.42	13.42							
+314073	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	White Tailed Eagle (Haliaeetus Albicilla)	01/02/2022	17/02/2022			47.6315	17.3144							
+312724	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	31/01/2022	03/02/2022			51.86	5.08							
+313232	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Strigidae (Unidentified):Strigidae (Incognita)(Strigidae)	31/01/2022	10/02/2022			54.386	9.064922							
+314421	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Barnacle Goose:branta Leucopsis(Anatidae)	30/01/2022	18/02/2022			52	4.666667							
+313660	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	28/01/2022	15/02/2022			43.659775	-0.45564							
+313231	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified):Anatidae (Incognita)(Anatidae)	26/01/2022	10/02/2022			54.47	9.513889							
+314313	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Greylag Goose:anser Anser(Anatidae)	26/01/2022	22/02/2022			55.7842	12.3172							
+313646	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	24/01/2022	15/02/2022			43.827699	-0.314347							
+313296	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified):Anatidae (Incognita)(Anatidae)	20/01/2022	10/02/2022			54.47	9.513889							
+311827	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified):Anatidae (Incognita)(Anatidae)	17/01/2022	19/01/2022			51.699	6.43							
+313589	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	17/01/2022	15/02/2022			43.709263	-0.849199							
+311805	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Greylag Goose:anser Anser(Anatidae)	15/01/2022	19/01/2022			38.07978	-8.78044							
+313242	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Swan	15/01/2022	10/02/2022			53.926	10.001							
+311582	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Barnacle Goose:branta Leucopsis(Anatidae)	13/01/2022	14/01/2022			52.31	5.617							
+312697	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Turkey	13/01/2022	03/02/2022			41.3071	-3.9355							
+311255	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	11/01/2022	13/01/2022			43.603698	-0.550432							
+311578	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Barnacle Goose:branta Leucopsis(Anatidae)	11/01/2022	14/01/2022			52.38	5.01							
+311822	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Laridae (Unidentified):Laridae (Incognita)(Laridae)	11/01/2022	19/01/2022			53.523	9.946							
+311209	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	10/01/2022	13/01/2022			43.504969	-0.750521							
+313613	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	10/01/2022	15/02/2022			43.566585	-0.344455							
+311013	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	09/01/2022	12/01/2022			51.518889	18.039167							
+310949	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Barnacle Goose:branta Leucopsis(Anatidae)	07/01/2022	10/01/2022			52	4.666667							
+311028	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified):Anatidae (Incognita)(Anatidae)	04/01/2022	12/01/2022			52.825	12.078							
+310956	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	01/01/2022	11/01/2022			46.3848	15.6696							
+310969	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	01/01/2022	11/01/2022			47.0734	16.0102							
+311465	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	01/01/2022	14/01/2022			53.37	-0.94							
+311456	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Buzzard	31/12/2021	14/01/2022			53.89	-1.72							
+311470	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Canada Goose:branta Canadensis(Anatidae)	31/12/2021	14/01/2022			53.39	-3.03							
+313403	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified):Anatidae (Incognita)(Anatidae)	31/12/2021	11/02/2022			51.18	8.88							
+310561	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	29/12/2021	04/01/2022			45.8054	15.1706							
+312995	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Laridae (Unidentified):Laridae (Incognita)(Laridae)	29/12/2021	09/02/2022			54.157526	8.834017							
+310770	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	27/12/2021	10/01/2022			45.993009	5.099277							
+312921	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified):Anatidae (Incognita)(Anatidae)	27/12/2021	07/02/2022			54.47	9.513889							
+310052	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Turkey	25/12/2021	27/12/2021			32.38	34.93							
+310795	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Barnacle Goose:branta Leucopsis(Anatidae)	25/12/2021	10/01/2022			51.81	4.6							
+310369	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	24/12/2021	04/01/2022			10.4352	9.3117							
+312711	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Laridae (Unidentified):Laridae (Incognita)(Laridae)	23/12/2021	03/02/2022			54.766	8.703							
+316970	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	23/12/2021	25/03/2022			52.576	-1.5454							
+310460	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Laridae (Unidentified):Laridae (Incognita)(Laridae)	21/12/2021	06/01/2022			53.671	10							
+310588	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Teal	17/12/2021	05/01/2022			45.32952	12.13465							
+309323	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Black-Faced Spoonbill (Platalea Minor)	16/12/2021	20/12/2021			22.46452	114.00852							
+311215	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	16/12/2021	13/01/2022			43.257543	-0.680154							
+311246	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	16/12/2021	13/01/2022			50.879498	2.519091							
+318334	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	15/12/2021	01/04/2022			57.23	-2.45							
+309161	Influenza - Avian	H5 HPAI	OIE	Confirmed	Wild	Barnacle Goose:branta Leucopsis(Anatidae)	13/12/2021	14/12/2021			52.666667	4.833333							
+308825	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	06/12/2021	12/12/2021			45.297588	10.221751							
+308612	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	05/12/2021	09/12/2021			45.252575	11.603946							
+314123	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Duck	05/12/2021	21/02/2022			9.44113	76.39562							
+310389	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Buzzard	03/12/2021	02/01/2022			55.74	-2.59							
+308141	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Common Kestrel:falco Tinnunculus(Falconidae)	30/11/2021	03/12/2021			45.377712	11.102473							
+308792	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	28/11/2021	10/12/2021			54.46	-1.78							
+321274	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Corvus Brachyrhynchos: (Corvidae) American Crow	26/11/2021	29/04/2022			47.54	-52.75							
+308802	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	21/11/2021	11/12/2021			46.276507	19.343578							
+310445	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified):Anatidae (Incognita)(Anatidae)	19/11/2021	06/01/2022			53.41	10.25							
+311437	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Canada Goose:branta Canadensis(Anatidae)	19/11/2021	14/01/2022			53.19	-2.25							
+311835	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	19/11/2021	20/01/2022			49.3149	5.5212							
+310216	Influenza - Avian	H5 HPAI	OIE	Confirmed	Domestic	Duck	17/11/2021	30/12/2021			54.680933	55.059437							
+310396	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Goose	16/11/2021	02/01/2022			54.93	-3.93							
+310660	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Buzzard	16/11/2021	07/01/2022			54.9	-5							
+306904	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Turkey	14/11/2021	17/11/2021			45.393604	11.098069							
+307020	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Phasianidae (Unidentified):Phasianidae (Incognita)(Phasianidae)	13/11/2021	18/11/2021			51.96	5.06							
+306918	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Turkey	12/11/2021	17/11/2021			45.400699	11.082619							
+307022	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Phasianidae (Unidentified):Phasianidae (Incognita)(Phasianidae)	12/11/2021	18/11/2021			53.17189	5.43672							
+307108	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Goose	11/11/2021	19/11/2021			53.65	-3.01							
+308882	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	10/11/2021	12/12/2021			45.228068	11.201449							
+308868	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	08/11/2021	12/12/2021			45.384802	11.289895							
+309160	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified):Anatidae (Incognita)(Anatidae)	01/11/2021	14/12/2021			54.333333	13							
+305487	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Goose	13/10/2021	22/10/2021			58.361123	15.658133							
+304136	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Phasianidae (Unidentified):Phasianidae (Incognita)(Phasianidae)	23/09/2021	28/09/2021			60.383	23.1295							
+303298	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Captive	Anatidae (Unidentified):Anatidae (Incognita)(Anatidae)	04/09/2021	11/09/2021			49.435485	4.707891							
+303371	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Chicken	28/08/2021	15/09/2021			49.647185	5.893571							
+303373	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	26/08/2021	15/09/2021			55.107612	61.414546							
+304562	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	09/08/2021	05/10/2021			-33.9	18.8							
+299214	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	25/07/2021	03/08/2021			-29.7	30.5							
+308218	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	12/07/2021	06/12/2021			6.455	3.6149							
+298107	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	21/06/2021	07/07/2021			59.4877	10.3196							
+298050	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	African Sacred Ibis (Threskiornis Aethiopicus)	19/06/2021	07/07/2021			-34.4	19.15							
+297275	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Unspecified Bird	04/06/2021	17/06/2021			6.467	3.8125							
+297020	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Laridae (Unidentified):Laridae (Incognita)(Laridae)	03/06/2021	10/06/2021			59.45555	28.02761							
+300530	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	03/06/2021	22/08/2021			20.4186	105.6646							
+309003	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Unspecified Bird	03/06/2021	13/12/2021			-26.3	28.2							
+299213	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	27/05/2021	03/08/2021			-33.6	18.9							
+299211	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified):Anatidae (Incognita)(Anatidae)	09/05/2021	03/08/2021			61.428	28.203							
+296803	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Accipitridae (Accipitridae)	04/05/2021	08/06/2021			53.58	10.1							
+294835	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	26/04/2021	05/05/2021			54.622117	25.135776							
+294819	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	24/04/2021	05/05/2021			54.763047	25.17515							
+296183	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Stork	19/04/2021	24/05/2021			49.136	14.179							
+299858	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Chicken	12/04/2021	10/08/2021			53.929471	19.00435							
+323584	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Corvidae (Incognita)	11/04/2021	27/05/2022			47.7	-53.37							
+299855	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Chicken	09/04/2021	10/08/2021			53.033611	15.450278							
+294094	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Rook	08/04/2021	23/04/2021			56.27	-2.74							
+294206	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	26/03/2021	12/04/2021			47.89838	8.10438							
+296173	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	26/03/2021	24/05/2021			50.17306	15.54611							
+294228	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	24/03/2021	12/04/2021			47.986828	8.114143							
+295051	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Chicken	24/03/2021	06/05/2021			47.59	8.02							
+295998	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Chicken	24/03/2021	19/05/2021			47.92	8.18							
+292910	Influenza - Avian	H5N5 HPAI	OIE	Confirmed	Wild	Swan	22/03/2021	06/04/2021			57.1652	16.023393							
+295552	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	12/03/2021	11/05/2021			52.25	13.89							
+296587	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Anserinae (Unidentified):Anserinae (Incognita)(Anatidae)	09/03/2021	02/06/2021			53.93	10.31							
+294733	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	02/03/2021	08/04/2021			52.177649	10.745251							
+296524	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Anserinae (Unidentified):Anserinae (Incognita)(Anatidae)	02/03/2021	27/05/2021			52.14	11.33							
+294277	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Swan	23/02/2021	29/04/2021			54.533391	9.721473							
+290117	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Chicken	22/02/2021	04/03/2021			12.26	8.0004							
+294730	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	21/02/2021	08/04/2021			52.928994	7.955941							
+294275	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Laridae (Unidentified):Laridae (Incognita)(Laridae)	11/02/2021	29/04/2021			54.16	9.09							
+298072	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	02/02/2021	26/06/2021			8.525	9.561							
+303249	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	02/02/2021	11/09/2021			18.7842	73.5571							
+289198	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Buzzard	01/02/2021	12/02/2021			31.941033	130.532854							
+288806	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Whooper Swan:cygnus Cygnus(Anatidae)	31/01/2021	12/02/2021			56.65342	9.981646							
+303264	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	29/01/2021	11/09/2021			19.1178	73.0175							
+288246	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	28/01/2021	03/02/2021			43.394	-0.065							
+287619	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	27/01/2021	29/01/2021			35.441313	126.597744							
+288841	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	27/01/2021	12/02/2021			55.404861	11.353056							
+289236	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Whooper Swan:cygnus Cygnus(Anatidae)	25/01/2021	17/02/2021			51.886	-9.003							
+287595	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	24/01/2021	29/01/2021			53.38	-4.3							
+299845	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Chicken	24/01/2021	10/08/2021			54.37	17.02							
+287520	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	19/01/2021	28/01/2021			43.654272	-0.45792							
+287523	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	19/01/2021	28/01/2021			43.636357	-0.277869							
+287163	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	18/01/2021	25/01/2021			53.11	18.3							
+287550	Influenza - Avian	H5N3 HPAI	OIE	Confirmed	Wild	Unspecified Bird	18/01/2021	27/01/2021			48.803147	-1.569757							
+287115	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	16/01/2021	22/01/2021			43.3017	-0.3686							
+288215	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	14/01/2021	31/01/2021			32.850067	59.350156							
+293454	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	13/01/2021	18/04/2021			21.4004	107.7046							
+287053	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	11/01/2021	22/01/2021			43.604557	-0.790156							
+293473	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	11/01/2021	18/04/2021			20.5399	106.0614							
+286790	Influenza - Avian	H5N3 LPAI	OIE	Confirmed	Domestic	Unspecified Bird	09/01/2021	19/01/2021			43.991513	-0.226493							
+287487	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	08/01/2021	28/01/2021			43.528	-0.323698							
+286437	Influenza - Avian	H5 HPAI	OIE	Confirmed	Wild	Whooper Swan:cygnus Cygnus(Anatidae)	07/01/2021	14/01/2021			44.27	28.31							
+287004	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	05/01/2021	22/01/2021			43.3017	-0.3686							
+287136	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Accipitridae (Accipitridae)	05/01/2021	22/01/2021			56.115209	12.31707							
+286229	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	04/01/2021	08/01/2021			43.675549	-0.938384							
+286763	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Goose	04/01/2021	17/01/2021			37.68284	126.89241							
+287171	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Chicken	03/01/2021	26/01/2021			32.839984	58.942354							
+286222	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	02/01/2021	08/01/2021			43.882078	-0.724277							
+285762	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	29/12/2020	04/01/2021			37.707252	126.553366							
+294659	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	27/12/2020	04/05/2021			54.01	9.11							
+295707	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Turkey	26/12/2020	07/05/2021			52.92	8.1							
+286188	Influenza - Avian	H5N5 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	25/12/2020	13/01/2021			22.79016	120.55576							
+295083	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Turkey	23/12/2020	07/05/2021			52.91	8.07							
+285188	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	10/12/2020	18/12/2020			52.29	-2.12							
+285518	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	10/12/2020	28/12/2020			35.008625	134.148621							
+284387	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	01/12/2020	11/12/2020			54.3	-1.45							
+284093	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mallard	30/11/2020	06/12/2020			37.866667	127.733333							
+283713	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Egyptian Goose (Alopochen Aegyptiacus)	26/11/2020	04/12/2020			51.0464	2.7972							
+288288	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan:cygnus Olor(Anatidae)	19/11/2020	05/02/2021			52.23	0.17							
+283350	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	18/11/2020	19/11/2020			54.51	8.63							
+283357	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified)	17/11/2020	24/11/2020			53.53	10.67							
+282430	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Greylag Goose	12/11/2020	13/11/2020			52.1	4.6							
+282479	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified)	12/11/2020	16/11/2020			54.47	9.07							
+285246	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified)	11/11/2020	22/12/2020			54.89	8.63							
+283363	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified)	09/11/2020	27/11/2020			53.41	8.18							
+282009	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified)	06/11/2020	09/11/2020			54.38	13.26							
+282013	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified)	06/11/2020	09/11/2020			54.38	13.26							
+282024	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified)	06/11/2020	09/11/2020			54.46	9.09							
+285245	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Accipitridae (Accipitridae)	06/11/2020	22/12/2020			53.93	9.72							
+282695	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified)	03/11/2020	17/11/2020			53.58	6.71							
+281647	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified)	02/11/2020	05/11/2020			54.609167	8.904444							
+281609	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Curlew	31/10/2020	07/11/2020			53.33	5.75							
+291546	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Eurasian Wigeon:anas Penelope(Anatidae)	16/10/2020	19/03/2021			52.92	4.98							
+280542	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Egyptian Goose (Alopochen Aegyptiacus)	12/10/2020	14/10/2020			31.777611	35.224262							
+278637	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	13/09/2020	17/09/2020			53.5718	67.6042							
+278944	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	13/09/2020	21/09/2020			55.559832	70.620149							
+283335	Influenza - Avian	H7 LPAI	OIE	Confirmed	Domestic	Unspecified Bird	07/09/2020	13/11/2020			-34	21.5							
+278003	Influenza - Avian	H5 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	01/09/2020	03/09/2020			54.817044	73.584715							
+278379	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	26/08/2020	11/09/2020			9.8265	106.0959							
+277784	Influenza - Avian	H5 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	24/08/2020	01/09/2020			54.82324	73.579875							
+277774	Influenza - Avian	H5 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	18/08/2020	01/09/2020			55.400721	74.452353							
+271344	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	23/04/2020	30/04/2020			46.2833	19.35307							
+271345	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	23/04/2020	30/04/2020			46.46244	19.60314							
+271333	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	21/04/2020	30/04/2020			46.50526	19.63927							
+271364	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	20/04/2020	30/04/2020			46.51651	20.54515							
+271000	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	17/04/2020	21/04/2020			46.618622	19.536336							
+270339	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	07/04/2020	16/04/2020			46.40123	19.73661							
+270332	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	06/04/2020	16/04/2020			46.494599	19.784372							
+270325	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	05/04/2020	16/04/2020			46.47344	19.74689							
+269766	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	30/03/2020	08/04/2020			46.45286	19.79683							
+267175	Influenza - Avian	H7N3 LPAI	OIE	Confirmed	Domestic	Turkey	13/03/2020	24/03/2020			35.034	-80.596							
+273466	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Stork	23/02/2020	02/06/2020			23.46756	85.45409							
+263658	Influenza - Avian	H5N8 HPAI	EC	Confirmed	Domestic	Goose	14/01/2020	16/01/2020			51.7175	17.8514							
+263636	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Chicken	13/01/2020	14/01/2020			52.24865	18.815717							
+263562	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	09/01/2020	10/01/2020			48.377098	18.008413							
+263287	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Goose	17/12/2019	03/01/2020			23.48408	120.339258							
+259990	Influenza - Avian	H7N3 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	25/09/2019	11/10/2019			21.341652	-102.016175							
+259080	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Chicken	13/09/2019	18/09/2019			23.677665	120.265872							
+258702	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Quail	28/08/2019	06/09/2019			23.59023	120.40844							
+254953	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	23/06/2019	03/07/2019			20.6032	106.5665							
+258235	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Ostrich	11/06/2019	16/08/2019			-34	21.4							
+251431	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	08/04/2019	13/04/2019			35.20394	51.71101							
+250202	Influenza - Avian	H5 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	02/04/2019	03/04/2019			43.0747	24.0764							
+251398	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Chicken	22/03/2019	08/04/2019			23.677665	120.265872							
+254513	Influenza - Avian	H3 LPAI	National authorities	Confirmed	Domestic	Chicken	31/01/2019	14/06/2019			49.963279	5.438261							
+245500	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Wild	Buzzard	04/01/2019	21/01/2019			55.9588	11.7773							
+243942	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	07/12/2018	14/12/2018			19.56816	85.241236							
+240012	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Goose	30/08/2018	10/09/2018			23.699358	120.238394							
+239409	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	03/08/2018	02/09/2018			6.1502514	116.1673694							
+238512	Influenza - Avian	H5 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	19/07/2018	25/07/2018			54.874391	47.804693							
+237397	Influenza - Avian	H5 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	13/06/2018	20/06/2018			52.389633	50.467074							
+237391	Influenza - Avian	H5 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	07/06/2018	20/06/2018			52.489669	50.327844							
+244582	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	15/05/2018	15/05/2018			0.723234	124.38094							
+236136	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Wild	White Tailed Eagle (Haliaeetus Albicilla)	09/04/2018	26/04/2018			56.067342	14.479502							
+237035	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	09/04/2018	05/06/2018			24.083256	47.339437							
+236044	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Chicken	08/04/2018	16/04/2018			23.76612222	120.63851667							
+235774	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Goose	02/04/2018	09/04/2018			23.621047	120.194404							
+235126	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	16/03/2018	23/03/2018			26.833	89.1136							
+234396	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Wild	Greylag Goose	28/02/2018	01/03/2018			52.79987	-0.351658							
+249352	Influenza - Avian	H7N4 LPAI	National authorities	Confirmed	Domestic	Duck	24/02/2018	15/02/2019			11.14787	105.54372							
+234612	Influenza - Avian	H7N3 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	22/02/2018	09/03/2018			20.695363	-99.814412							
+234277	Influenza - Avian	H5N3 LPAI	OIE	Confirmed	Domestic	Duck	15/02/2018	21/02/2018			46.825	1.762							
+237453	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	05/02/2018	25/06/2018			-4.055782	119.780416							
+233875	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Goose	28/01/2018	09/02/2018			23.369988	120.307401							
+233105	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Domestic	Duck	10/01/2018	11/01/2018			34.4	126.8							
+233233	Influenza - Avian	H5N2 HPAI	National authorities	Confirmed	Domestic	Chicken	04/01/2018	15/01/2018			23.71069	120.23502							
+233229	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	28/12/2017	16/01/2018			24.1561666	47.1710432							
+232721	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	19/12/2017	20/12/2017			24.593984	46.74401							
+233889	Influenza - Avian	H5N2 LPAI	OIE	Confirmed	Domestic	Chicken	11/12/2017	08/02/2018			19.32809	-70.40562							
+232295	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	15/11/2017	23/11/2017			46.546233	43.620785							
+231398	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	16/10/2017	20/10/2017			45.380042	11.797878							
+231301	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Ostrich	11/09/2017	22/09/2017			-33.5	21.8							
+232391	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	06/09/2017	04/12/2017			-3.8417	102.309							
+231366	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Ostrich	28/08/2017	17/10/2017			-34.1	21							
+230847	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	21/08/2017	15/09/2017			-31.8	23.6							
+230563	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Crane	17/08/2017	31/08/2017			-34.1	21							
+230652	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Chicken	04/08/2017	08/09/2017			6.9876	3.4655							
+230178	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	20/06/2017	21/06/2017			28.10054	30.64102							
+228748	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	19/06/2017	27/06/2017			23.242137	120.282777							
+232144	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Chicken	08/06/2017	20/11/2017			35.661038	127.280806							
+228480	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	05/06/2017	12/06/2017			33.5129	126.5232							
+228495	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	19/05/2017	14/06/2017			2.1401	30.9988							
+227584	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	21/04/2017	04/05/2017			47.733307	40.381033							
+232222	Influenza - Avian	H5N6 HPAI	National authorities	Confirmed	Domestic	Chicken	15/04/2017	31/08/2017			26.78119	112.49852							
+232257	Influenza - Avian	H5N6 HPAI	National authorities	Confirmed	Domestic	Duck	15/04/2017	31/08/2017			24.58802	98.03842							
+226753	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Chicken	06/04/2017	09/04/2017			28.2828	30.6366							
+225947	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Turkey	27/03/2017	31/03/2017			53	8.24							
+225755	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Chicken	23/03/2017	27/03/2017			22.8997	120.3327							
+226054	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	23/03/2017	24/03/2017			25.6825	32.63182							
+227074	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Domestic	Duck	22/03/2017	14/04/2017			34.62047	126.98327							
+225667	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Turkey	17/03/2017	23/03/2017			52.95	8							
+225645	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Chicken	13/03/2017	20/03/2017			22.95508	120.51639							
+225544	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Turkey	11/03/2017	17/03/2017			52.95	7.99							
+225097	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Unspecified Bird	09/03/2017	10/03/2017			50.93	11.6							
+227062	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Domestic	Chicken	06/03/2017	14/04/2017			36.09049	127.00632							
+225447	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	01/03/2017	17/03/2017			23.77076	120.58278							
+225448	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	01/03/2017	17/03/2017			23.72965	120.50512							
+224429	Influenza - Avian	H7N9 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	28/02/2017	01/03/2017			23.02	113.74							
+225274	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	28/02/2017	02/03/2017			31.23177	30.56262							
+224275	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan  (Cygnus Olor)	20/02/2017	23/02/2017			54.34274	18.828904							
+224795	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Duck	20/02/2017	07/03/2017			24.699722	121.691722							
+226575	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	17/02/2017	17/02/2017			-7.0351	110.876							
+224211	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	15/02/2017	24/02/2017			43.728191	-0.657196							
+224405	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan  (Cygnus Olor)	15/02/2017	28/02/2017			47.8031	18.9064							
+223962	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	14/02/2017	21/02/2017			9.6189	105.7773							
+223881	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan  (Cygnus Olor)	13/02/2017	16/02/2017			49.30684	19.52549							
+228737	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Great Egret (Ardea Alba)	07/02/2017	26/06/2017			35.87611	127.104124							
+223553	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Duck	06/02/2017	14/02/2017			42.384672	25.025119							
+223978	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Swan	06/02/2017	17/02/2017			48.173333	6.363889							
+224443	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Chicken	03/02/2017	01/03/2017			23.7615	120.245							
+223588	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	02/02/2017	03/02/2017			30.06484	32.6676							
+224442	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Chicken	02/02/2017	01/03/2017			23.7479	120.229							
+223390	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	01/02/2017	03/02/2017			52.6	14.24							
+226134	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan  (Cygnus Olor)	30/01/2017	06/04/2017			48.36	16.11							
+224005	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	28/01/2017	16/02/2017			32.350819	34.926951							
+223169	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan  (Cygnus Olor)	25/01/2017	01/02/2017			51.270278	15.983333							
+222757	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mallard	24/01/2017	25/01/2017			49.2159	17.5208							
+223057	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	24/01/2017	27/01/2017			41.1315	25.2788							
+223413	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan  (Cygnus Olor)	24/01/2017	05/02/2017			48.550479	17.843756							
+222924	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Pheasant	23/01/2017	25/01/2017			53.9388	-2.9418							
+222930	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	23/01/2017	26/01/2017			52.0819	15.6326							
+223251	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Duck	20/01/2017	24/01/2017			42.22876	24.15883							
+223046	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Buzzard	19/01/2017	27/01/2017			43.379722	0.406944							
+222747	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mallard	16/01/2017	25/01/2017			50.4107	16.1671							
+222675	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	14/01/2017	20/01/2017			43.3161	0.3028							
+222410	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	11/01/2017	12/01/2017			30.73956	32.24895							
+222799	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan  (Cygnus Olor)	11/01/2017	17/01/2017			49.6026	17.2354							
+226494	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Wild	Common Pochard (Aythya Ferina)	11/01/2017	18/04/2017			34.86187	137.061758							
+221550	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	10/01/2017	06/02/2017			10.249	9.6065							
+221999	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	09/01/2017	13/01/2017			43.938056	-0.331111							
+226489	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Wild	Anatidae (Unidentified)	05/01/2017	18/04/2017			39.388582	141.116857							
+222310	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Eurasian Wigeon (Anas Penelope)	03/01/2017	11/01/2017			45.7	13.44							
+223215	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Goose	03/01/2017	05/01/2017			42.27051	27.14353							
+224314	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	02/01/2017	24/02/2017			46.5795	20.3489							
+221942	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	30/12/2016	09/01/2017			43.585031	0.414434							
+222730	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan  (Cygnus Olor)	29/12/2016	24/01/2017			45.367	16.787							
+226482	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Wild	Whooper Swan	29/12/2016	18/04/2017			40.612702	141.205911							
+221526	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Chicken	28/12/2016	28/12/2016			-7.300657	108.162							
+221930	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	27/12/2016	09/01/2017			43.824043	-0.145522							
+221690	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Swan	26/12/2016	09/01/2017			50.653223	-2.601845							
+227564	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Domestic	Chicken	24/12/2016	04/05/2017			37.340505	127.566063							
+222055	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Wild Duck	22/12/2016	09/01/2017			50.33	7.59							
+227529	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Domestic	Chicken	20/12/2016	04/05/2017			37.007666	127.469252							
+222306	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Mute Swan  (Cygnus Olor)	16/12/2016	11/01/2017			46.06635	19.82952							
+221657	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	12/12/2016	29/12/2016			46.569808	19.437804							
+226410	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Wild	Tundra Swan	11/12/2016	18/04/2017			37.834495	139.225991							
+220483	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	07/12/2016	14/12/2016			46.4611	19.7117							
+220775	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	07/12/2016	15/12/2016			46.5739	19.74							
+220911	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Greater Flamingo (Phoenicopterus Roseus)	07/12/2016	18/12/2016			36.8753	53.5456							
+227406	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Domestic	Duck	07/12/2016	04/05/2017			34.898972	126.546291							
+220425	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Goose	01/12/2016	13/12/2016			46.6317	19.6031							
+219825	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	27/11/2016	29/11/2016			53.59	9.93							
+220088	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Wild Duck	25/11/2016	02/12/2016			51.47	8.18							
+220166	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Goose	24/11/2016	07/12/2016			46.4027	19.8342							
+220412	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Herring Gull	23/11/2016	12/12/2016			56.357032	16.419598							
+221992	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	23/11/2016	12/01/2017			9.49508	76.40282							
+220062	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	22/11/2016	06/12/2016			46.4364	19.8333							
+219119	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Great Crested Grebe	14/11/2016	16/11/2016			47.66	9.14							
+219427	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Gull	14/11/2016	22/11/2016			47.13	7.22							
+219667	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Unspecified Bird	13/11/2016	25/11/2016			54.42	13.22							
+219850	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Wild	Buzzard	07/11/2016	01/12/2016			47.51	9.65							
+219917	Influenza - Avian	H7N2 LPAI	OIE	Confirmed	Domestic	Ostrich	01/11/2016	29/11/2016			-33.5	22.8							
+221503	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Chicken	22/10/2016	22/10/2016			-1.8878	106.064							
+221975	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	22/10/2016	12/01/2017			9.49508	76.40282							
+218622	Influenza - Avian	H7N1 HPAI	OIE	Confirmed	Wild	Common Ringed Plover	20/10/2016	02/11/2016			31.257	2.8246							
+221498	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Chicken	19/10/2016	19/10/2016			-7.1769	112.345							
+217625	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	25/09/2016	08/10/2016			5.59971	-0.27262							
+217086	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	12/08/2016	12/08/2016			-2.2214	106.191							
+216691	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	28/07/2016	28/07/2016			-3.057394	114.304							
+215000	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	10/07/2016	12/07/2016			30.125164	31.339166							
+214647	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Goose	01/07/2016	22/07/2016			23.0136	120.316							
+216664	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	24/05/2016	24/05/2016			-7.337251	109.588							
+212682	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	23/05/2016	25/05/2016			30.297469	31.313835							
+213175	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Chicken	21/05/2016	12/06/2016			2.938417	11.16227							
+211991	Influenza - Avian	H7N7 HPAI	OIE	Confirmed	Domestic	Chicken	29/04/2016	02/05/2016			44.727647	11.857355							
+216652	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	17/04/2016	17/04/2016			-3.944347	119.785							
+216650	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	14/04/2016	14/04/2016			-3.834666	119.791							
+216612	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	05/04/2016	05/04/2016			-6.356175	108.374							
+211777	Influenza - Avian	H7N3 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	23/03/2016	08/04/2016			18.715895	-97.306							
+216784	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	15/03/2016	15/03/2016			-7.775319	110.367							
+214915	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Guinea Fowl	12/03/2016	27/07/2016			5.299354	-3.975179							
+211498	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	10/03/2016	20/03/2016			11.9166	8.2852							
+211499	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	10/03/2016	20/03/2016			12.9057	5.3396							
+211124	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	01/03/2016	07/03/2016			9.94379	8.89447							
+211088	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	29/02/2016	04/03/2016			9.89944	8.88723							
+211085	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	27/02/2016	04/03/2016			11.9311	8.4784							
+210959	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	26/02/2016	29/02/2016			11.9289	8.4725							
+210950	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	24/02/2016	26/02/2016			26.547103	31.685399							
+211996	Influenza - Avian	H5N2 LPAI	OIE	Confirmed	Domestic	Ostrich	18/02/2016	03/05/2016			-34.1	22							
+210430	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	02/02/2016	08/02/2016			9.88797	8.86548							
+212121	Influenza - Avian	H7N9 LPAI	National authorities	Confirmed	Domestic	Chicken	31/01/2016	21/04/2016			30.81458	120.01959							
+211887	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	25/01/2016	25/04/2016			31.78333	45.732833							
+209831	Influenza - Avian	H7N8 LPAI	OIE	Confirmed	Domestic	Turkey	16/01/2016	19/01/2016			38.404	-86.883							
+216717	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	31/12/2015	31/12/2015			-6.48125	107.874							
+215379	Influenza - Avian	H5N6 HPAI	National authorities	Confirmed	Domestic	Duck	15/12/2015	15/01/2016			26.00369	119.11539							
+215396	Influenza - Avian	H5N6 LPAI	National authorities	Confirmed	Domestic	Duck	15/12/2015	15/01/2016			28.75969	112.43683							
+209268	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Duck	13/12/2015	14/12/2015			43.677445	-0.637749							
+209416	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	30/11/2015	25/12/2015			5.59011	-0.18666							
+208864	Influenza - Avian	H5N6 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	26/11/2015	30/11/2015			19.0493	105.5829							
+208534	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Duck	26/10/2015	16/11/2015			34.8628	126.644179							
+207976	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Goose	09/10/2015	21/10/2015			25.0453	121.188							
+208825	Influenza - Avian	H5N1 HPAI	FAO officer	Confirmed	Domestic	Chicken	25/09/2015	25/09/2015			-3.7417	103.909							
+207525	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	17/09/2015	22/09/2015			5.0222	6.5499							
+206899	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Duck	10/08/2015	01/09/2015			5.33583	-3.89							
+206619	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	06/08/2015	17/08/2015			6.45583	3.21958							
+207105	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	14/07/2015	14/07/2015			31.49309	34.45285							
+205727	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	08/07/2015	14/07/2015			5.75938	-0.02673							
+205686	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	07/07/2015	09/07/2015			30.413013	31.056862							
+208367	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	30/06/2015	12/11/2015			32.893568	117.326141							
+208375	Influenza - Avian	H5N6 HPAI	National authorities	Confirmed	Domestic	Duck	30/06/2015	12/11/2015			30.716667	111.283333							
+208385	Influenza - Avian	H5N2 HPAI	National authorities	Confirmed	Domestic	Duck	30/06/2015	12/11/2015			28.910376	111.970227							
+205575	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Chicken	20/06/2015	07/07/2015			23.8496	120.309							
+204525	Influenza - Avian	H5N2 HPAI	National authorities	Confirmed	Domestic	Chicken	03/06/2015	11/06/2015			43.2389	-95.3667							
+204276	Influenza - Avian	H5N2 HPAI	National authorities	Confirmed	Domestic	Turkey	26/05/2015	04/06/2015			42.4618	-95.2384							
+204487	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	30/04/2015	30/04/2015			-6.2791	106.807							
+202825	Influenza - Avian	H5N2 HPAI	National authorities	Confirmed	Domestic	Turkey	29/04/2015	15/05/2015			42.577	-95.4133							
+202424	Influenza - Avian	H5N2 HPAI	National authorities	Confirmed	Domestic	Turkey	27/04/2015	04/05/2015			42.8854	-94.9508							
+202285	Influenza - Avian	H5N2 HPAI	National authorities	Confirmed	Domestic	Turkey	24/04/2015	29/04/2015			45.2044	-94.9933							
+202271	Influenza - Avian	H5N2 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	22/04/2015	28/04/2015			46.4289	-98.5654							
+205691	Influenza - Avian	H5N2 LPAI	OIE	Confirmed	Domestic	Xostrich	21/04/2015	13/07/2015			-34.1	21							
+202308	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	19/04/2015	30/04/2015			10.18	-3.316							
+202238	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Goose	11/04/2015	24/04/2015			23.6898	120.231							
+201909	Influenza - Avian	H5N2 HPAI	National authorities	Confirmed	Domestic	Turkey	09/04/2015	11/04/2015			45.758	-99.2178							
+201908	Influenza - Avian	H5N2 HPAI	National authorities	Confirmed	Domestic	Turkey	08/04/2015	11/04/2015			43.6633	-97.3988							
+205631	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	07/04/2015	07/07/2015			9.85358	8.86708							
+204497	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/04/2015	01/04/2015			-5.2524	105.211							
+205617	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	24/03/2015	07/07/2015			9.96733	8.88936							
+201790	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Chicken	10/03/2015	23/03/2015			36.51905	126.847							
+201782	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Duck	06/03/2015	23/03/2015			36.51905	126.84696							
+201844	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	04/03/2015	07/04/2015			9.73288	8.79518							
+200209	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	02/02/2015	03/02/2015			30.807	31.04							
+200204	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/02/2015	02/02/2015			31.369	31.629							
+200206	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Goose	01/02/2015	03/02/2015			30.224	31.357							
+199707	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	30/01/2015	30/01/2015			9.3255	104.8385							
+200200	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	29/01/2015	31/01/2015			31.3	31.276							
+199680	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Goose	22/01/2015	26/01/2015			37.322	126.831							
+199279	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	14/01/2015	15/01/2015			30.15	31.333							
+198896	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Goose	12/01/2015	15/01/2015			23.709221	120.25264							
+198881	Influenza - Avian	H5N3 HPAI	National authorities	Confirmed	Domestic	Goose	11/01/2015	16/01/2015			22.6167222	120.49894							
+198713	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	05/01/2015	06/01/2015			30.298	30.969							
+198621	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	31/12/2014	01/01/2015			30.949886	31.233054							
+198623	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	31/12/2014	01/01/2015			30.880488	31.483578							
+208189	Influenza - Avian	H5N6 HPAI	National authorities	Confirmed	Domestic	Duck	31/12/2014	02/11/2015			31.2599	117.308							
+198611	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	26/12/2014	28/12/2014			30.27026	31.2598							
+199713	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Wild	American Wigeon	23/12/2014	30/01/2015			39.723656	-121.579381							
+200242	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Muscovy Ducks	22/12/2014	22/12/2014			-6.4182	108.374							
+198324	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	19/12/2014	21/12/2014			26.874232	31.420982							
+198306	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	16/12/2014	18/12/2014			30.800339	30.106405							
+198284	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	15/12/2014	17/12/2014			26.693537	31.658116							
+198264	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	13/12/2014	13/12/2014			28.303815	30.682504							
+198265	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Goose	13/12/2014	13/12/2014			28.303815	30.682504							
+198275	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	13/12/2014	16/12/2014			28.303815	30.682504							
+198181	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	11/12/2014	13/12/2014			28.520346	30.739265							
+198172	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	10/12/2014	12/12/2014			25.55	29.26667							
+198080	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	05/12/2014	09/12/2014			9.704	106.4351							
+198141	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	03/12/2014	05/12/2014			26.05532	32.304038							
+198662	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Quail	27/11/2014	27/11/2014			0.6143	101.541							
+202398	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Wild	Mallard	18/11/2014	18/11/2014			21.1397	105.84772							
+197080	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	12/11/2014	13/11/2014			30.53333	32.26667							
+199693	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Duck	12/10/2014	26/01/2015			34.755	126.582							
+199689	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Duck	06/10/2014	26/01/2015			34.755	126.582							
+208261	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Duck	30/09/2014	09/11/2015			41.046997	121.981554							
+194161	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	12/09/2014	24/10/2014			41.12	122.08							
+204564	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	01/07/2014	01/07/2014			23.357	116.685							
+187301	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Goose	12/06/2014	24/06/2014			26.56667	31.73333							
+187300	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	09/06/2014	25/06/2014			28.981287	29.25669							
+184955	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	26/04/2014	27/04/2014			26.07833	32.06333							
+204902	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	11/04/2014	11/04/2014			28.683	115.883							
+204916	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	06/04/2014	06/04/2014			28.683	115.883							
+204922	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	06/04/2014	06/04/2014			28.683	115.883							
+184427	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	04/04/2014	05/04/2014			29.158	30.919							
+184092	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	25/03/2014	25/03/2014			30.05	31.127							
+204867	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	16/03/2014	16/03/2014			28.683	115.883							
+184339	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	26/02/2014	26/02/2014			-0.968	100.943							
+184328	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	24/02/2014	25/02/2014			0.592	101.038							
+204719	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	21/02/2014	21/02/2014			23.021	113.751							
+204762	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	21/02/2014	21/02/2014			23.021	113.751							
+204741	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	20/02/2014	20/02/2014			23.021	113.751							
+183005	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	19/02/2014	22/02/2014			27.067	31.35							
+183001	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	13/02/2014	14/02/2014			30.333	31.35							
+184335	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	11/02/2014	12/02/2014			-0.323	100.541							
+182855	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	29/01/2014	30/01/2014			30.932	31.477							
+182856	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	28/01/2014	29/01/2014			29.353	30.667							
+204601	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	19/12/2013	19/12/2013			23.021	113.751							
+204607	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	19/12/2013	19/12/2013			23.021	113.751							
+204667	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	19/12/2013	19/12/2013			23.021	113.751							
+204590	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	18/12/2013	18/12/2013			23.021	113.751							
+202541	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Quail	24/11/2013	24/11/2013			24.143979	90.406929							
+204663	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	28/10/2013	28/10/2013			30.002	120.581							
+202543	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Duck	25/10/2013	25/10/2013			24.143979	90.406929							
+204648	Influenza - Avian	H7N9 LPAI	Publications	Confirmed	Domestic	Chicken	24/10/2013	24/10/2013			30.866	120.096							
+178913	Influenza - Avian	H5N2 LPAI	OIE	Confirmed	Domestic	Duck	09/09/2013	23/09/2013			23.402056	121.342492							
+177545	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	28/06/2013	28/06/2013			-5.48004	105.1868							
+176344	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	09/06/2013	10/06/2013			31.208	29.919							
+176173	Influenza - Avian	H7N1 LPAI	OIE	Confirmed	Domestic	Chicken	31/05/2013	03/06/2013			52.10644	5.46828							
+176519	Influenza - Avian		FAO Field Officer	Confirmed	Domestic	Duck	23/05/2013	23/05/2013			0.76	124.58							
+176193	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	05/05/2013	06/05/2013			31.033	31.4							
+176028	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	26/04/2013	26/04/2013			-7.29587	110.390366							
+175562	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	19/04/2013	23/04/2013			27.679	84.3954							
+175557	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Goose	16/04/2013	17/04/2013			30.17	31.002							
+175332	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	27/03/2013	06/04/2013			26.7211	88.1703							
+175540	Influenza - Avian	H7N3 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	23/03/2013	17/04/2013			20.7171806	-100.75222							
+175726	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	14/03/2013	14/03/2013			-8.224596	113.664899							
+174994	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	21/02/2013	22/02/2013			31.317	31.683							
+175852	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/02/2013	01/02/2013			-0.136418	115.750372							
+174556	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	21/01/2013	31/01/2013			11.129546	106.144564							
+174346	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	08/01/2013	18/01/2013			27.67236	85.35517							
+201694	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	02/01/2013	02/01/2013			29.96499	31.5699							
+174179	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	10/12/2012	22/12/2012			30.638	31.265							
+203849	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	17/11/2012	17/11/2012			34.265472	108.954239							
+173227	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Duck	25/10/2012	31/10/2012			30.298	30.969							
+174147	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Quail	18/10/2012	20/10/2012			-7.922929	110.234996							
+173319	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	17/10/2012	18/10/2012			30.083	31.217							
+173647	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	12/09/2012	12/09/2012			-7.435125	111.04124							
+172758	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	03/09/2012	17/09/2012			20.8352	105.5296							
+173114	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	30/08/2012	30/08/2012			-7.136809	108.1824							
+172320	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	05/08/2012	10/08/2012			20.3845	105.9695							
+203831	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Wild	Unspecified Bird	17/07/2012	17/07/2012			43.896539999	125.325862							
+172155	Influenza - Avian	H7N3 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	29/06/2012	10/07/2012			20.98164	-102.62894							
+203830	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	21/06/2012	21/06/2012			38.037057	114.46866499999							
+171491	Influenza - Avian	H7N1 LPAI	OIE	Confirmed	Domestic	Ostrich	25/04/2012	19/06/2012			-34.13197	21.79131							
+169917	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	26/03/2012	27/03/2012			31.104	30.21							
+171124	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	03/03/2012	03/03/2012			-6.952831	107.583504							
+169941	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	28/02/2012	29/02/2012			-7.267316	109.655652							
+168185	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	20/02/2012	28/02/2012			21.95693	95.27363							
+167748	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	15/02/2012	16/02/2012			22.9294	91.300933							
+167743	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	08/02/2012	09/02/2012			30.706	31.247							
+168217	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	23/01/2012	25/01/2012			-7.000016	109.000003							
+203754	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/01/2012	01/01/2012			22.396428	114.109497							
+203736	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/12/2011	01/12/2011			23.132191	113.266530999							
+203744	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/12/2011	01/12/2011			38.037057	114.46866499999							
+166059	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	23/11/2011	24/11/2011			23.852866	89.965788							
+203705	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/11/2011	01/11/2011			23.132191	113.266530999							
+165617	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	24/10/2011	25/10/2011			29.328	30.891							
+165614	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	18/10/2011	19/10/2011			30.727	31.211							
+166112	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	07/10/2011	10/10/2011			-6.854125	106.697069							
+164531	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	27/08/2011	29/08/2011			23.6041	88.7721							
+201969	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	25/08/2011	25/08/2011			30.554126	31.274283							
+165161	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	13/08/2011	14/08/2011			5.161998	96.664191							
+165187	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	08/08/2011	14/08/2011			-3.536349	118.971748							
+165182	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/08/2011	02/08/2011			-5.155257	119.452187							
+164853	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	13/07/2011	16/07/2011			-7.889454	110.728511							
+163910	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	12/07/2011	13/07/2011			31.126	30.549							
+164848	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	07/07/2011	07/07/2011			-3.714725	119.633349							
+203635	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/07/2011	01/07/2011			26.598194	106.70740999							
+203664	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/07/2011	01/07/2011			37.873532	112.562398							
+203682	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/07/2011	01/07/2011			23.132191	113.266530999							
+163700	Influenza - Avian	H7N7 LPAI	OIE	Confirmed	Domestic	Chicken	22/06/2011	30/06/2011			51.850763	8.368827							
+163683	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	21/06/2011	22/06/2011			31.317	31.717							
+164414	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	01/06/2011	08/06/2011			-7.00672	106.953653							
+163585	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	20/05/2011	21/05/2011			-3.825366	102.29985							
+163649	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	06/05/2011	13/05/2011			-5.000006	105.000028							
+163641	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	05/05/2011	07/05/2011			-7.62935	110.335998							
+162492	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	28/04/2011	29/04/2011			30.55	31.133							
+162492	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	28/04/2011	29/04/2011			30.55	31.133							
+162490	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	27/04/2011	28/04/2011			30.617	30.983							
+162472	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	23/04/2011	23/04/2011			24.0577	90.9909							
+163132	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Ostrich	19/04/2011	10/06/2011			-33.52722	25.54833							
+163274	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	18/04/2011	21/04/2011			-3.723866	102.268983							
+163322	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	18/04/2011	23/04/2011			-5.000011	105.000031							
+161949	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	11/04/2011	12/04/2011			27.656	30.786							
+163295	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	11/04/2011	15/04/2011			-7.000035	108.000046							
+161877	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	10/04/2011	11/04/2011			31.413	31.834							
+161877	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	10/04/2011	11/04/2011			31.413	31.834							
+163407	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	10/04/2011	12/04/2011			-1.238583	100.4868							
+163419	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	07/04/2011	07/04/2011			-0.491383	100.4706							
+163340	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	31/03/2011	01/04/2011			0.458933	101.900566							
+162204	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	30/03/2011	30/03/2011			-8.461	115.139816							
+162139	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	24/03/2011	25/03/2011			-0.019945	100.06847							
+161733	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	23/03/2011	24/03/2011			23.76817	90.57049							
+162203	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	18/03/2011	18/03/2011			-8.469466	115.167416							
+162143	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	13/03/2011	14/03/2011			-0.266816	100.690966							
+162117	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	07/03/2011	13/03/2011			-0.578666	100.096583							
+162180	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	03/03/2011	07/03/2011			-1.213533	100.502166							
+203188	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/03/2011	01/03/2011			31.861184	117.28492299							
+203233	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/03/2011	01/03/2011			31.861184	117.28492299							
+203279	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/03/2011	01/03/2011			29.56301	106.551557							
+203308	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/03/2011	01/03/2011			20.017378	110.349228999							
+203309	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/03/2011	01/03/2011			20.017378	110.349228999							
+203352	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/03/2011	01/03/2011			34.765515	113.753602							
+203389	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/03/2011	01/03/2011			34.765515	113.753602							
+203392	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/03/2011	01/03/2011			34.765515	113.753602							
+203457	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/03/2011	01/03/2011			38.4713179999	106.258753999							
+203486	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/03/2011	01/03/2011			36.66853	119.295143999							
+203514	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/03/2011	01/03/2011			37.873532	112.562398							
+160255	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	27/02/2011	28/02/2011			24.75784	90.4892							
+161531	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	25/02/2011	28/02/2011			-6.579383	106.830766							
+161618	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	25/02/2011	26/02/2011			0.489016	101.407							
+161619	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	25/02/2011	25/02/2011			0.458066	101.401883							
+161602	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	24/02/2011	24/02/2011			-3.2443	104.6606							
+161498	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	23/02/2011	28/02/2011			-7.834983	110.6971							
+160266	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	22/02/2011	23/02/2011			30.705	31.556							
+160265	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	21/02/2011	22/02/2011			28.52	30.739							
+161541	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	19/02/2011	23/02/2011			-7.671983	110.631733							
+161528	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	15/02/2011	17/02/2011			-7.000006	107.000056							
+160207	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	14/02/2011	16/02/2011			21.48174	92.10782							
+161562	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	12/02/2011	12/02/2011			-2.1635	106.13005							
+161640	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	12/02/2011	14/02/2011			-3.288683	102.88485							
+161573	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	10/02/2011	16/02/2011			-5.25965	105.27375							
+158676	Influenza - Avian	H5N1 HPAI	FAO officer	Confirmed	Wild	Crow	08/02/2011	08/02/2011			33.4459	131.1251							
+161576	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	07/02/2011	08/02/2011			-5.808816	105.614966							
+203178	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Wild	Mallard	01/02/2011	01/02/2011			28.675697	115.909227999							
+158384	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	26/01/2011	27/01/2011			29.30321	30.571836							
+158550	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	26/01/2011	27/01/2011			29.41389	30.75778							
+158551	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	26/01/2011	27/01/2011			29.41389	30.75778							
+158385	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Turkey	24/01/2011	25/01/2011			28.206684	30.915177							
+158105	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	21/01/2011	22/01/2011			31.098	30.792							
+160616	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	20/01/2011	25/01/2011			-7.872066	110.495533							
+158245	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	18/01/2011	28/01/2011	0	0	36.541895	127.102782							
+203133	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	16/01/2011	16/01/2011			36.66853	117.020358999							
+157949	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	11/01/2011	12/01/2011			30.47	31.069							
+157762	Influenza - Avian	H5N1 HPAI	Media	Confirmed	Domestic	Duck	10/01/2011	11/01/2011	0	0	35.0160601	126.7107572							
+160610	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	10/01/2011	12/01/2011			-7.806016	110.376266							
+157777	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	08/01/2011	09/01/2011			31.11334	31.3439							
+160522	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	06/01/2011	11/01/2011			-5.08565	105.299166							
+157791	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Goose	03/01/2011	04/01/2011			29.29917	30.7097							
+160494	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/01/2011	03/01/2011			-6.64595	106.014433							
+203094	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/01/2011	01/01/2011			22.396428	114.109497							
+203114	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/01/2011	01/01/2011			32.061707	118.763232							
+160515	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	28/12/2010	04/01/2011			-5.420316	105.0399							
+158130	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	27/12/2010	31/12/2010			-5.376316	105.101566							
+157554	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Unspecified Bird	13/12/2010	14/12/2010			31.048825	31.528706							
+158620	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	24/11/2010	26/11/2010			-7.387783	110.488166							
+158600	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	22/11/2010	23/11/2010			-6.458933	105.921433							
+202988	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/11/2010	01/11/2010			31.861184	117.28492299							
+203018	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/11/2010	01/11/2010			32.061707	118.763232							
+157090	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	27/10/2010	28/10/2010			26.033	32.783							
+157359	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/10/2010	01/10/2010			-7.75112	111.0209							
+156650	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	22/09/2010	23/09/2010			29.21	30.854							
+156647	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	20/09/2010	21/09/2010			30.381	31.16							
+156289	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	19/08/2010	20/08/2010			30.733	31.117							
+156667	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	10/08/2010	10/08/2010			-3.589	102.63115							
+156661	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	06/08/2010	10/08/2010			-6.131906	106.099292							
+156177	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	26/07/2010	27/07/2010			30.03167	31.11194							
+156318	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	15/07/2010	19/07/2010			-5.54991	120.18641							
+156171	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	11/07/2010	12/07/2010			29.825055	31.237321							
+156274	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	06/07/2010	08/07/2010			26.15	32.376							
+156170	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	30/06/2010	02/07/2010			31.41333	31.83389							
+156270	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	16/06/2010	17/06/2010			30.614	30.945							
+155846	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	09/06/2010	14/06/2010			-7.986951	110.283668							
+155825	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	03/06/2010	04/06/2010			-0.6884	100.592642							
+155833	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	31/05/2010	07/06/2010			-5.415069	105.076723							
+155398	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	28/05/2010	29/05/2010			-7.556537	111.128995							
+154924	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	25/05/2010	26/05/2010			29.82506	31.23732							
+155079	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Wigeon	15/05/2010	09/06/2010			33.188515	88.8832642							
+155388	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	05/05/2010	08/05/2010			-6.40865	106.789604							
+154406	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	27/04/2010	14/05/2010			18.1328	102.68852							
+154492	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	21/04/2010	24/04/2010			-7.78645	110.590482							
+153470	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	13/04/2010	19/04/2010			20.99497	106.9682							
+154443	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	07/04/2010	12/04/2010			-6.905447	107.894252							
+154121	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	18/03/2010	18/03/2010			-5.659074	105.50463							
+154100	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	12/03/2010	12/03/2010			-4.116233	104.184766							
+152866	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	10/03/2010	11/03/2010			29.339107	31.089546							
+152868	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	07/03/2010	08/03/2010			31.25833	31.17778							
+152849	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	05/03/2010	05/03/2010			27.62444	30.87556							
+154073	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	04/03/2010	04/03/2010			-7.246706	110.43176							
+154057	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	03/03/2010	03/03/2010			-5.536796	105.53622							
+154099	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/03/2010	01/03/2010			-7.008191	108.456418							
+202940	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Wild	Duck	01/03/2010	01/03/2010			22.889451	112.430983							
+152358	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	21/02/2010	22/02/2010			30.36528	30.47361							
+153696	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	16/02/2010	18/02/2010			-6.028633	105.99755							
+153699	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	16/02/2010	18/02/2010			-6.342833	108.22905							
+152093	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	09/02/2010	10/02/2010			30.946	31.561							
+151879	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	07/02/2010	09/02/2010			18.329	105.993							
+151875	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Muscovy Ducks	04/02/2010	05/02/2010			9.231	105.185							
+153523	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	03/02/2010	04/02/2010			-6.45005	108.3425							
+151857	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	02/02/2010	03/02/2010			28.55	30.709							
+153521	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	02/02/2010	04/02/2010			-7.672066	110.1693							
+152761	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	29/01/2010	30/01/2010			-7.405989	109.823672							
+153479	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	29/01/2010	01/02/2010			-6.796533	107.930633							
+151613	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	26/01/2010	27/01/2010			30.449	31.581							
+151835	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Duck	26/01/2010	30/01/2010			28.197	83.982							
+151610	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	24/01/2010	25/01/2010			29.158	30.919							
+151491	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	15/01/2010	15/01/2010			31.033	31.083							
+151291	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	07/01/2010	07/01/2010			30.91278	31.57611							
+152600	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	01/01/2010	05/01/2010			-0.588229	100.609062							
+152160	Influenza - Avian	H5N1 HPAI	FAO officer	Confirmed	Domestic	Chicken	28/12/2009	31/12/2009			-6.739	108.295							
+152241	Influenza - Avian	H5N1 HPAI	FAO officer	Confirmed	Domestic	Chicken	11/12/2009	12/12/2009			-7.577	108.866							
+152163	Influenza - Avian	H5N1 HPAI	FAO officer	Confirmed	Domestic	Chicken	06/12/2009	09/12/2009			-7.12	108.167							
+146322	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	23/11/2009	24/11/2009			29.279	30.731							
+134337	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	29/10/2009	30/10/2009			30.417	30.85							
+133612	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	15/09/2009	18/09/2009			31.136	32.425							
+133285	Influenza - Avian	HPAI	National authorities	Denied	Domestic	Chicken	28/08/2009	02/09/2009			24.7576	89.39616							
+133290	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	28/08/2009	30/08/2009			31.03889	30.50111							
+134106	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	27/08/2009	01/09/2009			-6.217	106.689							
+133485	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	10/08/2009	10/08/2009			-7.41	108.316							
+133541	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	09/08/2009	09/08/2009			-5.09	119.509							
+133254	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	05/08/2009	06/08/2009			30.44	31.138							
+133245	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Crow	01/08/2009	10/08/2009			49.0213	101.1138							
+133124	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	20/06/2009	22/06/2009			-0.239122	100.75158							
+133199	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	20/06/2009	22/06/2009			-7.834083	110.345468							
+133152	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	12/06/2009	13/06/2009			-6.902609	109.597461							
+133188	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	11/06/2009	12/06/2009			-8.137148	111.04483							
+133028	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	02/06/2009	05/06/2009			-6.776917	108.387814							
+133063	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/06/2009	03/06/2009			-6.314323	107.347096							
+133083	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	30/05/2009	04/06/2009			-4.40685	105.168162							
+132627	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	25/05/2009	27/05/2009			-6.203011	106.678089							
+132400	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	09/05/2009	17/06/2009			21.484252	92.085211							
+132637	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	08/05/2009	15/05/2009			-8.518957	115.202643							
+132705	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	08/05/2009	09/05/2009			-6.784761	110.846489							
+206501	Influenza - Avian	H9N2 LPAI	Publications	Confirmed	Domestic	Chicken	28/04/2009	28/04/2009			37.55449	126.95169							
+168758	Influenza - Avian	H7N6 LPAI	OIE	Confirmed	Domestic	Quail	26/03/2009	31/03/2009			34.689	137.4086							
+131369	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	24/03/2009	07/04/2009			25.671028	32.706583							
+132302	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	16/03/2009	17/03/2009			-6.736212	111.35384							
+132323	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	13/03/2009	14/03/2009			-7.357154	110.484366							
+134008	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	11/03/2009	13/04/2009			22.532927	91.909205							
+132381	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	10/03/2009	10/03/2009			-3.988983	119.658803							
+132310	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	06/03/2009	06/03/2009			-7.343065	110.569084							
+132358	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	06/03/2009	18/03/2009			-2.68735	118.8758							
+132260	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	05/03/2009	07/03/2009			-7.761531	110.682816							
+132327	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	02/03/2009	02/03/2009			-7.837382	111.313441							
+130729	Influenza - Avian	HPAI	FAO Field Officer	Denied	Domestic	Chicken	28/02/2009	28/02/2009			26.4833333	87.2833333							
+130861	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	20/02/2009	26/02/2009			-5.367963	104.963568							
+133999	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	16/02/2009	26/02/2009			23.793808	90.360621							
+130943	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	14/02/2009	16/02/2009			-7.11692	112.399178							
+130963	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	12/02/2009	13/02/2009			-7.09741	112.262439							
+129765	Influenza - Avian	HPAI	FAO Field Officer	Denied	Domestic	Unspecified Bird	02/12/2008	10/12/2008			15.112958	103.6110229							
+129620	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Unspecified Bird	21/11/2008	21/11/2008			19.2333333	101.7333333							
+128627	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	07/08/2008	12/08/2008			2	99							
+202676	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	27/07/2008	27/07/2008			34.40002	58.42474							
+127859	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	06/05/2008	06/05/2008			37.5663889	126.9997222							
+127830	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Swan	21/04/2008	28/04/2008			40.1039	140.4549							
+127717	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	09/04/2008	10/04/2008			35.510755	126.592816							
+146917	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	25/02/2008	25/02/2008			21.605374	105.293652							
+127599	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Cormorant	22/02/2008	28/03/2008			47.15	8.1166667							
+127190	Influenza - Avian	HPAI	FAO officer	Denied	Domestic	Unspecified Bird	01/02/2008	14/02/2008			23.23333	98.36667							
+127072	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	30/01/2008	30/01/2008			23.9166667	87.5333333							
+126994	Influenza - Avian	H5N1 HPAI	National authorities	Denied	Wild	Unspecified Bird	28/01/2008	28/01/2008			37.86667	41.11667							
+127052	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	28/01/2008	04/02/2008			24.8666667	67.05							
+127034	Influenza - Avian	H5N1 HPAI	National authorities	Denied	Domestic	Chicken	25/01/2008	25/01/2008			16.501943	103.633005							
+133776	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	18/01/2008	16/03/2008			22.134352	90.111121							
+146918	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/01/2008	01/01/2008			21.659053	105.445946							
+160035	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	24/07/2007	03/12/2007			31.1619	30.9823							
+123833	Influenza - Avian	H5N1 HPAI	International reference laboratory	Confirmed	Wild	Unspecified Bird	06/07/2007	06/07/2007			51.04972	12.55							
+146784	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Muscovy Ducks	20/06/2007	20/06/2007			20.316088	106.561923							
+146846	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	20/06/2007	20/06/2007			21.212053	106.107933							
+146804	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	11/06/2007	11/06/2007			20.610503	106.299146							
+159591	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	11/05/2007	03/12/2007			31.2632	31.4167							
+121272	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	10/04/2007	10/04/2007			34.14972	73.21667							
+159544	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	03/04/2007	03/12/2007			25.8867	32.8549							
+121117	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	02/04/2007	02/04/2007			28.59472	47.97028							
+159838	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	21/03/2007	03/12/2007			28.5025	30.8472							
+121933	Influenza - Avian	H5N1 HPAI	International reference laboratory	Confirmed	Domestic	Chicken	02/03/2007	02/03/2007			34.23306	70.71667							
+159468	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	22/02/2007	03/12/2007			25.6888	32.7053							
+116652	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	21/02/2007	21/02/2007			13	7.59972							
+159625	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	06/02/2007	03/12/2007			30.4282	30.7651							
+146567	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	17/01/2007	17/01/2007			9.28833	105.568861							
+146604	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	15/01/2007	15/01/2007			9.360466	105.493274							
+146658	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	06/01/2007	06/01/2007			9.626635	105.361756							
+159823	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	05/01/2007	03/12/2007			31.2777	30.0363							
+114515	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Unspecified Bird	03/01/2007	03/01/2007			22.27583	114.18222							
+146535	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Muscovy Ducks	31/12/2006	31/12/2006			9.017418	104.866398							
+146543	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	11/12/2006	11/12/2006			9.11198	104.890706							
+202497	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	01/09/2006	01/09/2006			24.143979	90.406929							
+113397	Influenza - Avian	H5N1 LPAI	International reference laboratory	Confirmed	Wild	Mallard	28/08/2006	27/09/2006			41.43	-81.43							
+168772	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Ostrich	19/06/2006	21/09/2006			-33.4308	21.8911							
+111274	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	12/06/2006	12/06/2006			6.45306	3.39583							
+110964	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	30/05/2006	01/06/2006			44.95	26.01667							
+110573	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	24/05/2006	26/05/2006			46.2	26.81667							
+110605	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	23/05/2006	29/05/2006			45.78306	27.06667							
+110095	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	21/05/2006	21/05/2006			44.95	26.01667							
+110408	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	19/05/2006	21/05/2006			45.16667	26							
+112253	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	19/05/2006	19/05/2006			15.6	32.56667							
+112255	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	19/05/2006	19/05/2006			15.6	32.56667							
+109649	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	15/05/2006	18/05/2006			45.7	25.45							
+109693	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	15/05/2006	17/05/2006			45.89972	27.08306							
+202342	Influenza - Avian	H9N2 LPAI	International reference laboratory	Confirmed	Domestic	Chicken	02/05/2006	02/05/2006			33.985	71.55795							
+112153	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	22/04/2006	22/04/2006			15.6	32.56667							
+112371	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	22/04/2006	22/04/2006			15.58194	32.60333							
+112113	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	21/04/2006	21/04/2006			15.6	32.56667							
+159890	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	19/04/2006	03/12/2007			30.7371	29.7854							
+159774	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	31/03/2006	03/12/2007			29.8877	31.296							
+159732	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	27/03/2006	03/12/2007			30.6792	31.8269							
+159662	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	26/03/2006	03/12/2007			30.5084	31.129							
+108191	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Duck	25/03/2006	27/03/2006			54.79972	11.96667							
+159713	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	25/03/2006	03/12/2007			30.0807	30.9726							
+159372	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	21/03/2006	23/03/2006			30.9157	32.0537							
+107535	Influenza - Avian	H5N1 HPAI	International reference laboratory	Confirmed	Wild	Swan	20/03/2006	20/03/2006			53	14.18306							
+158904	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Unspecified Bird	20/03/2006	03/08/2006			46.51667	38.13333							
+159391	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	20/03/2006	23/03/2006			30.4234	31.3491							
+159278	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	19/03/2006	23/03/2006			30.2835	31.324							
+109363	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	17/03/2006	26/04/2006			23	95.5							
+107419	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Unspecified Bird	16/03/2006	22/03/2006			46.36667	6.13306							
+159270	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	16/03/2006	23/03/2006			29.021996	29.451783							
+108179	Influenza - Avian	H5N1 HPAI	International reference laboratory	Confirmed	Wild	Buzzard	14/03/2006	14/03/2006			54.35	13.48306							
+159246	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	12/03/2006	23/03/2006			29.021996	29.451783							
+159502	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	12/03/2006	03/12/2007			31.046	31.325							
+106372	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Unspecified Bird	08/03/2006	08/03/2006			58.66667	17.1							
+158901	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Unspecified Bird	03/03/2006	03/08/2006			44.33471	40.77281							
+106771	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Wild	Swan	02/03/2006	14/03/2006			45.95	18.93306							
+159373	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	01/03/2006	23/03/2006			30.3703	31.6001							
+106721	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	22/02/2006	10/03/2006			9.91667	8.91667							
+159152	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	18/02/2006	18/02/2006			29.021996	29.451783							
+158853	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Unspecified Bird	11/02/2006	03/08/2006			43.41667	46.91667							
+104675	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	10/02/2006	27/02/2006			13.25	9.25							
+105148	Influenza - Avian	H5N1 HPAI	International reference laboratory	Confirmed	Domestic	Chicken	10/02/2006	24/02/2006			12.050204	105.515449							
+104849	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	06/02/2006	13/02/2006			44.76667	28.86667							
+103642	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Wild	Swan	10/01/2006	10/01/2006			37.85	27.25							
+104361	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Goose	09/01/2006	01/02/2006			39.79972	31.36667							
+103578	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Duck	06/01/2006	06/01/2006			40.1	31.61667							
+104041	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	05/01/2006	25/01/2006			38.83306	41.68306							
+157841	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Unspecified Bird	24/12/2005	29/12/2005			44.56	27.37							
+103524	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	22/12/2005	05/01/2006			29.56667	106.58306							
+103516	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Chicken	19/12/2005	05/01/2006			44.85	34.96667							
+103060	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	14/12/2005	14/12/2005			45.5	33							
+150137	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	06/12/2005	06/12/2005			19.890607	105.84832							
+150132	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	04/12/2005	04/12/2005			20.80259	106.664745							
+150068	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	28/11/2005	28/11/2005			18.994199	105.258698							
+103715	Influenza - Avian	H5N1 HPAI	OIE	Confirmed	Domestic	Turkey	25/11/2005	09/01/2006			39.79972	42.66667							
+150007	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	22/11/2005	22/11/2005			20.79158	106.64391							
+149982	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	20/11/2005	20/11/2005			20.888588	104.687839							
+149962	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	19/11/2005	19/11/2005			19.939377	105.812699							
+149972	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	19/11/2005	19/11/2005			20.85072	106.505808							
+149948	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	18/11/2005	18/11/2005			20.847637	106.607507							
+149954	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	18/11/2005	18/11/2005			21.05816	106.621518							
+149920	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	17/11/2005	17/11/2005			10.574473	105.457739							
+149879	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	15/11/2005	15/11/2005			20.73995	106.477999							
+149846	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	13/11/2005	13/11/2005			20.202714	105.97321							
+149849	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	13/11/2005	13/11/2005			20.592193	106.219784							
+149832	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	11/11/2005	11/11/2005			21.161755	106.326223							
+101740	Influenza - Avian	LPAI	Other	Confirmed	Wild	Unspecified Bird	10/11/2005	10/11/2005			45.41667	11.88306							
+149806	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	08/11/2005	08/11/2005			20.90649	104.534974							
+120990	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	30/08/2005	30/08/2005			16.1922	99.5811							
+158816	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Unspecified Bird	18/08/2005	22/12/2005			55.14332	70.95318							
+158741	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Unspecified Bird	11/08/2005	22/12/2005			55.38333	66.46667							
+158785	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Unspecified Bird	10/08/2005	22/12/2005			55.04907	75.52482							
+100620	Influenza - Avian	HPAI	FAO Field Officer	Denied	Wild	Unspecified Bird	25/07/2005	26/07/2005			23.11667	113.25							
+149718	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	08/03/2005	08/03/2005			20.798085	106.680169							
+149584	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	17/02/2005	17/02/2005			20.873243	106.273578							
+149552	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	16/02/2005	16/02/2005			10.311822	105.728076							
+149507	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	13/02/2005	13/02/2005			11.023605	106.710794							
+149508	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	13/02/2005	13/02/2005			21.059243	106.079916							
+149457	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	08/02/2005	08/02/2005			9.536949	105.47778							
+149384	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	04/02/2005	04/02/2005			10.138778	105.83425							
+149314	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	02/02/2005	02/02/2005			10.289694	106.403204							
+120772	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/02/2005	01/02/2005			17.0725	100.2736							
+149273	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/02/2005	01/02/2005			10.505841	106.604436							
+149298	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	01/02/2005	01/02/2005			10.693073	106.19835							
+150977	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	31/01/2005	31/01/2005			9.315767	105.489994							
+150989	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	31/01/2005	31/01/2005			10.302889	106.353399							
+150947	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	30/01/2005	30/01/2005			9.957847	105.583142							
+150913	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	28/01/2005	28/01/2005			10.862037	105.625197							
+150828	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	26/01/2005	26/01/2005			9.985274	106.108331							
+150838	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	26/01/2005	26/01/2005			10.221982	106.583068							
+150779	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	25/01/2005	25/01/2005			9.526282	105.422719							
+150693	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	22/01/2005	22/01/2005			10.054571	106.256381							
+150705	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	22/01/2005	22/01/2005			10.734568	107.088269							
+150666	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	21/01/2005	21/01/2005			10.174727	105.989108							
+150501	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	17/01/2005	17/01/2005			9.526282	105.422719							
+150462	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	15/01/2005	15/01/2005			9.97969	106.338051							
+150474	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	15/01/2005	15/01/2005			15.889549	108.345782							
+150442	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	14/01/2005	14/01/2005			10.296653	106.760664							
+150431	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	13/01/2005	13/01/2005			21.021069	105.915511							
+150337	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Quail	07/01/2005	07/01/2005			10.434189	106.370811							
+5830	Influenza - Avian	LPAI	Other	Confirmed	Domestic	Duck	10/12/2004	10/12/2004			37.87472	127.73417							
+120468	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	02/12/2004	02/12/2004			14.4055	99.9944							
+120268	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	17/11/2004	17/11/2004			16.9477	99.9394							
+120204	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	16/11/2004	16/11/2004			13.8522	100.4355							
+120218	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	16/11/2004	16/11/2004			14.2338	99.9788							
+120067	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	10/11/2004	10/11/2004			18.2805	98.655							
+119925	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	08/11/2004	08/11/2004			15.89	100.1416							
+119837	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	05/11/2004	05/11/2004			14.5537	100.2872							
+119839	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	05/11/2004	05/11/2004			14.8741	100.5027							
+119829	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	04/11/2004	04/11/2004			14.3741	100.0222							
+119791	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	03/11/2004	03/11/2004			13.9944	100.4874							
+119713	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	01/11/2004	01/11/2004			14.593	100.3644							
+119558	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	29/10/2004	29/10/2004			15.9611	100.2069							
+119628	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	29/10/2004	29/10/2004			15.9871	100.597							
+119497	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	27/10/2004	27/10/2004			17.3094	99.7383							
+119401	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	26/10/2004	26/10/2004			13.7969	100.8358							
+119241	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	22/10/2004	22/10/2004			13.7052	100.9958							
+119279	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	22/10/2004	22/10/2004			16.5013	100.2175							
+119311	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	22/10/2004	22/10/2004			16.0262	100.5108							
+118805	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	16/10/2004	16/10/2004			15.5636	100.0702							
+118892	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	16/10/2004	16/10/2004			16.7372	100.1186							
+118669	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	14/10/2004	14/10/2004			14.5911	100.4255							
+118573	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	12/10/2004	12/10/2004			14.3854	100.0675							
+118531	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	11/10/2004	11/10/2004			14.678	100.3552							
+118323	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	06/10/2004	06/10/2004			14.3291	100.2466							
+118371	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	06/10/2004	06/10/2004			14.3741	100.0222							
+117859	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	27/09/2004	27/09/2004			14.0891	100.2916							
+5312	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Duck	22/09/2004	22/09/2004			14.4009	100.1268							
+5726	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Quail	19/09/2004	24/09/2004			14.4009	100.1268							
+5748	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Quail	19/09/2004	24/09/2004			14.4009	100.1268							
+5602	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	14/09/2004	17/09/2004			15.0089	100.5362							
+5606	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Duck	14/09/2004	17/09/2004			14.4009	100.1268							
+5606	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Quail	14/09/2004	17/09/2004			14.4009	100.1268							
+5610	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	14/09/2004	17/09/2004			14.6222	99.9999							
+5612	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Duck	14/09/2004	17/09/2004			14.4666	100.1166							
+117775	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	11/09/2004	11/09/2004			13.6216	101.5247							
+5248	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Quail	08/09/2004	10/09/2004			17.2833	100.0833							
+5350	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	08/09/2004	10/09/2004			16.6997	102.8666							
+117715	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	26/08/2004	26/08/2004			16.62	100.2455							
+5370	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Unspecified Bird	22/08/2004	27/08/2004			14.817	100.49							
+117649	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	16/08/2004	16/08/2004			13.8358	100.398							
+117507	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	21/07/2004	21/07/2004			13.9655	100.4341							
+117487	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	20/07/2004	20/07/2004			13.7408	100.5597							
+117441	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Chicken	15/07/2004	15/07/2004			13.8055	100.7222							
+5378	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	03/07/2004	08/10/2004			16.183	100.8497							
+5386	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	03/07/2004	08/10/2004			13.9	99.7666							
+5388	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	03/07/2004	08/10/2004			13.983	99.95							
+5390	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	03/07/2004	08/10/2004			16.4166	101.133							
+5392	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	03/07/2004	08/10/2004			14.883	100.4166							
+5462	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	03/07/2004	08/10/2004			17.0152	99.7077							
+5658	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Duck	03/07/2004	08/10/2004			17.0638	99.8233							
+4868	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Wild	Crow	02/04/2004	02/04/2004			35.01333	135.57333							
+150209	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Duck	29/03/2004	29/03/2004			10.685452	105.494191							
+4414	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	21/03/2004	21/03/2004			37.78333	127.11667							
+147203	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	28/02/2004	28/02/2004			9.32833	105.61278							
+147481	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	28/02/2004	28/02/2004			12.82222	108.45556							
+148553	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	28/02/2004	28/02/2004			21.11444	106.80278							
+148947	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	26/02/2004	26/02/2004			10.41667	106.61917							
+148120	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	25/02/2004	25/02/2004			22.4075	104.19778							
+148028	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	22/02/2004	22/02/2004			20.88	105.93417							
+148969	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	21/02/2004	21/02/2004			10.26139	106.60278							
+147362	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	17/02/2004	17/02/2004			13.87111	109.21389							
+147007	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	16/02/2004	16/02/2004			10.31528	105.26333							
+148143	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	16/02/2004	16/02/2004			10.625	106.45278							
+148819	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	16/02/2004	16/02/2004			20.08472	105.89917							
+147129	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	14/02/2004	14/02/2004			21.26917	106.18389							
+148887	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	13/02/2004	13/02/2004			10.33083	106.10639							
+148935	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	13/02/2004	13/02/2004			10.3625	106.44056							
+147829	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	12/02/2004	12/02/2004			20.98972	105.56861							
+148955	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	11/02/2004	11/02/2004			10.45667	106.71722							
+147783	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	10/02/2004	10/02/2004			21.06139	105.70361							
+148278	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	10/02/2004	10/02/2004			20.39806	106.11667							
+147717	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	09/02/2004	09/02/2004			23.1525	105.40694							
+148023	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	08/02/2004	08/02/2004			20.82083	106.10778							
+148756	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	08/02/2004	08/02/2004			21.66167	106.12028							
+147219	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	07/02/2004	07/02/2004			21.03611	106.05194							
+147757	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	07/02/2004	07/02/2004			20.88167	105.66972							
+147069	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	06/02/2004	06/02/2004			10.40972	107.2825							
+4474	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	06/02/2004	23/03/2004			11.02	104.78							
+147313	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	04/02/2004	04/02/2004			10.20861	106.40222							
+147571	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	04/02/2004	04/02/2004			10.2525	105.86833							
+149064	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	04/02/2004	04/02/2004			20.96194	105.83528							
+147285	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	03/02/2004	03/02/2004			10.27278	106.40528							
+149031	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	03/02/2004	03/02/2004			21.17444	105.83556							
+3922	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Duck	02/02/2004	12/02/2004			29.83333	115.16667							
+148654	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	01/02/2004	01/02/2004			11.31444	105.90583							
+147926	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	29/01/2004	29/01/2004			20.96694	106.51083							
+3906	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	28/01/2004	28/01/2004			30.77111	111.32167							
+148915	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	26/01/2004	26/01/2004			10.39972	106.32889							
+3724	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Chicken	26/01/2004	06/02/2004			24.75861	103.26528							
+3900	Influenza - Avian	H5N1 HPAI	Media	Confirmed	Domestic	Chicken	26/01/2004	30/01/2004			26.732	110.629							
+148409	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	24/01/2004	24/01/2004			21.35667	105.38139							
+146986	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	22/01/2004	22/01/2004			10.66611	105.31611							
+147228	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	22/01/2004	22/01/2004			21.13222	105.94889							
+148248	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	22/01/2004	22/01/2004			10.59944	106.42917							
+147180	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	21/01/2004	21/01/2004			9.37083	105.53028							
+147188	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	21/01/2004	21/01/2004			9.51278	105.46778							
+148581	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	19/01/2004	19/01/2004			16.81389	107.09944							
+148872	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	19/01/2004	19/01/2004			10.36444	105.94472							
+148081	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	18/01/2004	18/01/2004			10.19417	104.92							
+147729	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	17/01/2004	17/01/2004			20.5	105.93083							
+147460	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	15/01/2004	15/01/2004			9.9975	105.77333							
+147344	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	14/01/2004	14/01/2004			13.78972	109.22							
+147991	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	12/01/2004	12/01/2004			20.92194	106.33194							
+148266	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	12/01/2004	12/01/2004			20.25556	106.12111							
+148918	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	12/01/2004	12/01/2004			10.41833	106.22722							
+148481	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	11/01/2004	11/01/2004			15.75222	108.35167							
+146944	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	10/01/2004	10/01/2004			10.49444	105.23167							
+147324	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	09/01/2004	09/01/2004			13.87611	109.04417							
+147341	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	09/01/2004	09/01/2004			14.3675	109.105							
+147735	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	09/01/2004	09/01/2004			21.26056	105.42917							
+148917	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	08/01/2004	08/01/2004			10.37167	106.27361							
+147453	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	07/01/2004	07/01/2004			10.04528	105.76833							
+147485	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	06/01/2004	06/01/2004			12.46806	108.11917							
+147119	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	03/01/2004	03/01/2004			21.34028	106.11472							
+148673	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	03/01/2004	03/01/2004			20.64944	106.26639							
+149025	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird	03/01/2004	03/01/2004			21.10833	105.79833							
+4062	Influenza - Avian	H5N1 HPAI	Other	Confirmed	Domestic	Duck	18/12/2003	25/03/2004			36.80639	127.15222							
+163904	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Chicken		19/07/2011			-3.660681	119.605371							
+175388	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Wild	Swallow		15/04/2013			11.601536	108.973523							
+177080	Influenza - Avian	H7N9 LPAI	National authorities	Confirmed	Domestic	Unspecified Bird		09/05/2013			25.724716	119.388034							
+199072	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Goose		19/01/2015			22.62	120.5							
+199113	Influenza - Avian	H5N3 HPAI	OIE	Confirmed	Domestic	Goose		19/01/2015			22.605	120.476							
+199137	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Goose		21/01/2015			23.517	120.208							
+199342	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		28/01/2015			23.756	120.24							
+199403	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		28/01/2015			23.675	120.25							
+199416	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		28/01/2015			23.723	120.24							
+199759	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		04/02/2015			23.636	120.321							
+199794	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		04/02/2015			22.518	120.542							
+199802	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		04/02/2015			23.377	120.32							
+200083	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		11/02/2015			23.454	120.267							
+200175	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		11/02/2015			23.654	120.152							
+200561	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		26/02/2015			23.88	120.408							
+200579	Influenza - Avian	H5N2 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		26/02/2015			24.9	120.97							
+205441	Influenza - Avian	H7N9 LPAI	National authorities	Confirmed	Domestic	Chicken		03/04/2015			28.832783	112.38313							
+206296	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		28/07/2015			37.199	127.603							
+206311	Influenza - Avian	H5N8 HPAI	OIE	Confirmed	Domestic	Unspecified Bird		28/07/2015			35.252	127.435							
+207253	Influenza - Avian	H7N9 LPAI	National authorities	Confirmed	Domestic	Chicken		11/02/2014			28.800157	113.079314							
+218756	Influenza - Avian	H5N8 HPAI	National authorities	Confirmed	Domestic	Chicken		11/11/2016			15.19289	76.706358							
+224356	Influenza - Avian	H7N9 LPAI	National authorities	Confirmed	Domestic	Chicken		13/01/2017			22.572	113.082							
+225385	Influenza - Avian	H7N9 LPAI	National authorities	Confirmed	Domestic	Unspecified Env. Sample		28/02/2017			34.004739	115.300923							
+228670	Influenza - Avian	H7N9 LPAI	National authorities	Confirmed	Domestic	Chicken		19/06/2017			24.4458	117.8173							
+232540	Influenza - Avian	H7N9 LPAI	National authorities	Confirmed	Domestic	Chicken		13/12/2017			23.406649	103.285442							
+236271	Influenza - Avian	H5 HPAI	National authorities	Confirmed	Domestic	Duck		02/05/2018			42.28	24.733							
+250118	Influenza - Avian	H5N1 HPAI	National authorities	Confirmed	Domestic	Unspecified Bird		31/03/2019			42.13527	122.79055							
+262817	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Chicken		05/07/2018			0.821782	124.551907							
+262824	Influenza - Avian	H5N1 HPAI	FAO Field Officer	Confirmed	Domestic	Chicken		25/03/2019			-2.513163	115.425809							
+286360	Influenza - Avian	HPAI	National authorities	Confirmed	Wild	Crow		11/01/2021			29.292485	76.231115							
