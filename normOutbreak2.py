@@ -1,6 +1,7 @@
 #!/software/bin/python3 -u
 
 import pandas as pd
+import csv
 
 tx = pd.read_csv('NCBItaxNames.csv')
 ptx = pd.read_csv('NCBItaxNamesPathogen.csv')
@@ -11,16 +12,24 @@ tx.tax_id=tx.tax_id.astype('str')
 
 empres['species']=empres['Species'].str.lower()
 empres['serotype']=empres.Serotype.str.replace(' \S+$','')
+e=empres.Serotype.str.extract(r"^(\H\d+)(N\d+) (\w+)$")
+a='{'
+a=a+'"Hsubtype":"'+e.iloc[:,0]+'"'
+a=a+','
+a=a+'"Nsubtype":"'+e.iloc[:,1]+'"'
+a=a+','
+a=a+'"pathogenicity":"'+e.iloc[:,2]+'"'
+a=a+'}'
 
 x=pd.merge(empres,tx,how='left',left_on='species',right_on='synonym_name')
 x=pd.merge(x,ptx,how='left',left_on='serotype',right_on='ptgn_synonym_name')
-
 
 out=pd.DataFrame()
 out['Date observed']=pd.to_datetime(x['Observation.date..dd.mm.yyyy.'],infer_datetime_format=True)
 out['Date reported']=pd.to_datetime(x['Report.date..dd.mm.yyyy.'],infer_datetime_format=True)
 out['Pathogen species ']=x.ptgn_sciname
-out['Pathogen serotype']=x.serotype
+#out['Pathogen serotype']=x.serotype
+out['Pathogen serotype']=a
 out['Pathogen NCBI taxonomy ID']=x.ptgn_tax_id #.astype('Int64')
 out['Host species Latin name']=x.sciname
 out['Host species NCBI taxonomy ID']=x.tax_id #.astype('Int64')
@@ -36,4 +45,4 @@ out['Data source']=x['Diagnosis.source']
 out['Data source']=x['Diagnosis.source']
 out['Original record ID']=x['Event.ID']
 
-out.to_csv('out.tsv',sep=chr(9))
+out.to_csv('out.tsv',sep=chr(9),index=False,quoting=csv.QUOTE_NONE)
