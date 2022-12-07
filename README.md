@@ -1,3 +1,5 @@
+<img src='img/logo_mood_CMJN.png' width=200>
+
 # MOOD-data-processing-pipeline
 
 This repository contains scripts to download and stanradize disease outbreak
