@@ -339,6 +339,21 @@ def normalize_empresi_data(df):
         inplace=True,
     )
     df["original_record_location_description"] = df.apply(compile_location, axis=1)
+    df.drop(
+        columns=[
+            "disease",
+            "region",
+            "subregion",
+            "country",
+            "admin_level_1",
+            "locality",
+            "diagnosis_source",
+            "diagnosis_status",
+            "affected_human_count",
+            "human_death_count",
+        ],
+        inplace=True,
+    )
     return df
 
 
