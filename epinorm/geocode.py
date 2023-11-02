@@ -400,6 +400,25 @@ def geocode_empresi_data(df, connection):
     return df
 
 
+def reorder_columns(df):
+    """Reorder columns in a DataFrame."""
+    columns = [
+        "observation_date",
+        "report_date",
+        "host_domestication_status",
+        "latitude",
+        "longitude",
+        "country",
+        "admin_level_1",
+        "locality",
+        "country_osm_id",
+        "admin_level_1_osm_id",
+        "locality_osm_id",
+        "original_record_id",
+        "original_record_location_description",
+    ]
+    return df[columns]
+
 if __name__ == "__main__":
     # Configure logging
     logging.basicConfig(
@@ -440,6 +459,7 @@ if __name__ == "__main__":
     # Normalize and geocode the input data
     df = normalize_empresi_data(df)
     df = geocode_empresi_data(df, connection)
+    df = reorder_columns(df)
 
     # Save the output data
     df.to_csv(output_file, sep="\t", quoting=csv.QUOTE_NONE, index=False)
