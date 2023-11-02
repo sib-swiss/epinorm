@@ -55,7 +55,7 @@ def lookup(osm_ids):
 
 
 def search(query, country_codes=None, limit=DEFAULT_RESULT_LIMIT):
-    """Searche for a location using the Nominatim API."""
+    """Search for a location using the Nominatim API."""
     url = f"{NOMINATIM_API_URL}/search"
     params = {"q": query, "limit": limit}
     if country_codes:
@@ -307,23 +307,38 @@ def normalize_empresi_data(df):
 
     def compile_location(record):
         location = {
-            "region": record["Region"],
-            "subregion": record["Subregion"],
-            "country": record["Country"],
-            "admin_level_1": record["Admin.level.1"],
-            "locality": record["Locality"],
+            "region": record["region"],
+            "subregion": record["subregion"],
+            "country": record["country"],
+            "admin_level_1": record["admin_level_1"],
+            "locality": record["locality"],
         }
         return json.dumps(location)
 
-    latitude_values = df["Latitude"]
-    longitude_values = df["Longitude"]
-    df = df.drop(columns=["Latitude", "Longitude"])
-    df.insert(loc=len(df.columns), column="Latitude", value=latitude_values)
-    df.insert(loc=len(df.columns), column="Longitude", value=longitude_values)
-    df["Original location"] = df.apply(compile_location, axis=1)
-    df = df.drop(
-        columns=["Region", "Subregion", "Country", "Admin.level.1", "Locality"]
+    df.rename(
+        columns={
+            "Event.ID": "original_record_id",
+            "Disease": "disease",
+            "Serotype": "serotype",
+            "Region": "region",
+            "Subregion": "subregion",
+            "Country": "country",
+            "Admin.level.1": "admin_level_1",
+            "Locality": "locality",
+            "Latitude": "latitude",
+            "Longitude": "longitude",
+            "Diagnosis.source": "diagnosis_source",
+            "Diagnosis.status": "diagnosis_status",
+            "Animal.type": "host_domestication_status",
+            "Species": "species",
+            "Observation.date..dd.mm.yyyy.": "observation_date",
+            "Report.date..dd.mm.yyyy.": "report_date",
+            "Humans.affected": "affected_human_count",
+            "Human.deaths": "human_death_count",
+        },
+        inplace=True,
     )
+    df["original_record_location_description"] = df.apply(compile_location, axis=1)
     return df
 
 
@@ -336,8 +351,8 @@ def geocode_empresi_data(df, connection):
     country_names = []
     country_ids = []
     for index, row in df.iterrows():
-        latitude = row["Latitude"]
-        longitude = row["Longitude"]
+        latitude = row["latitude"]
+        longitude = row["longitude"]
         term = f"{latitude}, {longitude}"
         api_args = {"latitude": latitude, "longitude": longitude}
         locality = get_feature(
@@ -361,12 +376,12 @@ def geocode_empresi_data(df, connection):
         locality_ids.append(locality.get("id"))
         admin_level_1_ids.append(admin_level_1.get("id"))
         country_ids.append(country.get("id"))
-    df["Locality"] = locality_names
-    df["Locality OSM ID"] = locality_ids
-    df["County/State"] = admin_level_1_names
-    df["County/State OSM ID"] = admin_level_1_ids
-    df["Country"] = country_names
-    df["Country OSM ID"] = country_ids
+    df["locality"] = locality_names
+    df["locality_osm_id"] = locality_ids
+    df["admin_level_1"] = admin_level_1_names
+    df["admin_level_1_osm_id"] = admin_level_1_ids
+    df["country"] = country_names
+    df["country_osm_id"] = country_ids
     return df
 
 
@@ -417,7 +432,7 @@ if __name__ == "__main__":
     # Save feature geometries to disk
     feature_ids = (
         pd.concat(
-            [df["Locality OSM ID"], df["County/State OSM ID"], df["Country OSM ID"]]
+            [df["locality_osm_id"], df["admin_level_1_osm_id"], df["country_osm_id"]]
         )
         .dropna()
         .unique()
