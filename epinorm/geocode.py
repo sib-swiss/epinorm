@@ -55,7 +55,7 @@ def lookup(osm_ids):
 
 
 def search(query, country_codes=None, limit=DEFAULT_RESULT_LIMIT):
-    """Searche for a location using the Nominatim API."""
+    """Search for a location using the Nominatim API."""
     url = f"{NOMINATIM_API_URL}/search"
     params = {"q": query, "limit": limit}
     if country_codes:
@@ -64,7 +64,7 @@ def search(query, country_codes=None, limit=DEFAULT_RESULT_LIMIT):
 
 
 def reverse_geocode(latitude, longitude, zoom=DEFAULT_ZOOM_LEVEL):
-    """Reverse geocodes a location using the Nominatim API."""
+    """Reverse geocode a location using the Nominatim API."""
     url = f"{NOMINATIM_API_URL}/reverse"
     params = {"lat": latitude, "lon": longitude, "zoom": zoom}
     return fetch(url, params=params)
