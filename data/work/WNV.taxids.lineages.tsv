@@ -1,0 +1,16 @@
+tax_id	distance	subtxpath	sublineage
+11082	0	{11082}	{"West Nile virus"}
+2421439	1	{11082,2421439}	{"West Nile virus","West Nile virus 1"}
+2421440	1	{11082,2421440}	{"West Nile virus","West Nile virus 2"}
+469474	1	{11082,469474}	{"West Nile virus","West Nile virus crow/New York/3356/2000"}
+449280	1	{11082,449280}	{"West Nile virus","West Nile virus H442"}
+449279	1	{11082,449279}	{"West Nile virus","West Nile virus SA381/00"}
+449277	1	{11082,449277}	{"West Nile virus","West Nile virus SA93/01"}
+449278	1	{11082,449278}	{"West Nile virus","West Nile virus SPU116/89"}
+307044	1	{11082,307044}	{"West Nile virus","West Nile virus strain 385-99"}
+1968826	1	{11082,1968826}	{"West Nile virus","West Nile virus strain NY-99"}
+598673	1	{11082,598673}	{"West Nile virus","West Nile virus strain PT5.2"}
+598672	1	{11082,598672}	{"West Nile virus","West Nile virus strain PT6.16"}
+598675	1	{11082,598675}	{"West Nile virus","West Nile virus strain PT6.39"}
+598674	1	{11082,598674}	{"West Nile virus","West Nile virus strain PT6.5"}
+406269	1	{11082,406269}	{"West Nile virus","West Nile virus strain PTRoxo"}
