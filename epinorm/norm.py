@@ -3,7 +3,7 @@ import pandas as pd
 import re
 
 from csv import QUOTE_NONE
-from epinorm import REF_DATA_DIR
+from epinorm.config import REF_DATA_DIR
 from epinorm.geo import NominatimGeocoder
 from epinorm.utils import coalesce
 
