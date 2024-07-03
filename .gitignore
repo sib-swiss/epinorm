@@ -3,6 +3,9 @@
 # Cache and temporary files
 data/work/cache.db
 
+# Input files
+data/input/ecdc/*
+
 # Output files
 data/output/*/geometries/*
 
