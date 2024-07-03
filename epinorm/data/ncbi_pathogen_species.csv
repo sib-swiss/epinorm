@@ -1,0 +1,34 @@
+pathogen_species_ncbi_id,pathogen_species_name,pathogen_species_common_name,pathogen_species_synonym
+102793,H5N1 subtype,Influenza A virus,H5N1
+102796,H9N2 subtype,Influenza A virus,H9N2
+102801,H10N7 subtype,Influenza A virus,H10N7
+114729,H2N2 subtype,Influenza A virus,H2N2
+119213,H6N2 subtype,Influenza A virus,H6N2
+119214,H7N2 subtype,Influenza A virus,H7N2
+119215,H7N3 subtype,Influenza A virus,H7N3
+119216,H7N1 subtype,Influenza A virus,H7N1
+119217,H7N8 subtype,Influenza A virus,H7N8
+119218,H7N7 subtype,Influenza A virus,H7N7
+119220,H5N2 subtype,Influenza A virus,H5N2
+119221,H5N3 subtype,Influenza A virus,H5N3
+140020,H5N9 subtype,Influenza A virus,H5N9
+157802,H3N1 subtype,Influenza A virus,H3N1
+232441,H5N8 subtype,Influenza A virus,H5N8
+325678,H7N4 subtype,Influenza A virus,H7N4
+329376,H5N6 subtype,Influenza A virus,H5N6
+333278,H7N9 subtype,Influenza A virus,H7N9
+342224,H5N4 subtype,Influenza A virus,H5N4
+465975,H5N5 subtype,Influenza A virus,H5N5
+476651,H7N6 subtype,Influenza A virus,H7N6
+11320,Influenza A virus,Influenza A virus,LPAI
+11320,Influenza A virus,Influenza A virus,HPAI
+11320,Influenza A virus,Influenza A virus,H5
+11320,Influenza A virus,Influenza A virus,H9
+11320,Influenza A virus,Influenza A virus,H3
+11320,Influenza A virus,Influenza A virus,H7
+11084,Tick-borne encephalitis virus,Tick-borne encephalitis virus,TBE
+70733,Tick-borne encephalitis virus (strain HYPR),Tick-borne encephalitis virus (strain HYPR),TBE
+11087,Tick-borne encephalitis virus (STRAIN SOFJIN),Tick-borne encephalitis virus (STRAIN SOFJIN),TBE
+11088,Tick-borne encephalitis virus (WESTERN SUBTYPE),Tick-borne encephalitis virus (WESTERN SUBTYPE),TBE
+11082,West Nile virus,West Nile virus,WNV
+263,Francisella tularensis,Tularemia,Pasteurella tularensis
