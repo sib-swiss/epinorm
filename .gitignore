@@ -3,6 +3,8 @@
 # Cache and temporary files
 data/work/cache.db
 
+# Output files
+data/output/*/geometries/*
 
 ### Python ###
 
