@@ -1,25 +1,17 @@
 """CLI builder for EpiNorm."""
 
 import argparse
-from enum import Enum
 
-class DataSource(Enum):
-    EMPRESI = "empresi"
-    GENBANK = "genbank"
-    ECDC = "ecdc"
+from epinorm.workflows import DataSource, normalize_data, merge_data, clear_cache
 
+def str_to_datasource(value: str) -> DataSource:
+    try:
+        return DataSource(value)
+    except argparse.ArgumentTypeError:
+        raise argparse.ArgumentTypeError("bad value...")
+    
+    return DataSource(value)
 
-def run_normalize(args):
-    print("Starting the normalization workflow...")
-    print("Input args:", args)
-
-def run_merge(args):
-    print("Starting the file merge workflow...")
-    print("Input args:", args)
-
-def run_clear_cache(args):
-    print("Starting the clear-cache workflow...")
-    print("Input args:", args)
 
 def cli_argument_parser() -> argparse.Namespace:
     """Setup the CLI arguments.
@@ -30,6 +22,7 @@ def cli_argument_parser() -> argparse.Namespace:
     -f/--output-file optional output file name.
     -d/--output-dir optional output dir. By default, an "output" directory is created in the cwd
     -a/--write-auxiliaries
+    --debug
 
     epinorm merge -d
     epinorm clear-cache
@@ -45,8 +38,8 @@ def cli_argument_parser() -> argparse.Namespace:
     subcmd_normalize.add_argument(
         "-s",
         "--data-source",
-        type=str,
-        choices=[x.value for x in DataSource],
+        type=DataSource,
+        choices=list(DataSource),
         help="Input data source file to process."
     )
     subcmd_normalize.add_argument("-f", "--output-file", type=str, help="Output file.")
@@ -55,16 +48,21 @@ def cli_argument_parser() -> argparse.Namespace:
         "-a",
         "--write-auxiliaries",
         action="store_true",
-        default=False,
         help="Write auxillary files. Default: %(default)s."
     )
-    subcmd_normalize.set_defaults(func=run_normalize)
+    subcmd_normalize.add_argument(
+        "--dry-run",
+        action='store_true',
+        help="Test run on a subset of 10 values"
+    )
+    subcmd_normalize.add_argument("input_file")
+    subcmd_normalize.set_defaults(func=normalize_data)
 
     subcmd_merge = subparser.add_parser("merge", help="Merge files")
-    subcmd_merge.set_defaults(func=run_merge)
+    subcmd_merge.set_defaults(func=merge_data)
 
     subcmd_clear = subparser.add_parser("clear-cache", help="Clear cache")
-    subcmd_clear.set_defaults(func=run_clear_cache)
+    subcmd_clear.set_defaults(func=clear_cache)
 
     # parser.add_argument(
     #     "-v",
@@ -76,14 +74,3 @@ def cli_argument_parser() -> argparse.Namespace:
     #     action="store_const",
     # )
     return parser.parse_args()
-
-
-def main():
-    """Main entry point of EpiNorm application."""
-    args = cli_argument_parser()
-    args.func(args)
-
-
-
-if __name__ == "__main__":
-    main()

@@ -1,6 +1,6 @@
 import sqlite3
 
-from epinorm import (
+from epinorm.config import (
     SCRIPT_DIR,
     WORK_DIR,
 )
@@ -17,6 +17,7 @@ class SQLiteCache(Cache):
 
     def __init__(self):
         super().__init__()
+        print(DB_FILE)
         self._connection = sqlite3.connect(DB_FILE)
         self._initialize_database()
         self._enforce_foreign_keys()

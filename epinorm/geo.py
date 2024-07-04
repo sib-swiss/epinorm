@@ -73,7 +73,7 @@ class NominatimGeocoder(Geocoder):
         return self.fetch(url, params=params)
 
     def reverse(self, latitude, longitude, zoom=DEFAULT_ZOOM_LEVEL):
-        """Reverse geocodes a location using the Nominatim API."""
+        """Reverse geocode a location using the Nominatim API."""
         url = f"{NOMINATIM_API_URL}/reverse"
         params = {"lat": latitude, "lon": longitude, "zoom": zoom}
         return self.fetch(url, params=params)
