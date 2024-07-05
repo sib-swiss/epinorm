@@ -1,6 +1,7 @@
 """CLI builder for EpiNorm."""
 
 import argparse
+from pathlib import Path
 
 from epinorm.workflows import DataSource, normalize_data, merge_data, clear_cache
 
@@ -22,7 +23,9 @@ def cli_argument_parser() -> argparse.Namespace:
     -f/--output-file optional output file name.
     -d/--output-dir optional output dir. By default, an "output" directory is created in the cwd
     -a/--write-auxiliaries
+    --dry-run
     --debug
+
 
     epinorm merge -d
     epinorm clear-cache
@@ -42,8 +45,8 @@ def cli_argument_parser() -> argparse.Namespace:
         choices=list(DataSource),
         help="Input data source file to process."
     )
-    subcmd_normalize.add_argument("-f", "--output-file", type=str, help="Output file.")
-    subcmd_normalize.add_argument("-d", "--output-dir", type=str, help="Output directory.")
+    subcmd_normalize.add_argument("-f", "--output-file-name", type=str, help="Output file.")
+    subcmd_normalize.add_argument("-d", "--output-dir", type=Path, help="Output directory.")
     subcmd_normalize.add_argument(
         "-a",
         "--write-auxiliaries",
@@ -55,7 +58,12 @@ def cli_argument_parser() -> argparse.Namespace:
         action='store_true',
         help="Test run on a subset of 10 values"
     )
-    subcmd_normalize.add_argument("input_file")
+    subcmd_normalize.add_argument(
+        "--debug",
+        action='store_true',
+        help="Display debug information messages"
+    )
+    subcmd_normalize.add_argument("input_file", type=Path)
     subcmd_normalize.set_defaults(func=normalize_data)
 
     subcmd_merge = subparser.add_parser("merge", help="Merge files")
@@ -64,13 +72,4 @@ def cli_argument_parser() -> argparse.Namespace:
     subcmd_clear = subparser.add_parser("clear-cache", help="Clear cache")
     subcmd_clear.set_defaults(func=clear_cache)
 
-    # parser.add_argument(
-    #     "-v",
-    #     "--verbose",
-    #     dest="log_level",
-    #     const=logging.DEBUG,
-    #     default=logging.INFO,
-    #     help="increase verbosity",
-    #     action="store_const",
-    # )
     return parser.parse_args()

@@ -1,18 +1,19 @@
 import os
 import platform
-import logging
+from enum import Enum
 from pathlib import Path
 
-# Directory paths
-PACKAGE_DIR = Path(__file__).parent
-SCRIPT_DIR = PACKAGE_DIR / "scripts"
-REF_DATA_DIR = PACKAGE_DIR / "data"
-ROOT_DIR = PACKAGE_DIR.parent
-DATA_DIR = ROOT_DIR / "data"
-INPUT_DIR = DATA_DIR / "input"
-OUTPUT_DIR = DATA_DIR / "output"
-AUX_DIR = OUTPUT_DIR / "auxiliaries"
-GEO_DIR = OUTPUT_DIR / "geometries"
+from epinorm.error import UserError
+
+
+class DataSource(Enum):
+    EMPRESI = "empresi"
+    GENBANK = "genbank"
+    ECDC = "ecdc"
+
+    # Needed for argparse to display the string representation of the Enum.
+    def __str__(self):
+        return self.value
 
 xdg_data_dir_by_os = {
     "Linux": (".local", "share"),
@@ -32,15 +33,33 @@ def get_work_dir() -> Path:
     else:
         work_dir = Path.home().joinpath(*xdg_data_dir_by_os[platform.system()])
     
-    # Make sure the specified directory exits.
+    # Make sure the specified directory exists.
     if not work_dir.exists() or not work_dir.is_dir():
-        logging.error(f"'XDG_DATA_HOME' directory '{work_dir}' does not exist")
+        raise UserError(f"'XDG_DATA_HOME' directory '{work_dir}' does not exist")
     
     # If needed, create an "epinorm" subdirectory.
     work_dir /= "epinorm"
     if not work_dir.exists():
-        Path.mkdir(work_dir, exist_ok=True)
+        try:
+            Path.mkdir(work_dir, exist_ok=True)
+        except (OSError, IOError):
+            raise UserError(
+                f"'XDG_DATA_HOME' directory '{work_dir}' appears to be "
+                "non-writable"
+            )
 
     return work_dir
 
+# Directory paths.
+PACKAGE_DIR = Path(__file__).parent
+SCRIPT_DIR = PACKAGE_DIR / "scripts"
+REF_DATA_DIR = PACKAGE_DIR / "data"
 WORK_DIR = get_work_dir()
+
+
+# ROOT_DIR = PACKAGE_DIR.parent
+# DATA_DIR = ROOT_DIR / "data"
+# INPUT_DIR = DATA_DIR / "input"
+# OUTPUT_DIR = DATA_DIR / "output"
+# AUX_DIR = OUTPUT_DIR / "auxiliaries"
+# GEO_DIR = OUTPUT_DIR / "geometries"
