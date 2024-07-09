@@ -5,6 +5,7 @@ import re
 from csv import QUOTE_NONE
 from epinorm import REF_DATA_DIR
 from epinorm.geo import NominatimGeocoder
+from epinorm.utils import coalesce
 
 HOST_SPECIES_FILE = REF_DATA_DIR / "ncbi_host_species.csv"
 PATHOGEN_SPECIES_FILE = REF_DATA_DIR / "ncbi_pathogen_species.csv"
@@ -245,7 +246,107 @@ class EmpresiDataHandler(DataHandler):
 
 
 class GenBankDataHandler(DataHandler):
-    pass
+
+    INPUT_COLUMNS = {
+        "Pathogen NCBI taxonomy ID": "pathogen_species_ncbi_id",
+        "Pathogen species": "pathogen_species_name",
+        "Pathogen serotype": "pathogen_serotype",
+        "Pathogen isolate or strain": "pathogen_strain",
+        "Host species Latin name": "host_species_name",
+        "Host species NCBI taxonomy ID": "host_species_ncbi_id",
+        "Date observed": "observation_date",
+        "Geo text original": "original_location",
+    }
+
+    def __init__(self, data_file):
+        super().__init__(data_file)
+
+    def _compile_location(self, record):
+        places = record["original_location"].split(":", 1)
+        location = {
+            "country": places[0].strip(),
+        }
+        if len(places) > 1:
+            location["area"] = places[1].strip()
+        return json.dumps(location)
+
+    def _get_location_from_strain(self, record):
+        strain = str(record["pathogen_strain"])
+        tokens = re.sub(r"[^A-Za-z]+", "-", strain).split("-")
+        for token in tokens:
+            if re.match(r"^[A-Z][a-z]{4,}$", token):
+                return token
+
+    def _format_location(self, record):
+        location = json.loads(record["original_record_location_description"])
+        extracted_location = record["extracted_location"]
+        if "area" not in location:
+            location["area"] = extracted_location
+        country = str(coalesce(location["country"], ""))
+        area = str(coalesce(location["area"], ""))
+        places = []
+        for place in area.split(","):
+            place = place.replace("_", " ")
+            place = re.sub(r"\(.+\)", "", place)
+            place = re.sub(r"[^\w\s-]+", "", place)
+            place = place.strip()
+            if not place or place == country:
+                continue
+            places.append(place)
+        if places:
+            return ", ".join(places) + ", " + country
+        return country
+
+    def _normalize_dates(self):
+        self._data["observation_date"] = pd.to_datetime(
+            self._data["observation_date"], errors="coerce"
+        ).dt.date
+        self._data["report_date"] = pd.NaT
+
+    def _add_source_details(self):
+        self._data["original_record_source"] = "GenBank"
+        self._data["original_record_location_description"] = self._data.apply(
+            self._compile_location, axis=1
+        )
+
+    def _add_missing_columns(self):
+        self._data["host_species_common_name"] = None
+        self._data["host_domestication_status"] = None
+        self._data["latitude"] = None
+        self._data["longitude"] = None
+        self._data["original_record_id"] = None
+
+    def _geocode(self):
+        """Geocode GenBank data."""
+        self._data["extracted_location"] = self._data.apply(
+            self._get_location_from_strain, axis=1
+        )
+        self._data["location"] = self._data.apply(self._format_location, axis=1)
+        country_names = []
+        country_ids = []
+        for index, row in self._data.iterrows():
+            places = row["location"].split(",")
+            place = places[-1].strip() if places else None
+            api_args = {"country": place}
+            country = self._geocoder.get_feature(
+                "search", api_args, term=place, term_type="query"
+            )
+            country_names.append(country.get("name"))
+            country_ids.append(country.get("id"))
+        self._data["locality"] = None
+        self._data["locality_osm_id"] = None
+        self._data["admin_level_1"] = None
+        self._data["admin_level_1_osm_id"] = None
+        self._data["country"] = country_names
+        self._data["country_osm_id"] = country_ids
+
+    def normalize(self):
+        self.rename_columns()
+        self._normalize_dates()
+        self._add_source_details()
+        self._add_missing_columns()
+        self._geocode()
+        self.filter_columns()
 
 
 class ECDCDataHandler(DataHandler):
