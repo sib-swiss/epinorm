@@ -7,13 +7,11 @@ from epinorm.cli import cli_argument_parser
 def main() -> None:
     """Main entry point of EpiNorm application."""
     
-    
-
+    # Retrieve user input from the command line.
     args = vars(cli_argument_parser())
-    subcmd_function: Callable = args.pop("func")
-    show_debug_logs: bool = args.pop("debug")
 
     # Configure logging.
+    show_debug_logs: bool = args.pop("debug") if "debug" in args else False
     logging.basicConfig(
         format="%(asctime)s - %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
@@ -21,7 +19,7 @@ def main() -> None:
     )
     
     # Run the selected subcommand.
-    print(args)
+    subcmd_function: Callable = args.pop("func")
     subcmd_function(**args)
 
 

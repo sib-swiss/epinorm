@@ -5,7 +5,7 @@ import random
 from pathlib import Path
 
 from epinorm.norm import EmpresiDataHandler
-from epinorm.cache import SQLiteCache
+from epinorm.cache import SQLiteCache, DB_FILE
 from epinorm.config import DataSource
 from epinorm.error import UserError
 
@@ -74,7 +74,9 @@ def normalize_data(
     write_auxiliaries: bool = False,
     dry_run: bool = False,
 ):
-    print("Starting the normalization workflow...")
+    """Main epinorm workflow."""
+
+    logging.info("Starting the normalization workflow...")
     
     # Verify user inputs.
     args = ValidatedArgs(data_source, input_file, output_dir, output_file_name)
@@ -97,19 +99,18 @@ def normalize_data(
     
     # Display end-of-task message.
     logging.info("Data normalization completed.")
-    logging.info(f" -> Normalized data saved to: {args.output_file}")
-    logging.info(f" -> Geometries saved to: {args.geometries_dir}")
+    logging.info(f"Normalized data saved to: {args.output_file}")
+    logging.info(f"Geometries saved to: {args.geometries_dir}")
 
 
 def merge_data(args):
     print("Starting the file merge workflow...")
     print("Input args:", args)
 
-def clear_cache(args):
-    print("Starting the clear-cache workflow...")
-    print("Input args:", args)
-    
+def clear_cache():
+    logging.info(f"Deleting epinorm cache database at '{DB_FILE}'")
     SQLiteCache.delete_db()
+    logging.info("Deletion completed")
 
 
 def verify_dir_is_writable(dir: Path) -> None:

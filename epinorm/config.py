@@ -17,7 +17,7 @@ class DataSource(Enum):
 
 xdg_data_dir_by_os = {
     "Linux": (".local", "share"),
-    "Darwin": (".local", "share"),
+    "Darwin": (".local", "share"),  #  TODO ("Library", "Application Support")
     "Windows": ("AppData", "Roaming"),
 }
 

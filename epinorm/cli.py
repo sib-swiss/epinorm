@@ -37,6 +37,7 @@ def cli_argument_parser() -> argparse.Namespace:
     )
     subparser = parser.add_subparsers(title="EpiNorm subcommands", required=True)
 
+    # Add "normalize" subcommand.
     subcmd_normalize = subparser.add_parser("normalize", help="Normalize input data")
     subcmd_normalize.add_argument(
         "-s",
@@ -66,10 +67,15 @@ def cli_argument_parser() -> argparse.Namespace:
     subcmd_normalize.add_argument("input_file", type=Path)
     subcmd_normalize.set_defaults(func=normalize_data)
 
+    # Add "merge" subcommand.
     subcmd_merge = subparser.add_parser("merge", help="Merge files")
     subcmd_merge.set_defaults(func=merge_data)
 
-    subcmd_clear = subparser.add_parser("clear-cache", help="Clear cache")
+    # Add "clear-cache" subcommand.
+    subcmd_clear = subparser.add_parser(
+        "clear-cache",
+        help="Delete the local cache database file used by epinorm"
+    )
     subcmd_clear.set_defaults(func=clear_cache)
 
     return parser.parse_args()
