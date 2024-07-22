@@ -327,7 +327,7 @@ class GenBankDataHandler(DataHandler):
         for index, row in self._data.iterrows():
             places = row["location"].split(",")
             place = places[-1].strip() if places else None
-            api_args = {"country": place}
+            api_args = {"query": place}
             country = self._geocoder.get_feature(
                 "search", api_args, term=place, term_type="query"
             )
