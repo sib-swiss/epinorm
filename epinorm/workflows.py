@@ -4,7 +4,7 @@ import platform
 import random
 from pathlib import Path
 
-from epinorm.norm import EmpresiDataHandler
+from epinorm.norm import EmpresiDataHandler, GenBankDataHandler, ECDCDataHandler
 from epinorm.cache import SQLiteCache, DB_FILE
 from epinorm.config import DataSource
 from epinorm.error import UserError
@@ -81,12 +81,19 @@ def normalize_data(
     # Verify user inputs.
     args = ValidatedArgs(data_source, input_file, output_dir, output_file_name)
 
-    # Normalize data.
-    data_handler = EmpresiDataHandler(input_file)
+    # Normalize data according to output file
+    if (data_source == DataSource.EMPRESI):
+        data_handler = EmpresiDataHandler(input_file)
+    elif (data_source == DataSource.GENBANK):
+        data_handler = GenBankDataHandler(input_file)
+    else:
+        data_handler = ECDCDataHandler(input_file)
+
     if dry_run:
         logging.info("Running in --dry-run mode")
         sampled_data = data_handler.sample_rows("top", 10)
         data_handler.set_data(sampled_data)    
+        
     data_handler.normalize()
 
     # Save the normalized data and geometries.
