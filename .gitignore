@@ -1,6 +1,7 @@
 ### Project ###
 
 # Cache and temporary files
+data/work/admin_units/*
 data/work/cache.db
 
 # Input files
