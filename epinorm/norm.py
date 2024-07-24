@@ -43,8 +43,12 @@ class DataHandler:
     def __init__(self, data_file):
         self._geocoder = NominatimGeocoder()
         self._data = pd.read_csv(data_file)
-        self._host_species = pd.read_csv(HOST_SPECIES_FILE)
-        self._pathogen_species = pd.read_csv(PATHOGEN_SPECIES_FILE)
+        self._host_species = pd.read_csv(HOST_SPECIES_FILE).drop_duplicates(
+            subset="host_species_synonym", keep="first"
+        )
+        self._pathogen_species = pd.read_csv(PATHOGEN_SPECIES_FILE).drop_duplicates(
+            subset="pathogen_species_synonym", keep="first"
+        )
 
     def _join_reference_data(self):
         self._data = pd.merge(
@@ -157,7 +161,7 @@ class EmpresiDataHandler(DataHandler):
         return json.dumps(location)
 
     def _compile_serotype(self, serotype):
-        serotype = serotype.replace("\s+", " ").strip()
+        serotype = re.sub(r"\s+", " ", serotype).strip()
         if not serotype:
             return None
         match = re.match(r"^(H\d+)(N\d+) (\w+)$", serotype)
@@ -350,4 +354,141 @@ class GenBankDataHandler(DataHandler):
 
 
 class ECDCDataHandler(DataHandler):
-    pass
+    INPUT_COLUMNS = {
+        "Subject": "pathogen_species_synonym",
+        "Classification": "classification",
+        "DateOfDiagnosisISOdate": "date_of_diagnosis",
+        "DateOfNotificationISOdate": "date_of_notification",
+        "DateOfOnsetISOdate": "date_of_onset",
+        "Imported": "imported",
+        "PlaceOfInfection": "place_of_infection",
+        "PlaceOfInfectionEVD": "place_of_infection_evd",
+        "PlaceOfNotification": "place_of_notification",
+        "ReportingCountry": "reporting_country",
+        # Additions
+        "EventID": "original_record_id",
+        "Species": "host_species_synonym",
+        "DomesticationStatus": "host_domestication_status",
+        "Latitude": "latitude",
+        "Longitude": "longitude",
+    }
+
+    def __init__(self, data_file):
+        super().__init__(data_file)
+
+    def _resolve_location(self, record):
+        location = record["place_of_infection"]
+        if not location:
+            location = record["place_of_infection_evd"]
+        if not location and record["imported"] == "N":
+            location = record["place_of_notification"]
+        if not location and record["imported"] == "N":
+            location = record["reporting_country"]
+        return location
+
+    def _compile_location(self, record):
+        location = {
+            "place_of_infection": record["place_of_infection"],
+            "place_of_infection_evd": record["place_of_infection_evd"],
+            "place_of_notification": record["place_of_notification"],
+            "reporting_country": record["reporting_country"],
+        }
+        for key, value in list(location.items()):
+            if value is None:
+                del location[key]
+        return json.dumps(location)
+
+    def _normalize_location(self):
+        missing_values = [pd.NA, "NULL", "UNK", "UNK_DJ"]
+        columns = [
+            "place_of_infection",
+            "place_of_infection_evd",
+            "place_of_notification",
+        ]
+        for column in columns:
+            self._data[column] = self._data[column].replace(missing_values, None)
+        self._data["location"] = self._data.apply(self._resolve_location, axis=1)
+
+    def _resolve_observation_date(self, record):
+        dates = []
+        if record["date_of_diagnosis"]:
+            dates.append(record["date_of_diagnosis"])
+        if record["date_of_onset"]:
+            dates.append(record["date_of_onset"])
+        dates = [date for date in dates if not pd.isna(date)]
+        if not dates:
+            return record["date_of_notification"]
+        return min(dates)
+
+    def _normalize_dates(self):
+        self._data["date_of_diagnosis"] = pd.to_datetime(
+            self._data["date_of_diagnosis"], errors="coerce"
+        ).dt.date
+        self._data["date_of_onset"] = pd.to_datetime(
+            self._data["date_of_onset"], errors="coerce"
+        ).dt.date
+        self._data["date_of_notification"] = pd.to_datetime(
+            self._data["date_of_notification"], errors="coerce"
+        ).dt.date
+        self._data["observation_date"] = self._data.apply(
+            self._resolve_observation_date, axis=1
+        )
+        self._data["report_date"] = self._data["date_of_notification"]
+
+    def _normalize_species(self):
+        self._data["host_species_synonym"] = "human"
+        self._data["pathogen_serotype"] = None
+
+    def _add_source_details(self):
+        self._data["original_record_source"] = "ECDC"
+        self._data["original_record_location_description"] = self._data.apply(
+            self._compile_location, axis=1
+        )
+
+    def _add_missing_columns(self):
+        missing_columns = set(self.INPUT_COLUMNS.keys()) - set(self._data.columns)
+        for column in missing_columns:
+            self._data[column] = None
+
+    def _geocode(self):
+        """Geocode ECDC data."""
+        country_names = []
+        country_ids = []
+        for index, row in self._data.iterrows():
+            location_match = re.match(r"([A-Z]{2})", str(row["location"]))
+            if not location_match:
+                country_names.append(None)
+                country_ids.append(None)
+                continue
+            country_code = location_match.group(1)
+            api_args = {"query": country_code}
+            country = self._geocoder.get_feature(
+                "search", api_args, term=country_code, term_type="query"
+            )
+            country_names.append(country.get("name"))
+            country_ids.append(country.get("id"))
+        self._data["locality"] = None
+        self._data["locality_osm_id"] = None
+        self._data["admin_level_1"] = None
+        self._data["admin_level_1_osm_id"] = None
+        self._data["country"] = country_names
+        self._data["country_osm_id"] = country_ids
+
+    def _filter_rows(self):
+        self._data = self._data[
+            (self._data["classification"] == "CONF")
+            & ~self._data["observation_date"].isna()
+            & ~self._data["country"].isna()
+        ]
+
+    def normalize(self):
+        self._add_missing_columns()
+        self.rename_columns()
+        self._normalize_dates()
+        self._normalize_location()
+        self._normalize_species()
+        self._join_reference_data()
+        self._add_source_details()
+        self._geocode()
+        self._filter_rows()
+        self.filter_columns()
