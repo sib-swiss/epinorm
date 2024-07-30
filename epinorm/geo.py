@@ -5,6 +5,7 @@ import requests
 
 from calendar import timegm
 from time import gmtime, sleep
+from time import gmtime, sleep, time
 from epinorm.cache import SQLiteCache
 from epinorm.utils import get_coalesced
 
@@ -30,17 +31,27 @@ OSM_ELEMENT_TYPES = {
 
 
 class Geocoder:
+    
+    TIME_LAST_REQUEST = time()
 
     def fetch(self, url, params=None):
         """Fetch data from the web."""
+
+        elapsedTime = time() - self.TIME_LAST_REQUEST
+        if elapsedTime < 2: # must wait before making new request
+            sleep(2 - elapsedTime)
+
         if params:
             params = DEFAULT_PARAMETERS | params
         else:
             params = DEFAULT_PARAMETERS
+
         timestamp = timegm(gmtime())
         headers = {"User-Agent": f"{USER_AGENT} #{timestamp}"}
         response = requests.get(url, params=params, headers=headers)
         logging.info(f"Requesting data from {response.url}")
+        self.TIME_LAST_REQUEST = time()
+
         if response.status_code != 200:
             raise Exception(f"HTTP {response.status_code}: {response.reason}")
         return response.json()
@@ -152,7 +163,6 @@ class NominatimGeocoder(Geocoder):
             feature = self._cache.find_feature(term)
         if not feature:
             data_source = "remote source"
-            sleep(REMOTE_REQUEST_DELAY)
             api_call = self._get_api_method(api_method)
             results = api_call(**api_args)
             if not results:
