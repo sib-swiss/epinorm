@@ -21,7 +21,7 @@ DEFAULT_PARAMETERS = {
 USER_AGENT = "MOOD Geocoder"
 DEFAULT_ZOOM_LEVEL = 10
 DEFAULT_RESULT_LIMIT = 1
-REMOTE_REQUEST_DELAY = 2
+REMOTE_REQUEST_DELAY = 2 # in seconds
 OSM_ELEMENT_TYPES = {
     "node": "N",
     "way": "W",
@@ -30,9 +30,13 @@ OSM_ELEMENT_TYPES = {
 
 
 class Geocoder:
-
+    
     def fetch(self, url, params=None):
         """Fetch data from the web."""
+
+        # sleep to make sure we respect the API requirements
+        sleep(REMOTE_REQUEST_DELAY)
+
         if params:
             params = DEFAULT_PARAMETERS | params
         else:
@@ -41,6 +45,7 @@ class Geocoder:
         headers = {"User-Agent": f"{USER_AGENT} #{timestamp}"}
         response = requests.get(url, params=params, headers=headers)
         logging.info(f"Requesting data from {response.url}")
+
         if response.status_code != 200:
             raise Exception(f"HTTP {response.status_code}: {response.reason}")
         return response.json()
@@ -150,9 +155,9 @@ class NominatimGeocoder(Geocoder):
             term = feature_id
         else:
             feature = self._cache.find_feature(term)
+            
         if not feature:
             data_source = "remote source"
-            sleep(REMOTE_REQUEST_DELAY)
             api_call = self._get_api_method(api_method)
             results = api_call(**api_args)
             if not results:
@@ -162,11 +167,16 @@ class NominatimGeocoder(Geocoder):
                 feature = results[0]
             else:
                 feature = results
+            # we don't want mountain ranges as results
+            if "addresstype" in feature and feature["addresstype"] == "mountain_range":
+                logging.info(f'No results found for "{term}"')
+                return dict()
             feature = self.normalize_feature(feature)
             self._cache.save_feature(feature, term, term_type)
         address = feature.get("address")
         if address:
             feature["address"] = json.loads(address)
+
         feature_label = f"{feature.get('id')} - {feature.get('name')}"
         logging.info(f'Fetched "{feature_label}" from {data_source}')
         return feature

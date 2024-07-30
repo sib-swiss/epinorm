@@ -1,11 +1,21 @@
 import json
 import pandas as pd
+import numpy as np
 import re
-
+import itertools
 from csv import QUOTE_NONE
-from epinorm.config import REF_DATA_DIR
+from transliterate import translit
+from transliterate.exceptions import LanguageDetectionError
+
 from epinorm.geo import NominatimGeocoder
-from epinorm.utils import coalesce
+from epinorm.config import (
+    MIN_ADMIN_EXCEPTIONS, 
+    REF_DATA_DIR, 
+    COUNTRIES_DATA, 
+    COUNTRIES_EXCEPTIONS, 
+    ADMIN_LEVELS_DATA
+)
+
 
 HOST_SPECIES_FILE = REF_DATA_DIR / "ncbi_host_species.csv"
 PATHOGEN_SPECIES_FILE = REF_DATA_DIR / "ncbi_pathogen_species.csv"
@@ -34,6 +44,97 @@ OUTPUT_COLUMNS = [
     "original_record_id",
     "original_record_location_description",
 ]
+
+def get_transliterated_endonym(row):
+        """
+        this tries to transliterate the endonym of a row into latin characters.
+        If it fails, it returns an empty list
+        """
+
+        # try to tranlisterate the endonym
+        try:
+            transliteration = translit(row["endonym"], reversed=True)
+
+            # if the original language was russian, then it might have used the character ь which
+            # doesn't get transliterate properly (it gets into an apostrophe)
+            if "ь" in row["endonym"] and "'" in transliteration:
+                transliteration = transliteration.replace("'", "")
+
+            entry = {"name": transliteration, 
+                    "admin_level":row["admin_level"], 
+                    "osm_id": row["osm_id"]}
+            return [entry]
+
+        except (LanguageDetectionError, TypeError):
+            return []
+
+def get_admin_levels_table():
+    """
+    Retrieves the information in "countries.csv" and
+    "administrative_units.tsv", and returns a dictionary that maps a
+    country name (from "countries.csv") to a list of its administrative
+    levels.
+    Administrative levels are encoded as dictionaries with properties:
+    {
+        name,
+        admin_level,
+        osm_id
+    }
+    Also transliterates information from the administrative_units.tsv file.
+    """
+
+    # * create a mapping from country name to its two letter code
+    country_to_code = pd.read_csv(COUNTRIES_DATA, index_col="name")["alpha_2"].to_dict()
+    country_to_code.update(COUNTRIES_EXCEPTIONS) # add the exceptions
+
+    # * now map country code to its admin levels
+    code_to_admin = {}
+    for country_code, rows_country in pd.read_table(ADMIN_LEVELS_DATA).groupby("iso3166_1_code"):
+
+        code_to_admin[country_code] = []
+        for _, row in rows_country.iterrows():
+
+            new_entries = []
+
+            if isinstance(row["exonym"], str): # make sure the column contains a value
+                entry = {"name":row["exonym"],
+                         "admin_level":row["admin_level"], 
+                         "osm_id":row["osm_id"]}
+                new_entries.append(entry)
+
+            if isinstance(row["endonym"], str): # make sure the column contains a value
+                entry = {"name": row["endonym"], 
+                        "admin_level":row["admin_level"], 
+                        "osm_id": row["osm_id"]}
+                new_entries.append(entry)
+
+                new_entries += get_transliterated_endonym(row)
+
+            # some words are okay to be replaced, they are modifiers
+            replacements = {
+                "Oblast" : "Region",
+                "Krai" : "Region",
+            }
+            new_entries_synonyms = []
+            for entry in new_entries:
+                for original, synonym in replacements.items():
+                    pattern = re.compile("\\b" + original + "\\b")
+                    if re.match(pattern, entry["name"]):
+                        new_entry = {"name": re.sub(pattern, synonym, entry["name"]), 
+                                     "admin_level":entry["admin_level"], 
+                                     "osm_id":entry["osm_id"]}
+                        new_entries_synonyms.append(new_entry)
+
+            code_to_admin[country_code] += new_entries + new_entries_synonyms
+
+    # * now map each country name to its admin levels by merging the datasets above
+    country_to_admin = {}
+    for country_name, country_code in country_to_code.items():
+        country_to_admin[country_name] = code_to_admin.get(country_code, [])
+
+    return country_to_admin
+
+
 
 
 class DataHandler:
@@ -266,12 +367,29 @@ class GenBankDataHandler(DataHandler):
         super().__init__(data_file)
 
     def _compile_location(self, record):
-        places = record["original_location"].split(":", 1)
-        location = {
-            "country": places[0].strip(),
+        """
+        extract the information from the original_location field (according to the genbank format)
+        the format is:
+        country[:region [, location]]
+
+        we will extract them into a json object with fields:
+        {
+            country
+            areas
         }
-        if len(places) > 1:
-            location["area"] = places[1].strip()
+        """
+
+        location = {"country": None, "areas":[]}
+
+        if ":" in record["original_location"]:
+            country, areas = record["original_location"].split(":", 1)
+
+            location["country"] = country
+            location["areas"] = areas.split(",") # even if there isn't a comma you get what we need
+
+        else:
+            location["country"] = record["original_location"]
+
         return json.dumps(location)
 
     def _get_location_from_strain(self, record):
@@ -282,24 +400,57 @@ class GenBankDataHandler(DataHandler):
                 return token
 
     def _format_location(self, record):
+        """
+        basically we combine the information from original_record_location_description and the extracted information
+        of the strain. We also clean them (removing unwanted characters)
+
+        we return a dictionaly in json format with all the fields
+        {
+            country
+            areas
+        }
+        """
+
+        def clean_token(token):
+            token = token.replace("_", " ")
+            token = re.sub(r"\(.+\)", "", token) 
+            token = re.sub(r"[^\w\s-]+", "", token)
+            token = token.strip()
+            token = token.lower() # for easier comparison later
+            return token
+
         location = json.loads(record["original_record_location_description"])
-        extracted_location = record["extracted_location"]
-        if "area" not in location:
-            location["area"] = extracted_location
-        country = str(coalesce(location["country"], ""))
-        area = str(coalesce(location["area"], ""))
-        places = []
-        for place in area.split(","):
-            place = place.replace("_", " ")
-            place = re.sub(r"\(.+\)", "", place)
-            place = re.sub(r"[^\w\s-]+", "", place)
-            place = place.strip()
-            if not place or place == country:
-                continue
-            places.append(place)
-        if places:
-            return ", ".join(places) + ", " + country
-        return country
+
+        # format country to make comparison easier
+        location["country"] = clean_token(location["country"])
+
+        cleaned_places = [] 
+        places_to_clean = location["areas"]
+        if record["extracted_location"]:
+            places_to_clean.append(record["extracted_location"])
+
+
+        # format areas and extracted field
+        for place in places_to_clean:
+
+            cleaned_place = clean_token(place)
+            
+            if cleaned_place != "" and cleaned_place != location["country"] and \
+               cleaned_place not in cleaned_places:
+                cleaned_places.append(cleaned_place)
+
+        # take edge cases into account
+        exception_mappings = {
+            "west siberia": "siberian federal district",
+            "east siberia": "siberian federal district",
+        }
+        cleaned_places = [
+            exception_mappings[token] if token in exception_mappings else token for token in cleaned_places
+        ]
+
+        location["areas"] = cleaned_places
+
+        return json.dumps(location)
 
     def _normalize_dates(self):
         self._data["observation_date"] = pd.to_datetime(
@@ -320,27 +471,171 @@ class GenBankDataHandler(DataHandler):
         self._data["longitude"] = None
         self._data["original_record_id"] = None
 
+    def _search_tokens_diff_order(self, areas, appended_text):
+        """
+        This method uses the geocoder to make a query of areas (a list of tokens) and appended_text (a string).
+        we vary the order of the tokens in areas as they could be in the wrong order. We also remove them
+        if we still don't have a result. The code tries all permutations up to the point where it doesn't
+        include tokens from areas anymore (only "appended_text").
+        """
+
+        for length in range(len(areas), -1, -1):
+            for option in itertools.permutations(areas, length):
+
+                query = ", ".join(option) + ", " + appended_text
+                locality = self._geocoder.get_feature(
+                    "search", {"query": query}, term=query, term_type="query"
+                )
+                if locality:
+                    return locality
+
+        return None
+
+        
+    def _find_full_locality(self, areas, country_name):
+
+        result = {
+            "locality": None,
+            "locality_osm_id": None,
+            "admin_level_1": None,
+            "admin_level_1_osm_id": None,
+        }
+
+        # we must use an unstructured search as we have no idea what the tokens could be
+        locality = self._search_tokens_diff_order(areas[::-1], country_name)
+        if not locality:
+            return result
+
+        address = locality.get("address")
+        locality_name = self._geocoder.get_locality_name(address)
+        if locality_name is not None:
+            result["locality"] = locality_name
+            result["locality_osm_id"] = self._geocoder.create_feature_id(locality.get("osm_type"), locality.get("osm_id")) 
+        
+        admin_level_1_name = self._geocoder.get_admin_level_1_name(address)
+        query = f"{admin_level_1_name}, {country_name}"
+        admin_level_1 = self._geocoder.get_feature(
+            "search", {"query": query}, term=query, term_type="query"
+        )
+        result["admin_level_1"] = admin_level_1_name
+        result["admin_level_1_osm_id"] = admin_level_1.get("id")
+
+        return result
+
     def _geocode(self):
         """Geocode GenBank data."""
+
+        # extract information from the strain (could be whatever)
         self._data["extracted_location"] = self._data.apply(
             self._get_location_from_strain, axis=1
         )
+        # compile all the information we know about the location inside this column
         self._data["location"] = self._data.apply(self._format_location, axis=1)
-        country_names = []
-        country_ids = []
-        for index, row in self._data.iterrows():
-            places = row["location"].split(",")
-            place = places[-1].strip() if places else None
-            api_args = {"query": place}
+
+        # initialise to zero all output columns
+        country_names = np.full(len(self._data), None) 
+        country_ids = np.full(len(self._data), None) 
+        localities = np.full(len(self._data), None) 
+        locality_osm_ids = np.full(len(self._data), None) 
+        admin_level_1s = np.full(len(self._data), None) 
+        admin_level_1_ids = np.full(len(self._data), None) 
+
+        admin_levels_table = get_admin_levels_table()
+
+        # now parse each row to find its location
+        # use the administrative_units dataset and the Nominatim API
+        for i, row in self._data.iterrows():
+
+            location = json.loads(row["location"])
+
+            if location["country"] is None: # we now it doesn't contain any info then
+                continue
+                
+            # get the country osm_id
+            api_args = {"query": location["country"]}
             country = self._geocoder.get_feature(
-                "search", api_args, term=place, term_type="query"
+                "search", api_args, term=location["country"], term_type="query"
             )
-            country_names.append(country.get("name"))
-            country_ids.append(country.get("id"))
-        self._data["locality"] = None
-        self._data["locality_osm_id"] = None
-        self._data["admin_level_1"] = None
-        self._data["admin_level_1_osm_id"] = None
+            country_names[i] = country.get("name")
+            country_ids[i] = country.get("id")
+
+            areas = location["areas"]
+            if len(areas) == 0:
+                continue
+
+            # try to match tokens in areas with the administrative_units file
+            admin_levels_found = []
+            admin_levels_country = []
+            if country.get("name") in admin_levels_table:
+                admin_levels_country = admin_levels_table[country.get("name")]
+
+                for admin_level in admin_levels_country:
+                    if admin_level["name"].lower() in areas:
+                        areas.remove(admin_level["name"].lower()) # this removes one occurance on purpose
+                        admin_levels_found.append(admin_level)
+            
+            # we couldn't identify any token, we must use the api to find all fields
+            if len(admin_levels_found) == 0:
+                result = self._find_full_locality(areas, country.get("name"))
+                localities[i] = result["locality"]
+                locality_osm_ids[i] = result["locality_osm_id"]
+                admin_level_1s[i] = result["admin_level_1"]
+                admin_level_1_ids[i] = result["admin_level_1_osm_id"]
+                continue
+            
+            # now we check if we already found the highest admin level (hence lowest value) of the location
+            min_admin_level_country = min(map(lambda x: x["admin_level"], admin_levels_country))
+            if country.get("name") in MIN_ADMIN_EXCEPTIONS:
+                min_admin_level_country = MIN_ADMIN_EXCEPTIONS[country.get("name")] 
+            my_min_admin_level = min(admin_levels_found, key=lambda x: x["admin_level"])
+            
+            if min_admin_level_country == my_min_admin_level["admin_level"]:
+                admin_level_1s[i] = my_min_admin_level["name"]
+                admin_level_1_ids[i] = my_min_admin_level["osm_id"]
+                admin_levels_found.remove(my_min_admin_level)
+
+                # now check if you have all the rest of the info you need
+                if len(areas) == 0 and len(admin_levels_found) > 0:
+                    localities[i] = admin_levels_found[0]["name"]
+                    locality_osm_ids[i] = admin_levels_found[0]["osm_id"]
+                    continue
+
+            # we got no more information
+            if len(areas) == 0 and len(admin_levels_found) == 0:
+                continue
+
+            # we are here if we haven't identified the highest admin boundary, or we might still have
+            # information on the city that wasn't matched with admin_boundaries
+
+            sorted(admin_levels_found, key=lambda x: x["admin_level"], reverse=True)
+            admin_levels_matched = list(map(lambda x: x["name"], admin_levels_found))
+            admin_level = "" if admin_level_1s[i] is None else admin_level_1s[i]
+            second = ", ".join(admin_levels_matched) + ", " + admin_level + ", " + country.get("name")
+            locality = self._search_tokens_diff_order(areas[::-1], second)
+            if not locality:
+                continue
+
+            address = locality.get("address")
+            locality_name = self._geocoder.get_locality_name(address)
+            if locality_name is not None:
+                localities[i] = locality_name
+                locality_osm_ids[i] = self._geocoder.create_feature_id(locality.get("osm_type"), locality.get("osm_id")) 
+            
+            # maybe above you already identified the highest admin boundary
+            if admin_level_1s[i] is None:
+                admin_level_1_name = self._geocoder.get_admin_level_1_name(address)
+                query = f"{admin_level_1_name}, {country.get("name")}"
+                admin_level_1 = self._geocoder.get_feature(
+                    "search", {"query": query}, term=query, term_type="query"
+                )
+                admin_level_1s[i] = admin_level_1_name
+                admin_level_1_ids[i] = admin_level_1.get("id")
+
+
+        self._data["locality"] = localities
+        self._data["locality_osm_id"] = locality_osm_ids
+        self._data["admin_level_1"] = admin_level_1s
+        self._data["admin_level_1_osm_id"] = admin_level_1_ids
         self._data["country"] = country_names
         self._data["country_osm_id"] = country_ids
 
