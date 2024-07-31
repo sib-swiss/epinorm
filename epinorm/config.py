@@ -55,7 +55,8 @@ PACKAGE_DIR = Path(__file__).parent
 SCRIPT_DIR = PACKAGE_DIR / "scripts"
 REF_DATA_DIR = PACKAGE_DIR / "data"
 WORK_DIR = get_work_dir()
-
+COUNTRIES_DATA = PACKAGE_DIR / "data" / "countries.csv"
+ADMIN_LEVELS_DATA = PACKAGE_DIR / "data" / "administrative_units.tsv"
 
 # ROOT_DIR = PACKAGE_DIR.parent
 # DATA_DIR = ROOT_DIR / "data"
@@ -63,3 +64,34 @@ WORK_DIR = get_work_dir()
 # OUTPUT_DIR = DATA_DIR / "output"
 # AUX_DIR = OUTPUT_DIR / "auxiliaries"
 # GEO_DIR = OUTPUT_DIR / "geometries"
+
+# exceptions in data in the COUNTRIES_DATA file
+COUNTRIES_EXCEPTIONS = {
+    "Russia" : "RU",
+    "Bolivia" : "BO",
+    "Bonaire" : "BQ",
+    "Bosnia" : "BA",
+    "Iran" : "IR",
+    "North Korea" : "KP",
+    "North-Korea" : "KP",
+    "South Korea" : "KR",
+    "South-Korea" : "KR",
+    "Moldova" : "MD",
+    "Netherlands" : "NL",
+    "Palestine" : "PS",
+    "Taiwan" : "TW",
+    "Tanzania" : "TZ",
+    "United Kingdom" : "GB",
+    "UK" : "GB",
+    "United States" : "US",
+    "US" : "US",
+    "Venezuela" : "VE",
+    "Vietnam" : "VN"
+}
+
+# these are countries that have a low admin level (for instance 3) but we don't want to use that for the
+# output column "admin_level_1"
+MIN_ADMIN_EXCEPTIONS = {
+    "France" : 4,
+    "China" : 4
+}
