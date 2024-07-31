@@ -1,11 +1,12 @@
 import json
 import pandas as pd
 import re
-
+import itertools
 from csv import QUOTE_NONE
+from transliterate import translit
+
 from epinorm.geo import NominatimGeocoder
 from epinorm.config import MIN_ADMIN_EXCEPTIONS, REF_DATA_DIR, COUNTRIES_DATA, COUNTRIES_EXCEPTIONS, ADMIN_LEVELS_DATA
-from transliterate import translit
 
 
 
@@ -468,28 +469,23 @@ class GenBankDataHandler(DataHandler):
 
     def _search_tokens_diff_order(self, areas, second):
         """
-        This method uses the geocoder to make a query of areas (a list of tokens) and second (a string)
+        This method uses the geocoder to make a query of areas (a list of tokens) and second (a string).
+        we vary the order of the tokens in areas as they could be wrong. We also remove them if we still don't have a result
         """
 
-        query = ", ".join(areas) + ", " + second
-        locality = self._geocoder.get_feature(
-            "search", {"query": query}, term=query, term_type="query"
-        )
-        if locality:
-            return locality
-        
-        if len(areas) == 1: # you can't reorder the tokens if you only have one
-            return None
+        for l in range(len(areas), 0, -1):
+            for option in itertools.permutations(areas, l):
 
-        # try again in diffrent order for the tokens
-        query = ", ".join(areas[::-1]) + ", " + second
-        locality = self._geocoder.get_feature(
-            "search", {"query": query}, term=query, term_type="query"
-        )
-        if locality:
-            return locality
-        
+                query = ", ".join(option) + ", " + second
+                locality = self._geocoder.get_feature(
+                    "search", {"query": query}, term=query, term_type="query"
+                )
+                if locality:
+                    return locality
+
         return None
+
+        
             
         
     def _find_full_locality(self, areas, country, i, localities, localy_osm_ids, admin_level_1s, admin_level_1_ids):
@@ -563,7 +559,7 @@ class GenBankDataHandler(DataHandler):
 
             if country.get("name") in admin_levels_table:
                 admin_levels_country = admin_levels_table[country.get("name")]
-                
+
                 for admin_level in admin_levels_country:
                     if admin_level["name"].lower() in areas:
                         areas.remove(admin_level["name"].lower()) # this removes one occurance on purpose
