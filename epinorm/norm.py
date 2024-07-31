@@ -13,20 +13,20 @@ PATHOGEN_SPECIES_FILE = REF_DATA_DIR / "ncbi_pathogen_species.csv"
 SAMPLING_MODES = ("top", "bottom", "random")
 OUTPUT_FILE_SEPARATOR = "\t"
 OUTPUT_COLUMNS = [
-    # "observation_date",
-    # "report_date",
+    "observation_date",
+    "report_date",
 
-    # "pathogen_species_ncbi_id",
-    # "pathogen_species_name",
-    # "pathogen_serotype",
+    "pathogen_species_ncbi_id",
+    "pathogen_species_name",
+    "pathogen_serotype",
 
-    # "host_species_ncbi_id",
-    # "host_species_name",
-    # "host_species_common_name",
-    # "host_domestication_status",
+    "host_species_ncbi_id",
+    "host_species_name",
+    "host_species_common_name",
+    "host_domestication_status",
 
-    # "latitude",
-    # "longitude",
+    "latitude",
+    "longitude",
     "country",
     "country_osm_id",
 
@@ -36,8 +36,8 @@ OUTPUT_COLUMNS = [
     "admin_level_1",
     "admin_level_1_osm_id",
 
-    # "original_record_source",
-    # "original_record_id",
+    "original_record_source",
+    "original_record_id",
     "location",
 ]
 
