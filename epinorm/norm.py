@@ -471,9 +471,10 @@ class GenBankDataHandler(DataHandler):
         """
         This method uses the geocoder to make a query of areas (a list of tokens) and second (a string).
         we vary the order of the tokens in areas as they could be wrong. We also remove them if we still don't have a result
+        it tried all permutations up to the point where it doesn't include tokens from areas anymore (only "second")
         """
 
-        for l in range(len(areas), 0, -1):
+        for l in range(len(areas), -1, -1):
             for option in itertools.permutations(areas, l):
 
                 query = ", ".join(option) + ", " + second
