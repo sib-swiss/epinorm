@@ -45,7 +45,6 @@ class Geocoder:
             params = DEFAULT_PARAMETERS | params
         else:
             params = DEFAULT_PARAMETERS
-
         timestamp = timegm(gmtime())
         headers = {"User-Agent": f"{USER_AGENT} #{timestamp}"}
         response = requests.get(url, params=params, headers=headers)
@@ -161,6 +160,7 @@ class NominatimGeocoder(Geocoder):
             term = feature_id
         else:
             feature = self._cache.find_feature(term)
+            
         if not feature:
             data_source = "remote source"
             api_call = self._get_api_method(api_method)
@@ -172,11 +172,16 @@ class NominatimGeocoder(Geocoder):
                 feature = results[0]
             else:
                 feature = results
+            # we don't want mountain ranges as results
+            if "addresstype" in feature and feature["addresstype"] == "mountain_range":
+                logging.info(f'No results found for "{term}"')
+                return dict()
             feature = self.normalize_feature(feature)
             self._cache.save_feature(feature, term, term_type)
         address = feature.get("address")
         if address:
             feature["address"] = json.loads(address)
+
         feature_label = f"{feature.get('id')} - {feature.get('name')}"
         logging.info(f'Fetched "{feature_label}" from {data_source}')
         return feature
