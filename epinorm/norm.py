@@ -32,16 +32,14 @@ OUTPUT_COLUMNS = [
     "longitude",
     "country",
     "country_osm_id",
-
     "locality",
     "locality_osm_id",
-
     "admin_level_1",
     "admin_level_1_osm_id",
 
     "original_record_source",
     "original_record_id",
-    "location",
+    "original_record_location_description",
 ]
 
 
