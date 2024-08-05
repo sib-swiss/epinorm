@@ -22,7 +22,7 @@ DEFAULT_PARAMETERS = {
 USER_AGENT = "MOOD Geocoder"
 DEFAULT_ZOOM_LEVEL = 10
 DEFAULT_RESULT_LIMIT = 1
-REMOTE_REQUEST_DELAY = 2
+REMOTE_REQUEST_DELAY = 2 # in second
 OSM_ELEMENT_TYPES = {
     "node": "N",
     "way": "W",
@@ -37,9 +37,10 @@ class Geocoder:
     def fetch(self, url, params=None):
         """Fetch data from the web."""
 
-        elapsedTime = time() - self.TIME_LAST_REQUEST
-        if elapsedTime < 2: # must wait before making new request
-            sleep(2 - elapsedTime)
+        elaped_time_since_last_request = time() - self.TIME_LAST_REQUEST
+        if elaped_time_since_last_request < REMOTE_REQUEST_DELAY: # must wait before making new request
+            sleep(REMOTE_REQUEST_DELAY - elaped_time_since_last_request)
+        self.TIME_LAST_REQUEST = time()
 
         if params:
             params = DEFAULT_PARAMETERS | params
@@ -49,7 +50,6 @@ class Geocoder:
         headers = {"User-Agent": f"{USER_AGENT} #{timestamp}"}
         response = requests.get(url, params=params, headers=headers)
         logging.info(f"Requesting data from {response.url}")
-        self.TIME_LAST_REQUEST = time()
 
         if response.status_code != 200:
             raise Exception(f"HTTP {response.status_code}: {response.reason}")
