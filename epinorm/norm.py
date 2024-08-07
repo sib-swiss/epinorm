@@ -365,10 +365,10 @@ class GenBankDataHandler(DataHandler):
         location = {"country": None, "areas":[]}
 
         if ":" in record["original_location"]:
-            objects = record["original_location"].split(":", 1)
+            country, areas = record["original_location"].split(":", 1)
 
-            location["country"] = objects[0]
-            location["areas"] = objects[1].split(",") # even if there isn't a comma you get what we need
+            location["country"] = country
+            location["areas"] = areas.split(",") # even if there isn't a comma you get what we need
 
         else:
             location["country"] = record["original_location"]
