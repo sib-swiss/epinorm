@@ -32,15 +32,11 @@ OSM_ELEMENT_TYPES = {
 
 class Geocoder:
     
-    TIME_LAST_REQUEST = time()
-
     def fetch(self, url, params=None):
         """Fetch data from the web."""
 
-        elaped_time_since_last_request = time() - self.TIME_LAST_REQUEST
-        if elaped_time_since_last_request < REMOTE_REQUEST_DELAY: # must wait before making new request
-            sleep(REMOTE_REQUEST_DELAY - elaped_time_since_last_request)
-        self.TIME_LAST_REQUEST = time()
+        # sleep to make sure we respect the API requirements
+        sleep(REMOTE_REQUEST_DELAY)
 
         if params:
             params = DEFAULT_PARAMETERS | params
