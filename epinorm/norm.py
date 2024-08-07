@@ -3,11 +3,11 @@ import pandas as pd
 import re
 import itertools
 from csv import QUOTE_NONE
-from transliterate import translit, LanguagePackNotFound
+from transliterate import translit
+from transliterate.exceptions import LanguageDetectionError
 
 from epinorm.geo import NominatimGeocoder
 from epinorm.config import MIN_ADMIN_EXCEPTIONS, REF_DATA_DIR, COUNTRIES_DATA, COUNTRIES_EXCEPTIONS, ADMIN_LEVELS_DATA
-
 
 
 HOST_SPECIES_FILE = REF_DATA_DIR / "ncbi_host_species.csv"
@@ -16,20 +16,20 @@ PATHOGEN_SPECIES_FILE = REF_DATA_DIR / "ncbi_pathogen_species.csv"
 SAMPLING_MODES = ("top", "bottom", "random")
 OUTPUT_FILE_SEPARATOR = "\t"
 OUTPUT_COLUMNS = [
-    "observation_date",
-    "report_date",
+    # "observation_date",
+    # "report_date",
 
-    "pathogen_species_ncbi_id",
-    "pathogen_species_name",
-    "pathogen_serotype",
+    # "pathogen_species_ncbi_id",
+    # "pathogen_species_name",
+    # "pathogen_serotype",
 
-    "host_species_ncbi_id",
-    "host_species_name",
-    "host_species_common_name",
-    "host_domestication_status",
+    # "host_species_ncbi_id",
+    # "host_species_name",
+    # "host_species_common_name",
+    # "host_domestication_status",
 
-    "latitude",
-    "longitude",
+    # "latitude",
+    # "longitude",
     "country",
     "country_osm_id",
     "locality",
@@ -37,27 +37,12 @@ OUTPUT_COLUMNS = [
     "admin_level_1",
     "admin_level_1_osm_id",
 
-    "original_record_source",
-    "original_record_id",
+    # "original_record_source",
+    # "original_record_id",
     "original_record_location_description",
 ]
 
-def get_admin_levels_table(self):
-    """
-    Retrieves the information in "countries.csv" and
-    "administrative_units.tsv", and returns a dictionary that maps a
-    country name (from "countries.csv") to a list of its administrative
-    levels.
-    Administrative levels are encoded as dictionaries with properties:
-    {
-        name,
-        admin_level,
-        osm_id
-    }
-    Also transliterates information from the administrative_units.tsv file.
-    """
-
-    def get_translitaration_endonym(row):
+def get_translitaration_endonym(row):
         """
         this tries to transliterate the endonym of a row into latin characters.
         If it fails, it returns an empty list
@@ -77,8 +62,23 @@ def get_admin_levels_table(self):
                     "osm_id": row["osm_id"]}
             return [entry]
 
-        except LanguagePackNotFound: # the language of the endonym wasn't recognised
+        except (LanguageDetectionError, TypeError):
             return []
+
+def get_admin_levels_table():
+    """
+    Retrieves the information in "countries.csv" and
+    "administrative_units.tsv", and returns a dictionary that maps a
+    country name (from "countries.csv") to a list of its administrative
+    levels.
+    Administrative levels are encoded as dictionaries with properties:
+    {
+        name,
+        admin_level,
+        osm_id
+    }
+    Also transliterates information from the administrative_units.tsv file.
+    """
 
     # * create a mapping from country name to its two letter code
     country_to_code = pd.read_csv(COUNTRIES_DATA, index_col="name")["alpha_2"].to_dict()
@@ -86,40 +86,42 @@ def get_admin_levels_table(self):
 
     # * now map country code to its admin levels
     code_to_admin = {}
-    for country_code, rows in pd.read_table(ADMIN_LEVELS_DATA).groupby("iso3166_1_code"):
+    for country_code, rows_country in pd.read_table(ADMIN_LEVELS_DATA).groupby("iso3166_1_code"):
 
         code_to_admin[country_code] = []
-        for row in rows:
+        for _, row in rows_country.iterrows():
+
+            new_entries = []
 
             if isinstance(row["exonym"], str): # make sure the column contains a value
                 entry = {"name":row["exonym"],
                          "admin_level":row["admin_level"], 
                          "osm_id":row["osm_id"]}
-                code_to_admin[country_code].append(entry)
+                new_entries.append(entry)
 
             if isinstance(row["endonym"], str): # make sure the column contains a value
                 entry = {"name": row["endonym"], 
                         "admin_level":row["admin_level"], 
                         "osm_id": row["osm_id"]}
-                code_to_admin[country_code].append(entry)
+                new_entries.append(entry)
 
-                code_to_admin[country_code] += get_translitaration_endonym(row["endonym"])
+                new_entries += get_translitaration_endonym(row)
 
             # some words are okay to be replaced, they are modifiers
-            new_entries = []
-            for entry in code_to_admin[country_code]:
-
-                replacements = {
-                "District" : "Region",
-                "Region" : "District",
-                }
+            replacements = {
+            "District" : "Region",
+            "Region" : "District",
+            }
+            new_entries_synonyms = []
+            for entry in new_entries:
                 for original, synonym in replacements.items():
                     if original in entry["name"]:
                         new_entry = {"name":entry["name"].replace(original, synonym),
                                      "admin_level":entry["admin_level"], 
                                      "osm_id":entry["osm_id"]}
-                        new_entries.append(new_entry)
-            code_to_admin[country_code] += new_entries
+                        new_entries_synonyms.append(new_entry)
+
+            code_to_admin[country_code] += new_entries + new_entries_synonyms
 
     # * now map each country name to its admin levels by merging the datasets above
     country_to_admin = {}
@@ -127,6 +129,9 @@ def get_admin_levels_table(self):
         country_to_admin[country_name] = code_to_admin.get(country_code, [])
 
     return country_to_admin
+
+
+
 
 class DataHandler:
 
