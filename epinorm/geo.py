@@ -5,7 +5,6 @@ import requests
 
 from calendar import timegm
 from time import gmtime, sleep
-from time import gmtime, sleep, time
 from epinorm.cache import SQLiteCache
 from epinorm.utils import get_coalesced
 
@@ -22,7 +21,7 @@ DEFAULT_PARAMETERS = {
 USER_AGENT = "MOOD Geocoder"
 DEFAULT_ZOOM_LEVEL = 10
 DEFAULT_RESULT_LIMIT = 1
-REMOTE_REQUEST_DELAY = 2 # in second
+REMOTE_REQUEST_DELAY = 2 # in seconds
 OSM_ELEMENT_TYPES = {
     "node": "N",
     "way": "W",

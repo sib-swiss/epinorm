@@ -3,7 +3,7 @@ import pandas as pd
 import re
 import itertools
 from csv import QUOTE_NONE
-from transliterate import translit
+from transliterate import translit, LanguagePackNotFound
 
 from epinorm.geo import NominatimGeocoder
 from epinorm.config import MIN_ADMIN_EXCEPTIONS, REF_DATA_DIR, COUNTRIES_DATA, COUNTRIES_EXCEPTIONS, ADMIN_LEVELS_DATA
@@ -44,79 +44,87 @@ OUTPUT_COLUMNS = [
 
 def get_admin_levels_table(self):
     """
-    This method retrives the information in the "countries.csv" and "administrative_units.tsv".
-    It returns a dictionnary that maps a country name (from countries.csv) to a list of its administrative levels.
-    administrative levels are encoded as dictionaries with properties:
+    Retrieves the information in "countries.csv" and
+    "administrative_units.tsv", and returns a dictionary that maps a
+    country name (from "countries.csv") to a list of its administrative
+    levels.
+    Administrative levels are encoded as dictionaries with properties:
     {
         name,
         admin_level,
-        osmId
+        osm_id
     }
-
-    it also tranliterates information from the administrative_units.tsv file.
+    Also transliterates information from the administrative_units.tsv file.
     """
 
+    def get_translitaration_endonym(row):
+        """
+        this tries to transliterate the endonym of a row into latin characters.
+        If it fails, it returns an empty list
+        """
+
+        # try to tranlisterate the endonym
+        try:
+            transliteration = translit(row["endonym"], reversed=True)
+
+            # if the original language was russian, then it might have used the character ь which
+            # doesn't get transliterate properly (it gets into an apostrophe)
+            if "ь" in row["endonym"] and "'" in transliteration:
+                transliteration = transliteration.replace("'", "")
+
+            entry = {"name": transliteration, 
+                    "admin_level":row["admin_level"], 
+                    "osm_id": row["osm_id"]}
+            return [entry]
+
+        except LanguagePackNotFound: # the language of the endonym wasn't recognised
+            return []
+
     # * create a mapping from country name to its two letter code
-    country_to_code = {}
-    df = pd.read_csv(COUNTRIES_DATA)
-    for _, row in df.iterrows():
-        country_to_code[row["name"]] = row["alpha_2"]
-
-    # add the exceptions
-    country_to_code.update(COUNTRIES_EXCEPTIONS) 
-
+    country_to_code = pd.read_csv(COUNTRIES_DATA, index_col="name")["alpha_2"].to_dict()
+    country_to_code.update(COUNTRIES_EXCEPTIONS) # add the exceptions
 
     # * now map country code to its admin levels
     code_to_admin = {}
-    df = pd.read_csv(ADMIN_LEVELS_DATA, sep="\t")
-    for _, row in df.iterrows():
+    for country_code, rows in pd.read_table(ADMIN_LEVELS_DATA).groupby("iso3166_1_code"):
 
-            if row["iso3166_1_code"] not in code_to_admin:
-                code_to_admin[row["iso3166_1_code"]] = []
+        code_to_admin[country_code] = []
+        for row in rows:
 
-            # a row sometimes doesn't contain endonym
-            if type(row["endonym"]) is not float:
-                entry = {"name": row["endonym"], "admin_level":row["admin_level"], "osmId": row["osm_id"]}
-                code_to_admin[row["iso3166_1_code"]].append(entry)
+            if isinstance(row["exonym"], str): # make sure the column contains a value
+                entry = {"name":row["exonym"],
+                         "admin_level":row["admin_level"], 
+                         "osm_id":row["osm_id"]}
+                code_to_admin[country_code].append(entry)
 
-            # try to tranlisterate the endonym
-            try:
-                transliteration = translit(row["endonym"], reversed=True)
+            if isinstance(row["endonym"], str): # make sure the column contains a value
+                entry = {"name": row["endonym"], 
+                        "admin_level":row["admin_level"], 
+                        "osm_id": row["osm_id"]}
+                code_to_admin[country_code].append(entry)
 
-                # if the original language was russian, then it might have used the character ь which
-                # doesn't get transliterate properly (it gets into an apostrophe)
-                if "ь" in row["endonym"] and "'" in transliteration:
-                    transliteration = transliteration.replace("'", "")
+                code_to_admin[country_code] += get_translitaration_endonym(row["endonym"])
 
-                entry = {"name":transliteration, "admin_level":row["admin_level"], "osmId":row["osm_id"]}
-                code_to_admin[row["iso3166_1_code"]].append(entry)
-            except:
-                pass
+            # some words are okay to be replaced, they are modifiers
+            new_entries = []
+            for entry in code_to_admin[country_code]:
 
-
-            # when row contains exonym (most of the time but not always)
-            if type(row["exonym"]) is not float:
-
-                entry = {"name":row["exonym"], "admin_level":row["admin_level"], "osmId":row["osm_id"]}
-                code_to_admin[row["iso3166_1_code"]].append(entry)
-
-                # some words are okay to be replaced, they are modifiers
                 replacements = {
                 "District" : "Region",
                 "Region" : "District",
                 }
-                for first, second in replacements.items():
-                    if first in row["exonym"]:
-                        entry = {"name":row["exonym"].replace(first, second), "admin_level":row["admin_level"], "osmId":row["osm_id"]}
-                        code_to_admin[row["iso3166_1_code"]].append(entry)
+                for original, synonym in replacements.items():
+                    if original in entry["name"]:
+                        new_entry = {"name":entry["name"].replace(original, synonym),
+                                     "admin_level":entry["admin_level"], 
+                                     "osm_id":entry["osm_id"]}
+                        new_entries.append(new_entry)
+            code_to_admin[country_code] += new_entries
 
     # * now map each country name to its admin levels by merging the datasets above
     country_to_admin = {}
     for country_name, country_code in country_to_code.items():
-        if country_code in code_to_admin:
-            country_to_admin[country_name] = code_to_admin[country_code]
-        else:
-            country_to_admin[country_name] = []
+        country_to_admin[country_name] = code_to_admin.get(country_code, [])
 
     return country_to_admin
 
@@ -394,52 +402,50 @@ class GenBankDataHandler(DataHandler):
         }
         """
 
+        def clean_token(token):
+            token = token.replace("_", " ")
+            token = re.sub(r"\(.+\)", "", token) 
+            token = re.sub(r"[^\w\s-]+", "", token)
+            token = token.strip()
+            token = token.lower() # for easier comparison later
+            return token
+
         location = json.loads(record["original_record_location_description"])
 
-
         # format country to make comparison easier
-        location["country"] = location["country"].strip().lower()
+        location["country"] = clean_token(location["country"])
 
-        newPlaces = [] # combine areas and extrated location together in this list
+        new_places = [] # combine areas and extrated location together in this list
 
         # format areas
         for place in location["areas"]:
-            place = place.replace("_", " ")
-            place = re.sub(r"\(.+\)", "", place)
-            place = re.sub(r"[^\w\s-]+", "", place)
-            place = place.strip()
-            place = place.lower() # for easier comparison later
 
-            if place != "" and place != location["country"] and place not in newPlaces:
-                newPlaces.append(place)
+            cleaned_place = clean_token(place)
+            
+            if cleaned_place != "" and cleaned_place != location["country"] and \
+               cleaned_place not in new_places:
+                new_places.append(cleaned_place)
 
 
         # format extracted field
         if record["extracted_location"]:
-            place = record["extracted_location"].replace("_", " ")
-            place = re.sub(r"\(.+\)", "", place)
-            place = re.sub(r"[^\w\s-]+", "", place)
-            place = place.strip()
-            place = place.lower() # for easier comparison later
 
-            # the extracted field could be empty after format
-            if place != "" and place != location["country"] and place not in newPlaces:
-                newPlaces.append(place)
+            cleaned_place = clean_token(record["extracted_location"])
 
-        # take edge cases in to account
-        exceptionMappings = {
+            if cleaned_place != "" and cleaned_place != location["country"] and \
+               cleaned_place not in new_places:
+                new_places.append(cleaned_place)
+
+        # take edge cases into account
+        exception_mappings = {
             "west siberia": "siberian federal district",
             "east siberia": "siberian federal district",
         }
-        newPlacesAgain = []
-        for token in newPlaces:
+        new_places = [
+            exception_mappings[token] if token in exception_mappings else token for token in new_places
+        ]
 
-            if token in exceptionMappings :
-                newPlacesAgain.append(exceptionMappings[token])
-            else:
-                newPlacesAgain.append(token)
-            
-        location["areas"] = newPlacesAgain
+        location["areas"] = new_places
 
         return json.dumps(location)
 
@@ -572,13 +578,13 @@ class GenBankDataHandler(DataHandler):
             
             if min_admin_level_country == my_min_admin_level["admin_level"]:
                 admin_level_1s[i] = my_min_admin_level["name"]
-                admin_level_1_ids[i] = my_min_admin_level["osmId"]
+                admin_level_1_ids[i] = my_min_admin_level["osm_id"]
                 admin_levels_found.remove(my_min_admin_level)
 
                 # now check if you have all the rest of the info you need
                 if len(areas) == 0 and len(admin_levels_found) > 0:
                     localities[i] = admin_levels_found[0]["name"]
-                    localy_osm_ids[i] = admin_levels_found[0]["osmId"]
+                    localy_osm_ids[i] = admin_levels_found[0]["osm_id"]
                     continue
 
             # we got no more information
