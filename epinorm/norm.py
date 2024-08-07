@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import numpy as np
 import re
 import itertools
 from csv import QUOTE_NONE
@@ -493,26 +494,35 @@ class GenBankDataHandler(DataHandler):
         return None
 
         
-    def _find_full_locality(self, areas, country, i, localities, localy_osm_ids, admin_level_1s, admin_level_1_ids):
+    def _find_full_locality(self, areas, countryName):
+
+        result = {
+            "locality": None,
+            "locality_osm_id": None,
+            "admin_level_1": None,
+            "admin_level_1_osm_id": None,
+        }
 
         # we must use an unstructured search as we have no idea what the tokens could be
-        locality = self._search_tokens_diff_order(areas[::-1], country.get("name"))
+        locality = self._search_tokens_diff_order(areas[::-1], countryName)
         if not locality:
-            return
+            return result
 
         address = locality.get("address")
         locality_name = self._geocoder.get_locality_name(address)
         if locality_name is not None:
-            localities[i] = locality_name
-            localy_osm_ids[i] = self._geocoder.create_feature_id(locality.get("osm_type"), locality.get("osm_id")) 
+            result["locality"] = locality_name
+            result["locality_osm_id"] = self._geocoder.create_feature_id(locality.get("osm_type"), locality.get("osm_id")) 
         
         admin_level_1_name = self._geocoder.get_admin_level_1_name(address)
-        query = f"{admin_level_1_name}, {country.get("name")}"
+        query = f"{admin_level_1_name}, {countryName}"
         admin_level_1 = self._geocoder.get_feature(
             "search", {"query": query}, term=query, term_type="query"
         )
-        admin_level_1s[i] = admin_level_1_name
-        admin_level_1_ids[i] = admin_level_1.get("id")
+        result["admin_level_1"] = admin_level_1_name
+        result["admin_level_1_osm_id"] = admin_level_1.get("id")
+
+        return result
 
     def _geocode(self):
         """Geocode GenBank data."""
@@ -525,15 +535,12 @@ class GenBankDataHandler(DataHandler):
         self._data["location"] = self._data.apply(self._format_location, axis=1)
 
         # initialise to zero all output columns
-        country_names = [ None for _ in range(len(self._data))] 
-        country_ids = [ None for _ in range(len(self._data))] 
-        localities = [ None for _ in range(len(self._data))] 
-        localy_osm_ids = [ None for _ in range(len(self._data))]
-        admin_level_1s = [ None for _ in range(len(self._data))]
-        admin_level_1_ids = [ None for _ in range(len(self._data))]
-        # those two won't be filled in in this dataset
-        longitudes = [ None for _ in range(len(self._data))]
-        latitudes = [ None for _ in range(len(self._data))]
+        country_names = np.full(len(self._data), None) 
+        country_ids = np.full(len(self._data), None) 
+        localities = np.full(len(self._data), None) 
+        locality_osm_ids = np.full(len(self._data), None) 
+        admin_level_1s = np.full(len(self._data), None) 
+        admin_level_1_ids = np.full(len(self._data), None) 
 
         admin_levels_table = get_admin_levels_table()
 
@@ -543,10 +550,10 @@ class GenBankDataHandler(DataHandler):
 
             location = json.loads(row["location"])
 
-            if location["country"] is None:
+            if location["country"] is None: # we now it doesn't contain any info then
                 continue
                 
-            # get country from API to get the osm_id
+            # get the country osm_id
             api_args = {"query": location["country"]}
             country = self._geocoder.get_feature(
                 "search", api_args, term=location["country"], term_type="query"
@@ -554,14 +561,13 @@ class GenBankDataHandler(DataHandler):
             country_names[i] = country.get("name")
             country_ids[i] = country.get("id")
 
-            areas = location["areas"] # making a copy as we will modify "areas"
+            areas = location["areas"]
             if len(areas) == 0:
                 continue
 
             # try to match tokens in areas with the administrative_units file
             admin_levels_found = []
             admin_levels_country = []
-
             if country.get("name") in admin_levels_table:
                 admin_levels_country = admin_levels_table[country.get("name")]
 
@@ -572,7 +578,11 @@ class GenBankDataHandler(DataHandler):
             
             # we couldn't identify any token, we must use the api to find all fields
             if len(admin_levels_found) == 0:
-                self._find_full_locality(areas, country, i, localities, localy_osm_ids, admin_level_1s, admin_level_1_ids)
+                result = self._find_full_locality(areas, country.get("name"))
+                localities[i] = result["locality"]
+                locality_osm_ids[i] = result["locality_osm_id"]
+                admin_level_1s[i] = result["admin_level_1"]
+                admin_level_1_ids[i] = result["admin_level_1_osm_id"]
                 continue
             
             # now we check if we already found the highest admin level (hence lowest value) of the location
@@ -589,7 +599,7 @@ class GenBankDataHandler(DataHandler):
                 # now check if you have all the rest of the info you need
                 if len(areas) == 0 and len(admin_levels_found) > 0:
                     localities[i] = admin_levels_found[0]["name"]
-                    localy_osm_ids[i] = admin_levels_found[0]["osm_id"]
+                    locality_osm_ids[i] = admin_levels_found[0]["osm_id"]
                     continue
 
             # we got no more information
@@ -611,7 +621,7 @@ class GenBankDataHandler(DataHandler):
             locality_name = self._geocoder.get_locality_name(address)
             if locality_name is not None:
                 localities[i] = locality_name
-                localy_osm_ids[i] = self._geocoder.create_feature_id(locality.get("osm_type"), locality.get("osm_id")) 
+                locality_osm_ids[i] = self._geocoder.create_feature_id(locality.get("osm_type"), locality.get("osm_id")) 
             
             # maybe above you already identified the highest admin boundary
             if admin_level_1s[i] is None:
@@ -625,13 +635,11 @@ class GenBankDataHandler(DataHandler):
 
 
         self._data["locality"] = localities
-        self._data["locality_osm_id"] = localy_osm_ids
+        self._data["locality_osm_id"] = locality_osm_ids
         self._data["admin_level_1"] = admin_level_1s
         self._data["admin_level_1_osm_id"] = admin_level_1_ids
         self._data["country"] = country_names
         self._data["country_osm_id"] = country_ids
-        self._data["longitude"] = longitudes
-        self._data["latitude"] = latitudes
 
     def normalize(self):
         self.rename_columns()
