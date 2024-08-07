@@ -42,6 +42,83 @@ OUTPUT_COLUMNS = [
     "original_record_location_description",
 ]
 
+def get_admin_levels_table(self):
+    """
+    This method retrives the information in the "countries.csv" and "administrative_units.tsv".
+    It returns a dictionnary that maps a country name (from countries.csv) to a list of its administrative levels.
+    administrative levels are encoded as dictionaries with properties:
+    {
+        name,
+        admin_level,
+        osmId
+    }
+
+    it also tranliterates information from the administrative_units.tsv file.
+    """
+
+    # * create a mapping from country name to its two letter code
+    country_to_code = {}
+    df = pd.read_csv(COUNTRIES_DATA)
+    for _, row in df.iterrows():
+        country_to_code[row["name"]] = row["alpha_2"]
+
+    # add the exceptions
+    country_to_code.update(COUNTRIES_EXCEPTIONS) 
+
+
+    # * now map country code to its admin levels
+    code_to_admin = {}
+    df = pd.read_csv(ADMIN_LEVELS_DATA, sep="\t")
+    for _, row in df.iterrows():
+
+            if row["iso3166_1_code"] not in code_to_admin:
+                code_to_admin[row["iso3166_1_code"]] = []
+
+            # a row sometimes doesn't contain endonym
+            if type(row["endonym"]) is not float:
+                entry = {"name": row["endonym"], "admin_level":row["admin_level"], "osmId": row["osm_id"]}
+                code_to_admin[row["iso3166_1_code"]].append(entry)
+
+            # try to tranlisterate the endonym
+            try:
+                transliteration = translit(row["endonym"], reversed=True)
+
+                # if the original language was russian, then it might have used the character ь which
+                # doesn't get transliterate properly (it gets into an apostrophe)
+                if "ь" in row["endonym"] and "'" in transliteration:
+                    transliteration = transliteration.replace("'", "")
+
+                entry = {"name":transliteration, "admin_level":row["admin_level"], "osmId":row["osm_id"]}
+                code_to_admin[row["iso3166_1_code"]].append(entry)
+            except:
+                pass
+
+
+            # when row contains exonym (most of the time but not always)
+            if type(row["exonym"]) is not float:
+
+                entry = {"name":row["exonym"], "admin_level":row["admin_level"], "osmId":row["osm_id"]}
+                code_to_admin[row["iso3166_1_code"]].append(entry)
+
+                # some words are okay to be replaced, they are modifiers
+                replacements = {
+                "District" : "Region",
+                "Region" : "District",
+                }
+                for first, second in replacements.items():
+                    if first in row["exonym"]:
+                        entry = {"name":row["exonym"].replace(first, second), "admin_level":row["admin_level"], "osmId":row["osm_id"]}
+                        code_to_admin[row["iso3166_1_code"]].append(entry)
+
+    # * now map each country name to its admin levels by merging the datasets above
+    country_to_admin = {}
+    for country_name, country_code in country_to_code.items():
+        if country_code in code_to_admin:
+            country_to_admin[country_name] = code_to_admin[country_code]
+        else:
+            country_to_admin[country_name] = []
+
+    return country_to_admin
 
 class DataHandler:
 
@@ -129,86 +206,6 @@ class DataHandler:
             .dropna()
             .unique()
         )
-    
-    def _admin_levels_table(self):
-        """
-        This method retrives the information in the "countries.csv" and "administrative_units.tsv".
-        It returns a dictionnary that maps a country name (from countries.csv) to a list of its administrative levels.
-        administrative levels are encoded as dictionaries with properties:
-        {
-            name,
-            admin_level,
-            osmId
-        }
-
-        it also tranliterates information from the administrative_units.tsv file.
-        """
-
-        # * create a mapping from country name to its two letter code
-        country_to_code = {}
-        df = pd.read_csv(COUNTRIES_DATA)
-        for _, row in df.iterrows():
-            country_to_code[row["name"]] = row["alpha_2"]
-
-        # add the exceptions
-        country_to_code.update(COUNTRIES_EXCEPTIONS) 
-
-
-        # * now map country code to its admin levels
-        code_to_admin = {}
-        df = pd.read_csv(ADMIN_LEVELS_DATA, sep="\t")
-        for _, row in df.iterrows():
-
-                if row["iso3166_1_code"] not in code_to_admin:
-                    code_to_admin[row["iso3166_1_code"]] = []
-
-                # a row sometimes doesn't contain endonym
-                if type(row["endonym"]) is not float:
-                    entry = {"name": row["endonym"], "admin_level":row["admin_level"], "osmId": row["osm_id"]}
-                    code_to_admin[row["iso3166_1_code"]].append(entry)
-
-                # try to tranlisterate the endonym
-                try:
-                    transliteration = translit(row["endonym"], reversed=True)
-
-                    # if the original language was russian, then it might have used the character ь which
-                    # doesn't get transliterate properly (it gets into an apostrophe)
-                    if "ь" in row["endonym"] and "'" in transliteration:
-                        transliteration = transliteration.replace("'", "")
-
-                    entry = {"name":transliteration, "admin_level":row["admin_level"], "osmId":row["osm_id"]}
-                    code_to_admin[row["iso3166_1_code"]].append(entry)
-                except:
-                    pass
-
-
-                # when row contains exonym (most of the time but not always)
-                if type(row["exonym"]) is not float:
-
-                    entry = {"name":row["exonym"], "admin_level":row["admin_level"], "osmId":row["osm_id"]}
-                    code_to_admin[row["iso3166_1_code"]].append(entry)
-
-                    # some words are okay to be replaced, they are modifiers
-                    replacements = {
-                    "District" : "Region",
-                    "Region" : "District",
-                    }
-                    for first, second in replacements.items():
-                        if first in row["exonym"]:
-                            entry = {"name":row["exonym"].replace(first, second), "admin_level":row["admin_level"], "osmId":row["osm_id"]}
-                            code_to_admin[row["iso3166_1_code"]].append(entry)
-
-        # * now map each country name to its admin levels by merging the datasets above
-        country_to_admin = {}
-        for country_name, country_code in country_to_code.items():
-            if country_code in code_to_admin:
-                country_to_admin[country_name] = code_to_admin[country_code]
-            else:
-                country_to_admin[country_name] = []
-
-        return country_to_admin
-
-
 
 
 class EmpresiDataHandler(DataHandler):
@@ -485,8 +482,6 @@ class GenBankDataHandler(DataHandler):
         return None
 
         
-            
-        
     def _find_full_locality(self, areas, country, i, localities, localy_osm_ids, admin_level_1s, admin_level_1_ids):
 
         # we must use an unstructured search as we have no idea what the tokens could be
@@ -529,7 +524,7 @@ class GenBankDataHandler(DataHandler):
         longitudes = [ None for _ in range(len(self._data))]
         latitudes = [ None for _ in range(len(self._data))]
 
-        admin_levels_table = self._admin_levels_table()
+        admin_levels_table = get_admin_levels_table()
 
         # now parse each row to find its location
         # use the administrative_units dataset and the Nominatim API
