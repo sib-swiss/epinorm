@@ -8,7 +8,13 @@ from transliterate import translit
 from transliterate.exceptions import LanguageDetectionError
 
 from epinorm.geo import NominatimGeocoder
-from epinorm.config import MIN_ADMIN_EXCEPTIONS, REF_DATA_DIR, COUNTRIES_DATA, COUNTRIES_EXCEPTIONS, ADMIN_LEVELS_DATA
+from epinorm.config import (
+    MIN_ADMIN_EXCEPTIONS, 
+    REF_DATA_DIR, 
+    COUNTRIES_DATA, 
+    COUNTRIES_EXCEPTIONS, 
+    ADMIN_LEVELS_DATA
+)
 
 
 HOST_SPECIES_FILE = REF_DATA_DIR / "ncbi_host_species.csv"
@@ -17,33 +23,29 @@ PATHOGEN_SPECIES_FILE = REF_DATA_DIR / "ncbi_pathogen_species.csv"
 SAMPLING_MODES = ("top", "bottom", "random")
 OUTPUT_FILE_SEPARATOR = "\t"
 OUTPUT_COLUMNS = [
-    # "observation_date",
-    # "report_date",
-
-    # "pathogen_species_ncbi_id",
-    # "pathogen_species_name",
-    # "pathogen_serotype",
-
-    # "host_species_ncbi_id",
-    # "host_species_name",
-    # "host_species_common_name",
-    # "host_domestication_status",
-
-    # "latitude",
-    # "longitude",
+    "observation_date",
+    "report_date",
+    "pathogen_species_ncbi_id",
+    "pathogen_species_name",
+    "pathogen_serotype",
+    "host_species_ncbi_id",
+    "host_species_name",
+    "host_species_common_name",
+    "host_domestication_status",
+    "latitude",
+    "longitude",
     "country",
-    "country_osm_id",
-    "locality",
-    "locality_osm_id",
     "admin_level_1",
+    "locality",
+    "country_osm_id",
     "admin_level_1_osm_id",
-
-    # "original_record_source",
-    # "original_record_id",
+    "locality_osm_id",
+    "original_record_source",
+    "original_record_id",
     "original_record_location_description",
 ]
 
-def get_translitaration_endonym(row):
+def get_transliterated_endonym(row):
         """
         this tries to transliterate the endonym of a row into latin characters.
         If it fails, it returns an empty list
@@ -106,18 +108,19 @@ def get_admin_levels_table():
                         "osm_id": row["osm_id"]}
                 new_entries.append(entry)
 
-                new_entries += get_translitaration_endonym(row)
+                new_entries += get_transliterated_endonym(row)
 
             # some words are okay to be replaced, they are modifiers
             replacements = {
-            "District" : "Region",
-            "Region" : "District",
+                "Oblast" : "Region",
+                "Krai" : "Region",
             }
             new_entries_synonyms = []
             for entry in new_entries:
                 for original, synonym in replacements.items():
-                    if original in entry["name"]:
-                        new_entry = {"name":entry["name"].replace(original, synonym),
+                    pattern = re.compile("\\b" + original + "\\b")
+                    if re.match(pattern, entry["name"]):
+                        new_entry = {"name": re.sub(pattern, synonym, entry["name"]), 
                                      "admin_level":entry["admin_level"], 
                                      "osm_id":entry["osm_id"]}
                         new_entries_synonyms.append(new_entry)
@@ -421,37 +424,31 @@ class GenBankDataHandler(DataHandler):
         # format country to make comparison easier
         location["country"] = clean_token(location["country"])
 
-        new_places = [] # combine areas and extrated location together in this list
+        cleaned_places = [] 
+        places_to_clean = location["areas"]
+        if record["extracted_location"]:
+            places_to_clean.append(record["extracted_location"])
 
-        # format areas
-        for place in location["areas"]:
+
+        # format areas and extracted field
+        for place in places_to_clean:
 
             cleaned_place = clean_token(place)
             
             if cleaned_place != "" and cleaned_place != location["country"] and \
-               cleaned_place not in new_places:
-                new_places.append(cleaned_place)
-
-
-        # format extracted field
-        if record["extracted_location"]:
-
-            cleaned_place = clean_token(record["extracted_location"])
-
-            if cleaned_place != "" and cleaned_place != location["country"] and \
-               cleaned_place not in new_places:
-                new_places.append(cleaned_place)
+               cleaned_place not in cleaned_places:
+                cleaned_places.append(cleaned_place)
 
         # take edge cases into account
         exception_mappings = {
             "west siberia": "siberian federal district",
             "east siberia": "siberian federal district",
         }
-        new_places = [
-            exception_mappings[token] if token in exception_mappings else token for token in new_places
+        cleaned_places = [
+            exception_mappings[token] if token in exception_mappings else token for token in cleaned_places
         ]
 
-        location["areas"] = new_places
+        location["areas"] = cleaned_places
 
         return json.dumps(location)
 
@@ -474,17 +471,18 @@ class GenBankDataHandler(DataHandler):
         self._data["longitude"] = None
         self._data["original_record_id"] = None
 
-    def _search_tokens_diff_order(self, areas, second):
+    def _search_tokens_diff_order(self, areas, appended_text):
         """
-        This method uses the geocoder to make a query of areas (a list of tokens) and second (a string).
-        we vary the order of the tokens in areas as they could be wrong. We also remove them if we still don't have a result
-        it tried all permutations up to the point where it doesn't include tokens from areas anymore (only "second")
+        This method uses the geocoder to make a query of areas (a list of tokens) and appended_text (a string).
+        we vary the order of the tokens in areas as they could be in the wrong order. We also remove them
+        if we still don't have a result. The code tries all permutations up to the point where it doesn't
+        include tokens from areas anymore (only "appended_text").
         """
 
-        for l in range(len(areas), -1, -1):
-            for option in itertools.permutations(areas, l):
+        for length in range(len(areas), -1, -1):
+            for option in itertools.permutations(areas, length):
 
-                query = ", ".join(option) + ", " + second
+                query = ", ".join(option) + ", " + appended_text
                 locality = self._geocoder.get_feature(
                     "search", {"query": query}, term=query, term_type="query"
                 )
@@ -494,7 +492,7 @@ class GenBankDataHandler(DataHandler):
         return None
 
         
-    def _find_full_locality(self, areas, countryName):
+    def _find_full_locality(self, areas, country_name):
 
         result = {
             "locality": None,
@@ -504,7 +502,7 @@ class GenBankDataHandler(DataHandler):
         }
 
         # we must use an unstructured search as we have no idea what the tokens could be
-        locality = self._search_tokens_diff_order(areas[::-1], countryName)
+        locality = self._search_tokens_diff_order(areas[::-1], country_name)
         if not locality:
             return result
 
@@ -515,7 +513,7 @@ class GenBankDataHandler(DataHandler):
             result["locality_osm_id"] = self._geocoder.create_feature_id(locality.get("osm_type"), locality.get("osm_id")) 
         
         admin_level_1_name = self._geocoder.get_admin_level_1_name(address)
-        query = f"{admin_level_1_name}, {countryName}"
+        query = f"{admin_level_1_name}, {country_name}"
         admin_level_1 = self._geocoder.get_feature(
             "search", {"query": query}, term=query, term_type="query"
         )
@@ -610,9 +608,9 @@ class GenBankDataHandler(DataHandler):
             # information on the city that wasn't matched with admin_boundaries
 
             sorted(admin_levels_found, key=lambda x: x["admin_level"], reverse=True)
-            adminLevelsMatched = list(map(lambda x: x["name"], admin_levels_found))
+            admin_levels_matched = list(map(lambda x: x["name"], admin_levels_found))
             admin_level = "" if admin_level_1s[i] is None else admin_level_1s[i]
-            second = ", ".join(adminLevelsMatched) + ", " + admin_level + ", " + country.get("name")
+            second = ", ".join(admin_levels_matched) + ", " + admin_level + ", " + country.get("name")
             locality = self._search_tokens_diff_order(areas[::-1], second)
             if not locality:
                 continue
