@@ -57,6 +57,7 @@ REF_DATA_DIR = PACKAGE_DIR / "data"
 WORK_DIR = get_work_dir()
 COUNTRIES_DATA = PACKAGE_DIR / "data" / "countries.csv"
 ADMIN_LEVELS_DATA = PACKAGE_DIR / "data" / "administrative_units.tsv"
+ADMIN_LEVEL_1_DATA = PACKAGE_DIR / "data" / "admin_level_1.csv"
 
 # ROOT_DIR = PACKAGE_DIR.parent
 # DATA_DIR = ROOT_DIR / "data"
