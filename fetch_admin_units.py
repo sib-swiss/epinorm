@@ -5,9 +5,9 @@ import time
 
 from csv import QUOTE_NONE
 from io import StringIO
-from epinorm import (
-    DATA_DIR,
+from epinorm.config import (
     REF_DATA_DIR,
+    WORK_DIR
 )
 
 
@@ -17,12 +17,12 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S",
     level=logging.INFO,
 )
-
 OVERPASS_API_URL = "https://overpass-api.de/api/interpreter"
 INPUT_FILE = REF_DATA_DIR / "countries.csv"
 OUTPUT_FILE = REF_DATA_DIR / "administrative_units.tsv"
-CACHE_DIR = DATA_DIR / "work" / "admin_units"
+CACHE_DIR = WORK_DIR / "admin_units"
 ADMIN_LEVELS = [3, 4, 5, 6]
+ADMIN_LEVELS_EXCEPTIONS = {"BE" :[3, 4, 5, 6, 7]} 
 FIELD_SEPARATOR = "\t"
 DATA_COLUMNS = [
     "iso3166_1_code",
@@ -115,8 +115,13 @@ def get_cache_filename(country_code):
 
 def fetch_remote(country_code):
     """Fetch administrative units for a given country from OpenStreetMap using the Overpass API."""
+
+    admin_levels = ADMIN_LEVELS
+    if country_code in ADMIN_LEVELS_EXCEPTIONS:
+        admin_levels = ADMIN_LEVELS_EXCEPTIONS[country_code]
+
     data = pd.DataFrame()
-    for admin_level in ADMIN_LEVELS:
+    for admin_level in admin_levels:
         query = f"""
         [out:csv(::id, ::type, "name", "name:en", "admin_level", "wikidata", "ref", "ref:nuts", "ISO3166-2")];
         area["ISO3166-1"="{country_code}"][boundary=administrative]->.country;
