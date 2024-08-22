@@ -2,6 +2,7 @@ import os
 import platform
 from enum import Enum
 from pathlib import Path
+import pandas as pd
 
 from epinorm.error import UserError
 
@@ -58,6 +59,7 @@ WORK_DIR = get_work_dir()
 COUNTRIES_DATA = PACKAGE_DIR / "data" / "countries.csv"
 ADMIN_LEVELS_DATA = PACKAGE_DIR / "data" / "administrative_units.tsv"
 ADMIN_LEVEL_1_DATA = PACKAGE_DIR / "data" / "admin_level_1.csv"
+NUTS_2024_DATA = PACKAGE_DIR / "data" / "nuts_2024.csv"
 
 # ROOT_DIR = PACKAGE_DIR.parent
 # DATA_DIR = ROOT_DIR / "data"
@@ -95,4 +97,41 @@ COUNTRIES_EXCEPTIONS = {
 MIN_ADMIN_EXCEPTIONS = {
     "France" : 4,
     "China" : 4
+}
+
+# some countries don't use their contry code in their nuts code
+# for instance greece with country code GR uses EL as country code
+NUTS_CODE_TO_COUNTRY_EXCEPTIONS = {
+    "EL" : "GR"
+}
+
+# there are hardcoded exceptions for the "admin_level_1.csv" file
+ADMIN_LEVEL_1_EXCEPTIONS = {
+
+    # there were too many entries in the datasets with nuts level 1.
+    # if we had chosen a lower level then we would drop too many rows
+    "FR" : {"nuts_level": 1, "osm_level": 4},
+
+    # the nuts level 3 divide the nuts level 2 into very few areas, that don't
+    # have a osm_id. The administrative units within 2 are too small compared to the nuts level 3
+    "NL" : {"nuts_level": 2, "osm_level": 4},
+    "DK" : {"nuts_level": 2, "osm_level": 4},
+    "AT" : {"nuts_level": 2, "osm_level": 4},
+    "PL" : {"nuts_level": 2, "osm_level": 4},
+
+    # these countries are very small, their nuts codes doesn't contain precise information.
+    # we remove their nuts level and only keep osm_level
+    "CY" : {"nuts_level": 4, "osm_level": 3},
+    "MT" : {"nuts_level": 4, "osm_level": 4},
+    "LU" : {"nuts_level": 4, "osm_level": 6},
+
+    # osm doesn't yet contain the nuts codes for those countries
+    "PT" : {"nuts_level": 3, "osm_level": 6},
+    "EE" : {"nuts_level": 3, "osm_level": 6},
+    "IE" : {"nuts_level": 3, "osm_level": 5},
+    "GR" : {"nuts_level": 3, "osm_level": 6},
+    "LV" : {"nuts_level": 3, "osm_level": 4},
+
+    # China has 3 as min admin level, but we prefer 4
+    "CN" : {"nuts_level": None, "osm_level": 4},
 }
