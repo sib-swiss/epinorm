@@ -2,10 +2,8 @@ import os
 import platform
 from enum import Enum
 from pathlib import Path
-import pandas as pd
 
 from epinorm.error import UserError
-
 
 class DataSource(Enum):
     EMPRESI = "empresi"
@@ -60,6 +58,7 @@ COUNTRIES_DATA = PACKAGE_DIR / "data" / "countries.csv"
 ADMIN_LEVELS_DATA = PACKAGE_DIR / "data" / "administrative_units.tsv"
 ADMIN_LEVEL_1_DATA = PACKAGE_DIR / "data" / "admin_level_1.csv"
 NUTS_2024_DATA = PACKAGE_DIR / "data" / "nuts_2024.csv"
+NUTS_COORDINATES_DATA = PACKAGE_DIR / "data" / "NUTS_LB_2021_4326.geojson"
 
 # ROOT_DIR = PACKAGE_DIR.parent
 # DATA_DIR = ROOT_DIR / "data"

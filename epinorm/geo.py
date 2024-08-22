@@ -83,13 +83,28 @@ class NominatimGeocoder(Geocoder):
         params = {"lat": latitude, "lon": longitude, "zoom": zoom}
         return self.fetch(url, params=params)
 
+    def get_detailed_address(self, feature_id):
+        """
+        Get the detailed address of an osm_id using the Nominatim API.
+        The parameter feature_id of this method is of the form "R13310"
+        """
+        url = f"{NOMINATIM_API_URL}/details"
+        params = {"osmtype": feature_id[0], "osmid": feature_id[1:], "addressdetails": 1, "format": "json"}
+        result = self.fetch(url, params=params)
+        return result["address"]
+
     def create_feature_id(self, osm_type, osm_id):
-        """Create a feature ID from an OSM element type and ID."""
-        osm_type = OSM_ELEMENT_TYPES.get(osm_type)
-        if osm_type is None:
+        """
+        Create a feature ID from an OSM element type and ID.
+        Sometimes osm_type is already correctly mapped ! The api responses are not consistent...
+        """
+        if osm_type not in OSM_ELEMENT_TYPES.values() and OSM_ELEMENT_TYPES.get(osm_type) is None:
             raise ValueError(f"Invalid OSM element type: {osm_type}")
+        osm_type = OSM_ELEMENT_TYPES.get(osm_type, osm_type)
+
         if not isinstance(osm_id, int):
             raise ValueError(f"Invalid OSM ID: {osm_id}")
+
         return f"{osm_type}{osm_id}"
 
     def parse_feature_id(self, feature_id):
@@ -105,6 +120,7 @@ class NominatimGeocoder(Geocoder):
 
     def normalize_feature(self, feature):
         """Normalize a feature."""
+
         feature_id = self.create_feature_id(
             feature.get("osm_type"), feature.get("osm_id")
         )
@@ -115,7 +131,7 @@ class NominatimGeocoder(Geocoder):
             "osm_id": feature.get("osm_id"),
             "osm_type": feature.get("osm_type"),
             "name": feature.get("display_name"),
-            "address": json.dumps(feature.get("address")),
+            "address": self.get_detailed_address(feature_id),
             "place_rank": feature.get("place_rank"),
             "latitude": feature.get("lat"),
             "longitude": feature.get("lon"),
@@ -127,8 +143,32 @@ class NominatimGeocoder(Geocoder):
         """Get the locality name from an address."""
         return get_coalesced(address, ["city", "town", "village", "hamlet"])
 
+    def get_admin_level_1(self, address_details, admin_level_sought=None):
+        """Get the administrative level 1 name from a complex address."""
+
+        if admin_level_sought is not None:
+
+            for entry in address_details:
+                if entry.get("admin_level", 0) == admin_level_sought:
+                    return (entry["localname"], self.create_feature_id(entry["osm_type"], entry["osm_id"]))
+            return (None, None)
+
+        else: # extract the lowest admin level that exists
+            
+            lowest_admin_level = None
+            lowest_admin_name = None
+            lowest_admin_id = None
+            for entry in address_details:
+                admin_level_entry = entry.get("admin_level", 999) # 999 is to make sure that we never use that entry if it doesn't have an admin_level
+                if lowest_admin_level is None or admin_level_entry < lowest_admin_level:
+                    lowest_admin_level = entry["admin_level"]
+                    lowest_admin_name = entry["localname"]
+                    lowest_admin_id = self.create_feature_id(entry["osm_type"], entry["osm_id"])
+
+            return (lowest_admin_name, lowest_admin_id)
+
     def get_admin_level_1_name(self, address):
-        """Get the administrative level 1 name from an address."""
+        """Get the administrative level 1 name from a simple address."""
         return get_coalesced(
             address,
             [
@@ -142,20 +182,33 @@ class NominatimGeocoder(Geocoder):
         )
 
     def get_country_name(self, address):
-        """Get the country name from an address."""
-        return address.get("country")
+        """
+        Get the country name from an address.
+        The address could be simple or the complex detailed one.
+        """
+
+        if type(address) is dict: # simple address
+            return address.get("country")
+
+        elif type(address) is list: # detailed address
+            for entry in address:
+                if entry["type"] == "country":
+                    return entry["localname"]
+            return None
+
 
     def get_feature(
         self, api_method, api_args, feature_id=None, term=None, term_type=None
     ):
         """Get a feature from the cache database or from the Nominatim API."""
+
         data_source = "cache"
         if feature_id:
             feature = self._cache.get_feature(feature_id)
             term = feature_id
         else:
             feature = self._cache.find_feature(term)
-            
+
         if not feature:
             data_source = "remote source"
             api_call = self._get_api_method(api_method)
@@ -168,14 +221,11 @@ class NominatimGeocoder(Geocoder):
             else:
                 feature = results
             # we don't want mountain ranges as results
-            if "addresstype" in feature and feature["addresstype"] == "mountain_range":
+            if feature.get("addresstype", "") == "mountain_range":
                 logging.info(f'No results found for "{term}"')
                 return dict()
             feature = self.normalize_feature(feature)
             self._cache.save_feature(feature, term, term_type)
-        address = feature.get("address")
-        if address:
-            feature["address"] = json.loads(address)
 
         feature_label = f"{feature.get('id')} - {feature.get('name')}"
         logging.info(f'Fetched "{feature_label}" from {data_source}')
