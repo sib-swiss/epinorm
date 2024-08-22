@@ -807,6 +807,7 @@ class ECDCDataHandler(DataHandler):
 
         country_name_to_code = pd.read_csv(COUNTRIES_DATA, index_col="name")["alpha_2"].to_dict()
         country_name_to_code.update(COUNTRIES_EXCEPTIONS) 
+        country_code_to_name = { code: name for name, code in country_name_to_code.items() } # inverse mapping
 
         nuts_to_admin_level_1 = get_nuts_to_admin_level_1()
 
@@ -826,7 +827,32 @@ class ECDCDataHandler(DataHandler):
             # as for instance Guadeloupe uses FRY1 (which is the country code of France).
             # Hence we use the coordinates of that nuts_code to find the country
 
-            if nuts_code not in nuts_to_coordinates: # we can't do anything about this case
+            if nuts_code not in nuts_to_coordinates: 
+
+
+                # we are here for multiple reasons:
+                #                   - the NUTS code is invalid (we can't do anthing)
+                #                   - the NUTS code is not for the year 2021 (todo:)          
+                #                   - the NUTS code only contains the country code
+
+                if len(nuts_code) == 2: # assume we received only the country code (in NUTS)
+                    country_code = nuts_code
+                    if nuts_code in NUTS_CODE_TO_COUNTRY_EXCEPTIONS:
+                        country_code = NUTS_CODE_TO_COUNTRY_EXCEPTIONS[nuts_code]
+                    country_name = country_code_to_name[country_code]
+
+                    # get country osm id of the country from the api
+                    api_args = {"query": country_name}
+                    location = self._geocoder.get_feature(
+                        "search", api_args, term=country_name, term_type="query"
+                    )
+                    country_names[i] = location.get("name")
+                    country_ids[i] = location.get("id")
+                    continue
+
+                # you are here for the two other reasons above
+                print(f"Found nuts code {nuts_code} with no mapping")
+
                 continue
 
             coordinates = nuts_to_coordinates[nuts_code]
