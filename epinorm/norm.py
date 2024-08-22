@@ -13,9 +13,11 @@ from epinorm.config import (
     REF_DATA_DIR, 
     COUNTRIES_DATA, 
     COUNTRIES_EXCEPTIONS, 
-    ADMIN_LEVELS_DATA
+    ADMIN_LEVELS_DATA,
+    ADMIN_LEVEL_1_DATA,
+    NUTS_CODE_TO_COUNTRY_EXCEPTIONS,
+    NUTS_COORDINATES_DATA
 )
-
 
 HOST_SPECIES_FILE = REF_DATA_DIR / "ncbi_host_species.csv"
 PATHOGEN_SPECIES_FILE = REF_DATA_DIR / "ncbi_pathogen_species.csv"
@@ -134,6 +136,48 @@ def get_admin_levels_table():
 
     return country_to_admin
 
+def get_nuts_to_coordinates():
+    """
+    This method reads the content of the NUTS_LB_2021_4326 file and returns a dictionary of
+    { nuts_code: { longiture: int, latitude: int } }
+    """
+
+    nuts_to_coordinate = {}
+
+    with open(NUTS_COORDINATES_DATA, "r") as f:
+        data = json.load(f)
+
+        for entry in data["features"]:
+
+            nuts_code = entry["properties"]["NUTS_ID"]
+            longitude = entry["geometry"]["coordinates"][0]
+            latitude = entry["geometry"]["coordinates"][1]
+
+            nuts_to_coordinate[nuts_code] = {"longitude": longitude, "latitude": latitude}
+
+    return nuts_to_coordinate
+
+def get_nuts_to_admin_level_1():
+    """
+    This returns a mapping from nuts code to its admin_level as written in the 
+    'administrative_units' file.
+    { nuts_code : { name: str, id: str } }
+    """
+
+    admin_units = pd.read_table(ADMIN_LEVELS_DATA)
+    admin_units = admin_units.replace(np.nan, None) # its easier to deal with None
+
+    nuts_to_admin_level_1 = {}
+
+    for _, row in admin_units.iterrows():
+        if row["nuts_code"] is not None:
+            for nuts_code in row["nuts_code"].split(";"):
+                nuts_to_admin_level_1[nuts_code] = {
+                    "name": row["exonym"] if row["exonym"] else row["endonym"],
+                    "id" : row["osm_id"]
+                }
+
+    return nuts_to_admin_level_1
 
 
 
@@ -672,6 +716,10 @@ class ECDCDataHandler(DataHandler):
         super().__init__(data_file)
 
     def _resolve_location(self, record):
+        """
+        choose the nuts code from the correct column, and the one that is correctly formatted
+        """
+
         location = record["place_of_infection"]
         if not location:
             location = record["place_of_infection_evd"]
@@ -679,6 +727,10 @@ class ECDCDataHandler(DataHandler):
             location = record["place_of_notification"]
         if not location and record["imported"] == "N":
             location = record["reporting_country"]
+
+        if not pd.isna(location) and not re.match(r"([A-Z]{2})", location):
+            return None
+
         return location
 
     def _compile_location(self, record):
@@ -747,27 +799,79 @@ class ECDCDataHandler(DataHandler):
 
     def _geocode(self):
         """Geocode ECDC data."""
-        country_names = []
-        country_ids = []
-        for index, row in self._data.iterrows():
-            location_match = re.match(r"([A-Z]{2})", str(row["location"]))
-            if not location_match:
-                country_names.append(None)
-                country_ids.append(None)
+
+        admin_level_1_table = pd.read_csv(ADMIN_LEVEL_1_DATA)
+        admin_level_1_table = admin_level_1_table.replace(np.nan, None) # so its easier to deal with those values
+
+        nuts_to_coordinates = get_nuts_to_coordinates()
+
+        country_name_to_code = pd.read_csv(COUNTRIES_DATA, index_col="name")["alpha_2"].to_dict()
+        country_name_to_code.update(COUNTRIES_EXCEPTIONS) 
+
+        nuts_to_admin_level_1 = get_nuts_to_admin_level_1()
+
+        # these are the columns we will fill in
+        country_names = np.full(len(self._data), None) 
+        country_ids = np.full(len(self._data), None)
+        admin_level_1_names = np.full(len(self._data), None) 
+        admin_level_1_ids = np.full(len(self._data), None)
+
+        for i, row in self._data.iterrows():
+
+            nuts_code = row["location"]
+            if nuts_code is None:
                 continue
-            country_code = location_match.group(1)
-            api_args = {"query": country_code}
-            country = self._geocoder.get_feature(
-                "search", api_args, term=country_code, term_type="query"
+
+            # first find in which country we are. We can't use the first two characters of the nuts code
+            # as for instance Guadeloupe uses FRY1 (which is the country code of France).
+            # Hence we use the coordinates of that nuts_code to find the country
+
+            if nuts_code not in nuts_to_coordinates: # we can't do anything about this case
+                continue
+
+            coordinates = nuts_to_coordinates[nuts_code]
+            term = f"{coordinates["latitude"]}, {coordinates["longitude"]}"
+            locality_NUTS = self._geocoder.get_feature(
+                "reverse", coordinates, term=term, term_type="coordinate"
             )
-            country_names.append(country.get("name"))
-            country_ids.append(country.get("id"))
-        self._data["locality"] = None
-        self._data["locality_osm_id"] = None
-        self._data["admin_level_1"] = None
-        self._data["admin_level_1_osm_id"] = None
+            country_name = self._geocoder.get_country_name(locality_NUTS["address"])
+            country_names[i] = country_name
+            country_code = country_name_to_code[country_name]
+
+            # get osm id of that country name
+            query = country_name
+            locality_country = self._geocoder.get_feature(
+                "search", {"query": query}, term=query, term_type="query"
+            )
+            country_ids[i] = locality_country["id"]
+
+            # use the table to see what osm level you must take for the address
+            admin_level_1_country = admin_level_1_table[admin_level_1_table["country_code"] == country_code]
+            nuts_level_sought = admin_level_1_country["nuts_level"].iloc[0] # this could be None
+            osm_level_sought = admin_level_1_country["osm_level"].iloc[0] # this could be None
+
+            if nuts_level_sought is not None:
+                if len(nuts_code) < nuts_level_sought + 2: # nuts code provided not precise enough
+                    continue
+                elif len(nuts_code) > nuts_level_sought + 2: # nuts code provided is too precise
+                    nuts_code = nuts_code[:int(nuts_level_sought) + 2]
+
+            if nuts_code in nuts_to_admin_level_1: # we actually already know the mapping
+                admin_level_1_names[i] = nuts_to_admin_level_1[nuts_code]["name"]
+                admin_level_1_ids[i] = nuts_to_admin_level_1[nuts_code]["id"]
+
+            else: # we extract the mapping from the address of the coordinates
+                admin_level_1_name, admin_level_1_id = \
+                            self._geocoder.get_admin_level_1(locality_NUTS["address"], osm_level_sought)
+                admin_level_1_names[i] = admin_level_1_name
+                admin_level_1_ids[i] = admin_level_1_id
+
         self._data["country"] = country_names
         self._data["country_osm_id"] = country_ids
+        self._data["admin_level_1"] = admin_level_1_names
+        self._data["admin_level_1_osm_id"] = admin_level_1_ids
+        self._data["locality"] = None
+        self._data["locality_osm_id"] = None
 
     def _filter_rows(self):
         self._data = self._data[

@@ -1,4 +1,5 @@
 import sqlite3
+import json
 
 from epinorm.config import (
     SCRIPT_DIR,
@@ -78,6 +79,8 @@ class SQLiteCache(Cache):
             (feature_id,),
         )
         feature = self._get_record(cursor)
+        if feature:
+            feature["address"] = json.loads(feature["address"]) # it is a list encoded as json
         cursor.close()
         return feature
 
@@ -98,6 +101,9 @@ class SQLiteCache(Cache):
             """
         )
         features = self._get_records(cursor)
+        for feature in features:
+            if feature:
+                feature["address"] = json.loads(feature["address"]) # it is a list encoded as json
         cursor.execute("DROP TABLE selected_feature")
         cursor.close()
         return features
@@ -115,6 +121,8 @@ class SQLiteCache(Cache):
             (term,),
         )
         feature = self._get_record(cursor)
+        if feature:
+            feature["address"] = json.loads(feature["address"]) # it is a list encoded as json
         cursor.close()
         return feature
 
@@ -135,7 +143,9 @@ class SQLiteCache(Cache):
                 polygon
             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """
-        cursor.execute(statement, tuple(feature.values()))
+        to_save = feature.copy() # we must make copy to make sure we don't change the original one
+        to_save["address"] = json.dumps(to_save["address"]) # list can't be saved directly, so we must convert them to string
+        cursor.execute(statement, tuple(to_save.values()))
         if term and term_type:
             statement = """
                 INSERT OR IGNORE INTO feature_index (
@@ -144,7 +154,7 @@ class SQLiteCache(Cache):
                     feature_id
                 ) VALUES (?, ?, ?)
             """
-            cursor.execute(statement, (term, term_type, feature.get("id")))
+            cursor.execute(statement, (term, term_type, to_save.get("id")))
         cursor.close()
         self._commit_transaction()
 
