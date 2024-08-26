@@ -6,11 +6,10 @@ It uses the "countries" and "administrative_units" files.
 import pandas as pd
 
 from epinorm.config import (
-    ADMIN_LEVEL_1_DATA,
-    COUNTRIES_DATA,
-    ADMIN_LEVELS_DATA,
-    NUTS_2024_DATA,
-    MIN_ADMIN_EXCEPTIONS,
+    ADMIN_LEVEL_1_FILE,
+    COUNTRIES_FILE,
+    ADMIN_LEVELS_FILE,
+    NUTS_2024_FILE,
     ADMIN_LEVEL_1_EXCEPTIONS
 )
 
@@ -18,14 +17,14 @@ def main():
     df = pd.DataFrame(columns=["country_code", "nuts_level", "osm_level"])
 
     # get all country codes on planet
-    countries = pd.read_csv(COUNTRIES_DATA)
+    countries = pd.read_csv(COUNTRIES_FILE)
     df["country_code"] = countries["alpha_2"].dropna()
 
     # this is used for reference, we want to know which countries have nuts codes
-    countries_with_nuts = set(pd.read_csv(NUTS_2024_DATA)["Country code"].dropna())
+    countries_with_nuts = set(pd.read_csv(NUTS_2024_FILE)["Country code"].dropna())
     countries_with_nuts.add("GR") # greece is encoded as 'EL' for some reason in file 
 
-    admin_units = pd.read_table(ADMIN_LEVELS_DATA)
+    admin_units = pd.read_table(ADMIN_LEVELS_FILE)
 
     # now for each country code try to match the nuts level with its osm_level in the admin_units file
     for i, row in df.iterrows():
@@ -66,7 +65,7 @@ def main():
             df.loc[i, "osm_level"] = min(admin_units_country["admin_level"])
 
     # save file to disk
-    df.to_csv(ADMIN_LEVEL_1_DATA, index=False)
+    df.to_csv(ADMIN_LEVEL_1_FILE, index=False)
     print("Successfully created 'admin_level_1.csv' file")
 
 

@@ -54,11 +54,15 @@ PACKAGE_DIR = Path(__file__).parent
 SCRIPT_DIR = PACKAGE_DIR / "scripts"
 REF_DATA_DIR = PACKAGE_DIR / "data"
 WORK_DIR = get_work_dir()
-COUNTRIES_DATA = PACKAGE_DIR / "data" / "countries.csv"
-ADMIN_LEVELS_DATA = PACKAGE_DIR / "data" / "administrative_units.tsv"
-ADMIN_LEVEL_1_DATA = PACKAGE_DIR / "data" / "admin_level_1.csv"
-NUTS_2024_DATA = PACKAGE_DIR / "data" / "nuts_2024.csv"
-NUTS_COORDINATES_DATA = PACKAGE_DIR / "data" / "NUTS_LB_2021_4326.geojson"
+
+HOST_SPECIES_FILE = REF_DATA_DIR / "ncbi_host_species.csv"
+PATHOGEN_SPECIES_FILE = REF_DATA_DIR / "ncbi_pathogen_species.csv"
+
+COUNTRIES_FILE = PACKAGE_DIR / "data" / "countries.csv"
+ADMIN_LEVELS_FILE = PACKAGE_DIR / "data" / "administrative_units.tsv"
+ADMIN_LEVEL_1_FILE = PACKAGE_DIR / "data" / "admin_level_1.csv"
+NUTS_2024_FILE = PACKAGE_DIR / "data" / "nuts_2024.csv"
+NUTS_COORDINATES_FILE = PACKAGE_DIR / "data" / "NUTS_LB_2021_4326.geojson"
 
 # ROOT_DIR = PACKAGE_DIR.parent
 # DATA_DIR = ROOT_DIR / "data"
@@ -71,31 +75,36 @@ NUTS_COORDINATES_DATA = PACKAGE_DIR / "data" / "NUTS_LB_2021_4326.geojson"
 COUNTRIES_EXCEPTIONS = {
     "Russia" : "RU",
     "Bolivia" : "BO",
+    "Plurinational State of Bolivia" : "BO",
     "Bonaire" : "BQ",
     "Bosnia" : "BA",
     "Iran" : "IR",
+    "Islamic Republic of Iran" : "IR",
     "North Korea" : "KP",
     "North-Korea" : "KP",
+    "Democratic People's Republic of Korea" : "KP",
     "South Korea" : "KR",
     "South-Korea" : "KR",
+    "Republic of Korea" : "KR",
     "Moldova" : "MD",
+    "Republic of Moldova": "MD",
     "Netherlands" : "NL",
+    "Kingdom of the Netherlands" : "NL",
+    "Micronesia": "FM",
+    "Federated States of Micronesia": "FM",
     "Palestine" : "PS",
+    "State of Palestine" : "PS",
     "Taiwan" : "TW",
+    "Province of China Taiwan" : "TW",
     "Tanzania" : "TZ",
+    "United Republic of Tanzania" : "TZ",
     "United Kingdom" : "GB",
     "UK" : "GB",
     "United States" : "US",
     "US" : "US",
     "Venezuela" : "VE",
-    "Vietnam" : "VN"
-}
-
-# these are countries that have a low admin level (for instance 3) but we don't want to use that for the
-# output column "admin_level_1"
-MIN_ADMIN_EXCEPTIONS = {
-    "France" : 4,
-    "China" : 4
+    "Vietnam" : "VN",
+    "Democratic Republic of the Congo" : "CG",
 }
 
 # some countries don't use their contry code in their nuts code
