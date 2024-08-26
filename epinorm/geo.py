@@ -139,63 +139,60 @@ class NominatimGeocoder(Geocoder):
             "polygon": json.dumps(feature.get("geojson")),
         }
 
-    def get_locality_name(self, address):
-        """Get the locality name from an address."""
-        return get_coalesced(address, ["city", "town", "village", "hamlet"])
+    def get_locality(self, detailed_address):
+        """Get the locality name from a complex address."""
+
+        # find all entries with a rank address
+        entries_rank_address = []
+        for entry in detailed_address:
+            if "rank_address" in entry:
+                entries_rank_address.append(entry) 
+        if len(entries_rank_address) == 0:
+            return (None, None)
+
+        # we only want the entries with rank address from 13 to 25 (for locality)
+        # https://nominatim.org/release-docs/latest/customize/Ranking/
+        entries_in_range = list(filter(lambda entry : 13 <= entry["rank_address"] and \
+                                                     entry["rank_address"] <= 25, entries_rank_address))
+        if len(entries_in_range) == 0:
+            return (None, None)
+
+        # we prioritise the less precise one
+        entry_locality = min(entries_in_range, key=lambda entry: entry["rank_address"])
+        return (entry_locality["localname"], self.create_feature_id(entry_locality["osm_type"], entry_locality["osm_id"]))
 
     def get_admin_level_1(self, address_details, admin_level_sought=None):
         """Get the administrative level 1 name from a complex address."""
 
-        if admin_level_sought is not None:
-
+        if admin_level_sought is not None: # we are looking for a specific admin_level
             for entry in address_details:
-                if entry.get("admin_level", 0) == admin_level_sought:
+                if entry.get("admin_level", -1) == admin_level_sought:
                     return (entry["localname"], self.create_feature_id(entry["osm_type"], entry["osm_id"]))
             return (None, None)
 
-        else: # extract the lowest admin level that exists
-            
-            lowest_admin_level = None
-            lowest_admin_name = None
-            lowest_admin_id = None
+        else: # extract the highest admin level that exists in the country
+
+            entires_admin_level = []
             for entry in address_details:
-                admin_level_entry = entry.get("admin_level", 999) # 999 is to make sure that we never use that entry if it doesn't have an admin_level
-                if lowest_admin_level is None or admin_level_entry < lowest_admin_level:
-                    lowest_admin_level = entry["admin_level"]
-                    lowest_admin_name = entry["localname"]
-                    lowest_admin_id = self.create_feature_id(entry["osm_type"], entry["osm_id"])
+                if "admin_level" in entry:
+                    entires_admin_level.append(entry) 
+            if len(entires_admin_level) == 0:
+                return (None, None)
 
-            return (lowest_admin_name, lowest_admin_id)
-
-    def get_admin_level_1_name(self, address):
-        """Get the administrative level 1 name from a simple address."""
-        return get_coalesced(
-            address,
-            [
-                "ISO3166-2-lvl4",
-                "state",
-                "region",
-                "province",
-                "ISO3166-2-lvl6",
-                "county",
-            ],
-        )
+            entry_min_admin_level = min(entires_admin_level, key=lambda entry: entry["admin_level"])
+            return (entry_min_admin_level["localname"], self.create_feature_id(entry_min_admin_level["osm_type"], entry_min_admin_level["osm_id"]))
 
     def get_country_name(self, address):
         """
-        Get the country name from an address.
-        The address could be simple or the complex detailed one.
+        Get the country name from an address. 
+        It can only retrieve the country name, not the osm id.
+        If it can't extract it, the method returns None
         """
 
-        if type(address) is dict: # simple address
-            return address.get("country")
-
-        elif type(address) is list: # detailed address
-            for entry in address:
-                if entry["type"] == "country":
-                    return entry["localname"]
-            return None
-
+        for entry in address:
+            if entry["type"] == "country":
+                return entry["localname"]
+        return None
 
     def get_feature(
         self, api_method, api_args, feature_id=None, term=None, term_type=None
