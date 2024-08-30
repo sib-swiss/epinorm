@@ -17,12 +17,12 @@ AF	AF-BAL	Balkh Province	ولایت بلخ			Q121104	R1674795	4
 AF	AF-BAM	Bamyan Province	ولایت بامیان			Q171382	R1674849	4
 AF	AF-DAY	Daykundi Province	ولایت دایکندی			Q181220	R1674833	4
 AF	AF-FRA	Farah Province	ولایت فراه			Q180330	R1674802	4
-AF	AF-FYB	Faryab Province	ولایت فاریاب			Q173830	R1674814	4
+AF	AF-FYB	Faryab Province	Foryob Viloyati / ولایت فاریاب			Q173830	R1674814	4
 AF	AF-GHA	Ghazni Province	ولایت غزنی			Q180415	R1675048	4
 AF	AF-GHO	Ghor Province	غور			Q186392	R1674816	4
 AF	AF-HEL	Helmand Province	هلمند ولايت			Q173821	R1674573	4
 AF	AF-HER	Herat Province	ولایت هرات			Q182844	R1674803	4
-AF	AF-JOW	Jowzjan Province	ولایت جوزجان			Q183036	R1674800	4
+AF	AF-JOW	Jowzjan Province	Joʻzjon Viloyati / ولایت جوزجان			Q183036	R1674800	4
 AF	AF-KAB	Kabul Province	ولایت كابل			Q188933	R1674876	4
 AF	AF-KAN	Kandahar Province	کندهار ولايت			Q173808	R1674567	4
 AF	AF-KAP	Kapisa Province	ولایت کاپیسا			Q173816	R1674767	4
@@ -1204,22 +1204,47 @@ AR			Cuartel I				R17845983	6
 AR			Cuartel I				R17845984	6
 AR			Cuartel I				R17846261	6
 AR			Cuartel I				R17848796	6
+AR			Cuartel I				R17877793	6
+AR			Cuartel I				R17869461	6
+AR			Cuartel I				R17875117	6
+AR			Cuartel I				R17882895	6
+AR			Cuartel I				R17887912	6
 AR			Cuartel II				R15087665	6
+AR			Cuartel II				R17871784	6
 AR			Cuartel II				R17845985	6
 AR			Cuartel II				R17848795	6
 AR			Cuartel II				R17846262	6
+AR			Cuartel II				R17869459	6
+AR			Cuartel II				R17877789	6
+AR			Cuartel II				R17887909	6
+AR			Cuartel II				R17881238	6
 AR			Cuartel III				R15087666	6
 AR			Cuartel III				R15092636	6
+AR			Cuartel III				R17871783	6
 AR			Cuartel III				R17848793	6
 AR			Cuartel III				R17846528	6
+AR			Cuartel III				R17869458	6
+AR			Cuartel III				R17877790	6
+AR			Cuartel III				R17881237	6
+AR			Cuartel III				R17887908	6
 AR			Cuartel IV				R15087663	6
 AR			Cuartel IV				R15092639	6
 AR			Cuartel IV				R17848791	6
 AR			Cuartel IV				R17846529	6
+AR			Cuartel IV				R17869457	6
+AR			Cuartel IV				R17877794	6
+AR			Cuartel IV				R17887907	6
+AR			Cuartel IV				R17875115	6
+AR			Cuartel IV				R17882896	6
 AR			Cuartel IX				R15087669	6
 AR			Cuartel IX				R15092644	6
+AR			Cuartel IX				R17869453	6
+AR			Cuartel IX				R17878751	6
 AR			Cuartel IX				R17846532	6
 AR			Cuartel IX				R17850017	6
+AR			Cuartel IX				R17881234	6
+AR			Cuartel IX				R17875358	6
+AR			Cuartel IX				R17887910	6
 AR			Cuartel Irala				R6597872	6
 AR			Cuartel La Aurora				R6661020	6
 AR			Cuartel La Carreta				R6660988	6
@@ -1247,39 +1272,87 @@ AR			Cuartel Treinta de Agosto				R6660991	6
 AR			Cuartel Undécimo				R6660992	6
 AR			Cuartel V				R15087662	6
 AR			Cuartel V				R15092640	6
-AR			Cuartel V				R17848792	6
 AR			Cuartel V				R17846530	6
+AR			Cuartel V				R17848792	6
+AR			Cuartel V				R17869456	6
+AR			Cuartel V				R17877795	6
+AR			Cuartel V				R17887914	6
+AR			Cuartel V				R17875118	6
+AR			Cuartel V				R17881235	6
 AR			Cuartel VI				R15087661	6
+AR			Cuartel VI				R17869462	6
 AR			Cuartel VI				R15092641	6
 AR			Cuartel VI				R17850018	6
+AR			Cuartel VI				R17871787	6
+AR			Cuartel VI				R17878753	6
+AR			Cuartel VI				R17887916	6
+AR			Cuartel VI				R17871790	6
+AR			Cuartel VI				R17881236	6
 AR			Cuartel VII				R15087667	6
 AR			Cuartel VII				R15092642	6
+AR			Cuartel VII				R17871785	6
+AR			Cuartel VII				R17869455	6
 AR			Cuartel VII				R17848797	6
+AR			Cuartel VII				R17877791	6
+AR			Cuartel VII				R17887917	6
+AR			Cuartel VII				R17875119	6
+AR			Cuartel VII				R17882897	6
 AR			Cuartel VIII				R15087668	6
 AR			Cuartel VIII				R15092643	6
+AR			Cuartel VIII				R17869454	6
 AR			Cuartel VIII				R17848794	6
+AR			Cuartel VIII				R17878749	6
+AR			Cuartel VIII				R17871786	6
+AR			Cuartel VIII				R17881233	6
+AR			Cuartel VIII				R17875122	6
+AR			Cuartel VIII				R17887918	6
 AR			Cuartel Villa Loguercio				R6601953	6
 AR			Cuartel Warnes				R6597913	6
 AR			Cuartel X				R15087670	6
 AR			Cuartel X				R15092645	6
+AR			Cuartel X				R17869452	6
 AR			Cuartel X				R17846531	6
 AR			Cuartel X				R17850019	6
+AR			Cuartel X				R17878752	6
+AR			Cuartel X				R17875121	6
+AR			Cuartel X				R17881231	6
+AR			Cuartel X				R17887906	6
 AR			Cuartel XI				R15087673	6
 AR			Cuartel XI				R15092646	6
 AR			Cuartel XI				R17846942	6
+AR			Cuartel XI				R17869463	6
+AR			Cuartel XI				R17878750	6
+AR			Cuartel XI				R17887915	6
+AR			Cuartel XI				R17875120	6
+AR			Cuartel XI				R17881232	6
 AR			Cuartel XI				R6597876	6
 AR			Cuartel XII				R15087672	6
 AR			Cuartel XII				R15092647	6
 AR			Cuartel XII				R17846943	6
+AR			Cuartel XII				R17887919	6
+AR			Cuartel XII				R17877792	6
+AR			Cuartel XII				R17869460	6
+AR			Cuartel XII				R17881230	6
+AR			Cuartel XII				R17875361	6
 AR			Cuartel XIII				R15087671	6
 AR			Cuartel XIII				R15092648	6
 AR			Cuartel XIII				R17846944	6
+AR			Cuartel XIII				R17887920	6
+AR			Cuartel XIII				R17875360	6
+AR			Cuartel XIII				R17882899	6
 AR			Cuartel XIV				R15087664	6
 AR			Cuartel XIV				R15092649	6
 AR			Cuartel XIV				R17846945	6
+AR			Cuartel XIV				R17875359	6
+AR			Cuartel XIV				R17882898	6
+AR			Cuartel XIV				R17887911	6
 AR			Cuartel XV				R15092690	6
+AR			Cuartel XV				R17875357	6
+AR			Cuartel XV				R17887913	6
 AR			Cuartel XVI				R15092689	6
+AR			Cuartel XVI				R17875123	6
 AR			Cuartel XVII				R15092637	6
+AR			Cuartel XVII				R17875116	6
 AR			Cuartel XVIII				R15092638	6
 AR			Cuartel Zapiola				R6664672	6
 AR			Distrito Agrelo				R2989805	6
@@ -1927,7 +2000,6 @@ AU			City Of Greater Geraldton			Q614973	R11689919	6
 AU			City Of Kalamunda			Q1721949	R11689431	6
 AU			City Of Kalgoorlie-Boulder			Q203327	R11690214	6
 AU			City Of Karratha			Q669605	R11690037	6
-AU			City Of Mandurah			Q1664472	R11690490	6
 AU			City of Ballarat			Q805150	R3291925	6
 AU			City of Banyule			Q650144	R2403625	6
 AU			City of Bayside			Q546554	R3333042	6
@@ -1965,6 +2037,7 @@ AU			City of Knox			Q1500804	R3333971	6
 AU			City of Kwinana			Q1794961	R11689145	6
 AU			City of Latrobe			Q1475256	R3355071	6
 AU			City of Launceston			Q937765	R10581631	6
+AU			City of Mandurah			Q1664472	R11690490	6
 AU			City of Manningham			Q765334	R2405038	6
 AU			City of Maribyrnong			Q1502208	R3330965	6
 AU			City of Marion			Q1812769	R9102764	6
@@ -2204,7 +2277,6 @@ AU			Shire Of Donnybrook-Balingup			Q612302	R11688751	6
 AU			Shire Of Dowerin			Q1253062	R11689797	6
 AU			Shire Of Dumbleyung			Q1264931	R11688916	6
 AU			Shire Of Dundas			Q1265516	R11690221	6
-AU			Shire Of East Pilbara			Q1277976	R11690247	6
 AU			Shire Of Esperance			Q1368120	R11689020	6
 AU			Shire Of Exmouth			Q1383997	R11689997	6
 AU			Shire Of Gingin			Q286453	R11689578	6
@@ -2222,7 +2294,6 @@ AU			Shire Of Lake Grace			Q1573562	R11688971	6
 AU			Shire Of Laverton			Q1808916	R11690240	6
 AU			Shire Of Leonora			Q684243	R11690164	6
 AU			Shire Of Manjimup			Q1516885	R11690439	6
-AU			Shire Of Meekatharra			Q934817	R11690204	6
 AU			Shire Of Menzies			Q1854263	R11690211	6
 AU			Shire Of Merredin			Q594167	R11689039	6
 AU			Shire Of Moora			Q1752376	R11689731	6
@@ -2231,7 +2302,6 @@ AU			Shire Of Mount Marshall			Q1573988	R11690070	6
 AU			Shire Of Mukinbudin			Q1341239	R11690148	6
 AU			Shire Of Mundaring			Q1261226	R11689676	6
 AU			Shire Of Murchison			Q1953616	R11690199	6
-AU			Shire Of Murray			Q1647630	R11690485	6
 AU			Shire Of Nannup			Q1854235	R11688780	6
 AU			Shire Of Narembeen			Q1573730	R11690142	6
 AU			Shire Of Narrogin			Q1854746	R11688948	6
@@ -2276,6 +2346,7 @@ AU			Shire of Cocos (Keeling) Islands			Q1105471	R11716757	6
 AU			Shire of Colac Otway			Q1107583	R3291847	6
 AU			Shire of Corangamite			Q1131914	R3291894	6
 AU			Shire of East Gippsland			Q721318	R3359756	6
+AU			Shire of East Pilbara			Q1277976	R11690247	6
 AU			Shire of Gannawarra			Q1475578	R3363585	6
 AU			Shire of Glenelg			Q606378	R3357380	6
 AU			Shire of Halls Creek			Q1571907	R11690294	6
@@ -2287,6 +2358,7 @@ AU			Shire of Kent			Q133480	R9045367	6
 AU			Shire of Loddon			Q662483	R3344106	6
 AU			Shire of Macedon Ranges			Q662472	R3327683	6
 AU			Shire of Mansfield			Q647929	R3350291	6
+AU			Shire of Meekatharra			Q934817	R11690204	6
 AU			Shire of Mingenew			Q1854791	R11689744	6
 AU			Shire of Mitchell			Q652395	R3327815	6
 AU			Shire of Moira			Q657666	R3365119	6
@@ -2295,6 +2367,7 @@ AU			Shire of Morawa			Q578323	R11689827	6
 AU			Shire of Mornington Peninsula			Q684708	R3333281	6
 AU			Shire of Mount Alexander			Q657741	R3339104	6
 AU			Shire of Moyne			Q278688	R3347615	6
+AU			Shire of Murray			Q1647630	R11690485	6
 AU			Shire of Murrindindi			Q1478730	R3332647	6
 AU			Shire of Nillumbik			Q175701	R3331023	6
 AU			Shire of Northampton			Q1855392	R11689854	6
@@ -2537,6 +2610,7 @@ BA		Town of Konjic	Grad Konjic			Q12756633	R2528219	6
 BA		Town of Laktaši	Grad Laktaši				R2528225	6
 BA		Town of Lukavac	Grad Lukavac			Q12756642	R2528230	6
 BA		Town of Orašje	Grad Orašje			Q12756656	R2528245	6
+BA		Town of Prnjavor	Grad Prnjavor				R2528255	6
 BA		Town of Srebrenik	Grad Srebrenik			Q12756675	R2528270	6
 BA		Town of Stolac	Grad Stolac			Q65158497	R2528271	6
 BA		Town of Zavidovići	Grad Zavidovići			Q12756618	R2528292	6
@@ -3047,6 +3121,49 @@ BE	BE-WLX	Luxembourg	Luxembourg		BE34	Q1126	R1412581	6
 BE	BE-WNA	Namur	Namur		BE35	Q1125	R1311816	6
 BE	BE-WBR	Walloon Brabant	Brabant wallon		BE31	Q1122	R78748	6
 BE	BE-VWV	West Flanders	West-Vlaanderen		BE25	Q1113	R416271	6
+BE			Aalst		BE231	Q90921	R2523964	7
+BE			Arlon		BE341	Q93816	R1412580	7
+BE			Ath		BE32A	Q94069	R2372933	7
+BE			Bastogne		BE342	Q93925	R1412583	7
+BE			Brugge		BE251	Q91045	R2239546	7
+BE			Charleroi		BE32B	Q94077	R2336710	7
+BE			Dendermonde		BE232	Q90960	R2523970	7
+BE			Diksmuide		BE252	Q91402	R2239583	7
+BE			Dinant		BE351	Q93740	R1405412	7
+BE			Eeklo		BE233	Q90942	R2523965	7
+BE			Gent		BE234	Q90948	R2524008	7
+BE			Halle-Vilvoorde		BE241	Q93368	R2524255	7
+BE			Hasselt		BE224	Q93515	R2412218	7
+BE			Huy		BE331	Q94019	R1407189	7
+BE			Ieper		BE253	Q91450	R2239171	7
+BE			La Louvière		BE329	Q62011183	R11619312	7
+BE			Liège		BE332	Q94000	R1407191	7
+BE			Maaseik		BE225	Q93577	R2413054	7
+BE			Marche-en-Famenne		BE343	Q93905	R1412582	7
+BE			Mechelen		BE212	Q90905	R2524403	7
+BE			Mons		BE323	Q94087	R2372934	7
+BE			Neufchâteau		BE344	Q93873	R2336443	7
+BE			Nivelles		BE310	Q93707	R2322809	7
+BE			Oudenaarde		BE235	Q90932	R2524068	7
+BE			Philippeville		BE353	Q93769	R1405411	7
+BE			Roeselare		BE256	Q91439	R2239123	7
+BE			Sint-Niklaas		BE236	Q90954	R2524074	7
+BE			Thuin		BE32D	Q94122	R2198768	7
+BE			Tielt		BE257	Q91445	R2239751	7
+BE			Tongeren		BE223	Q93549	R2377237	7
+BE			Tournai-Mouscron		BE328	Q63020284	R2198998	7
+BE			Turnhout		BE213	Q90911	R2524404	7
+BE			Verviers			Q93989	R1407211	7
+BE			Veurne		BE258	Q91411	R2239635	7
+BE			Virton		BE345	Q93860	R2336444	7
+BE			Waremme		BE334	Q93970	R1407190	7
+BE		Antwerp	Antwerpen		BE211	Q90895	R1902793	7
+BE		Brussels-Capital	Brussel-Hoofdstad - Bruxelles-Capitale		BE100	Q90870	R2404020	7
+BE		Kortrijk	Kortrijk		BE254	Q91388	R2239750	7
+BE		Leuven	Leuven		BE242	Q93392	R2524256	7
+BE		Namur	Namur		BE352	Q93782	R1405410	7
+BE		Ostend	Oostende		BE255	Q91427	R2239593	7
+BE		Soignies	Soignies		BE32C	Q94110	R2372935	7
 BF	BF-01	Boucle du Mouhoun	Boucle du Mouhoun			Q527093	R2674448	4
 BF	BF-04	Central-East	Centre-Est			Q543006	R2746016	4
 BF	BF-05	Central-North	Centre-Nord			Q850064	R2746040	4
@@ -3446,34 +3563,334 @@ BF			Zoungou			Q227054	R6149444	6
 BF			Zéguédéghin				R5698286	6
 BF		Leo	Léo			Q3841085	R5705428	6
 BF		Ouagadougou	Ouagadougou			Q3357901	R5675756	6
-BG	BG-01	Blagoevgrad	Благоевград		BG413	Q804311	R1739521	6
-BG	BG-02	Burgas	Бургас		BG341	Q369220	R1739523	6
-BG	BG-08	Dobrich	Добрич		BG332	Q907395	R1739528	6
-BG	BG-07	Gabrovo	Габрово		BG322	Q1007272	R1739527	6
-BG	BG-26	Haskovo	Хасково		BG422	Q182809	R1739545	6
-BG	BG-09	Kardzhali	Кърджали		BG425	Q1104675	R1739529	6
-BG	BG-10	Kyustendil	Кюстендил		BG415	Q1112985	R1739530	6
-BG	BG-11	Lovech	Ловеч		BG315	Q6587068	R1739531	6
-BG	BG-12	Montana	Монтана		BG312	Q2012057	R1739532	6
-BG	BG-13	Pazardzhik	Пазарджик		BG423	Q2012227	R1739533	6
-BG	BG-14	Pernik	Перник		BG414	Q2012234	R1739534	6
-BG	BG-15	Pleven	Плевен		BG314	Q2012242	R1739535	6
-BG	BG-16	Plovdiv	Пловдив		BG421	Q187874	R1739536	6
-BG	BG-17	Razgrad	Разград		BG324	Q2790675	R1739537	6
-BG	BG-18	Ruse	Русе		BG323	Q1251933	R1739538	6
-BG	BG-27	Shumen	Шумен		BG333	Q184981	R1739546	6
-BG	BG-19	Silistra	Силистра		BG325	Q2012423	R1739539	6
-BG	BG-20	Sliven	Сливен		BG342	Q113120	R1739540	6
-BG	BG-21	Smolyan	Смолян		BG424	Q2012430	R1739541	6
-BG	BG-23	Sofia	Софийска		BG412	Q202904	R1739542	6
-BG	BG-22	Sofia-City	София-град		BG411	Q1585725	R1739543	6
-BG	BG-24	Stara Zagora	Стара Загора		BG344	Q2012583	R1300657	6
-BG	BG-25	Targovishte	Търговище		BG334	Q2012589	R1739544	6
-BG	BG-03	Varna	Варна		BG331	Q183487	R1437135	6
-BG	BG-04	Veliko Tarnovo	Велико Търново		BG321	Q2012621	R1739524	6
-BG	BG-05	Vidin	Видин		BG311	Q2012772	R1739525	6
-BG	BG-06	Vratsa	Враца		BG313	Q2012785	R1739526	6
-BG	BG-28	Yambol	Ямбол		BG343	Q220736	R1739547	6
+BG	BG-01	Blagoevgrad	Благоевград		BG413	Q804311	R1739521	4
+BG	BG-02	Burgas	Бургас		BG341	Q369220	R1739523	4
+BG	BG-08	Dobrich	Добрич		BG332	Q907395	R1739528	4
+BG	BG-07	Gabrovo	Габрово		BG322	Q1007272	R1739527	4
+BG	BG-26	Haskovo	Хасково		BG422	Q182809	R1739545	4
+BG	BG-09	Kardzhali	Кърджали		BG425	Q1104675	R1739529	4
+BG	BG-10	Kyustendil	Кюстендил		BG415	Q1112985	R1739530	4
+BG	BG-11	Lovech	Ловеч		BG315	Q6587068	R1739531	4
+BG	BG-12	Montana	Монтана		BG312	Q2012057	R1739532	4
+BG	BG-13	Pazardzhik	Пазарджик		BG423	Q2012227	R1739533	4
+BG	BG-14	Pernik	Перник		BG414	Q2012234	R1739534	4
+BG	BG-15	Pleven	Плевен		BG314	Q2012242	R1739535	4
+BG	BG-16	Plovdiv	Пловдив		BG421	Q187874	R1739536	4
+BG	BG-17	Razgrad	Разград		BG324	Q2790675	R1739537	4
+BG	BG-18	Ruse	Русе		BG323	Q1251933	R1739538	4
+BG	BG-27	Shumen	Шумен		BG333	Q184981	R1739546	4
+BG	BG-19	Silistra	Силистра		BG325	Q2012423	R1739539	4
+BG	BG-20	Sliven	Сливен		BG342	Q113120	R1739540	4
+BG	BG-21	Smolyan	Смолян		BG424	Q2012430	R1739541	4
+BG	BG-23	Sofia	Софийска		BG412	Q202904	R1739542	4
+BG	BG-22	Sofia-City	София-град		BG411	Q1585725	R1739543	4
+BG	BG-24	Stara Zagora	Стара Загора		BG344	Q2012583	R1300657	4
+BG	BG-25	Targovishte	Търговище		BG334	Q2012589	R1739544	4
+BG	BG-03	Varna	Варна		BG331	Q183487	R1437135	4
+BG	BG-04	Veliko Tarnovo	Велико Търново		BG321	Q2012621	R1739524	4
+BG	BG-05	Vidin	Видин		BG311	Q2012772	R1739525	4
+BG	BG-06	Vratsa	Враца		BG313	Q2012785	R1739526	4
+BG	BG-28	Yambol	Ямбол		BG343	Q220736	R1739547	4
+BG		Aitos	Айтос			Q2001782	R1937076	5
+BG		Aksakovo	Аксаково			Q2715403	R1933146	5
+BG		Alfatar	Алфатар			Q587507	R1931092	5
+BG		Anton	Антон			Q2012997	R1955788	5
+BG		Antonovo	Антоново			Q2633034	R1933102	5
+BG		Apriltsi	Априлци			Q2719406	R1922486	5
+BG		Ardino	Ардино			Q3621889	R1952398	5
+BG		Asenovgrad	Асеновград			Q4071224	R1955789	5
+BG		Avren	Аврен			Q2715453	R1934659	5
+BG		Balchik	Балчик			Q2663152	R1933112	5
+BG		Banite	Баните			Q1890848	R1974004	5
+BG		Bansko	Банско			Q2085163	R1978202	5
+BG		Batak	Батак			Q8019066	R1974005	5
+BG		Belene	Белене			Q2657351	R1922468	5
+BG		Belitsa	Белица			Q2281436	R1978203	5
+BG		Belogradchik	Белоградчик			Q2254259	R1916757	5
+BG		Beloslav	Белослав			Q2653042	R1934783	5
+BG		Belovo	Белово			Q2404510	R1974006	5
+BG		Berkovitsa	Берковица			Q2609066	R1916930	5
+BG		Biala	Бяла			Q2609654	R1930194	5
+BG		Biala Slatina	Бяла Слатина			Q2015255	R1922245	5
+BG		Blagoevgrad	Благоевград			Q628050	R1978204	5
+BG		Boboshevo	Бобошево			Q2401745	R1978247	5
+BG		Bobov Dol	Бобов дол			Q2401761	R1978248	5
+BG		Boichinovtsi	Бойчиновци			Q2719430	R1916931	5
+BG		Boliarovo	Болярово			Q2653282	R1947810	5
+BG		Borino	Борино			Q1749527	R1974007	5
+BG		Borovan	Борован			Q2015266	R1922246	5
+BG		Borovo	Борово			Q2652921	R1930193	5
+BG		Botevgrad	Ботевград			Q1750337	R1978762	5
+BG		Boynitsa	Бойница			Q2542152	R1916758	5
+BG		Bozhurishte	Божурище			Q2011235	R1978763	5
+BG		Bratsigovo	Брацигово			Q2403879	R1974008	5
+BG		Bratya Daskalovi	Братя Даскалови			Q1749540	R1362255	5
+BG		Bregovo	Брегово			Q2542167	R1916759	5
+BG		Breznik	Брезник			Q2405103	R1978287	5
+BG		Brezovo	Брезово			Q585848	R1955790	5
+BG		Brusartsi	Брусарци			Q2719590	R1916932	5
+BG		Burgas	Бургас			Q167807	R1937057	5
+BG		Byala	Бяла			Q2609691	R1934660	5
+BG		Chavdar	Чавдар			Q1750661	R1978764	5
+BG		Chelopech	Челопеч			Q3627159	R1978765	5
+BG		Chepelare	Чепеларе			Q1749522	R1974009	5
+BG		Chernoochene	Черноочене			Q929927	R1952399	5
+BG		Cherven Briag	Червен бряг			Q2560800	R1922469	5
+BG		Chiprovtsi	Чипровци			Q2545392	R1916933	5
+BG		Chirpan	Чирпан			Q1749678	R1356218	5
+BG		Chuprene	Чупрене			Q2715502	R1916760	5
+BG		Dalgopol	Дългопол			Q2609410	R1934661	5
+BG		Devin	Девин			Q2011314	R1974010	5
+BG		Devnia	Девня			Q2715422	R1934761	5
+BG		Dimitrovgrad	Димитровград			Q2606948	R1947811	5
+BG		Dimovo	Димово			Q2715394	R1916761	5
+BG		Dobrich	Добрич			Q2220850	R4761414	5
+BG		Dobrichka	Добричка			Q2561279	R1933147	5
+BG		Dolna Bania	Долна баня			Q4165080	R1978766	5
+BG		Dolna Mitropolia	Долна Митрополия			Q2721258	R1922247	5
+BG		Dolni Chiflik	Долни чифлик			Q2715362	R1934662	5
+BG		Dolni Dabnik	Долни Дъбник			Q2561191	R1922470	5
+BG		Dospat	Доспат			Q2715784	R1974011	5
+BG		Dragoman	Драгоман			Q2476900	R1978288	5
+BG		Drianovo	Дряново			Q2549061	R1930781	5
+BG		Dulovo	Дулово			Q2387177	R1931094	5
+BG		Dupnitsa	Дупница			Q2401780	R1978249	5
+BG		Dve Mogili	Две могили			Q2721034	R1930887	5
+BG		Dzhebel	Джебел			Q1748256	R1952400	5
+BG		Elena	Елена			Q2653757	R1929746	5
+BG		Elhovo	Елхово			Q2653243	R1947812	5
+BG		Elin Pelin	Елин Пелин			Q1750672	R1978767	5
+BG		Etropole	Етрополе			Q771640	R1978768	5
+BG		Gabrovo	Габрово			Q2652942	R1930782	5
+BG		Galabovo	Гълъбово			Q953742	R1947813	5
+BG		Garmen	Гърмен			Q2452337	R1978206	5
+BG		General Toshevo	Генерал Тошево			Q614612	R1933113	5
+BG		Georgi Damianovo	Георги Дамяново			Q2548560	R1916934	5
+BG		Glavinitsa	Главиница			Q303082	R1931121	5
+BG		Godech	Годеч			Q2615978	R1978769	5
+BG		Gorna Malina	Горна Малина			Q1750531	R1978770	5
+BG		Gorna Oriahovitsa	Горна Оряховица			Q2603553	R1930172	5
+BG		Gotse Delchev	Гоце Делчев			Q2557228	R1978205	5
+BG		Gramada	Грамада			Q2615666	R1916762	5
+BG		Guliantsi	Гулянци			Q2721295	R1922248	5
+BG		Gurkovo	Гурково			Q1749681	R1930837	5
+BG		Hadzhidimovo	Хаджидимово			Q2722827	R1978207	5
+BG		Hairedin	Хайредин			Q2426275	R1922249	5
+BG		Harmanli	Харманли			Q2400127	R1947833	5
+BG		Haskovo	Хасково			Q2454587	R1947814	5
+BG		Hisaria	Хисаря			Q1750679	R1955791	5
+BG		Hitrino	Хитрино			Q2220759	R1934701	5
+BG		Ihtiman	Ихтиман			Q1750675	R1978771	5
+BG		Iskar	Искър			Q2721004	R1922472	5
+BG		Isperih	Исперих			Q2220241	R1931069	5
+BG		Ivailovgrad	Ивайловград			Q2608264	R1947815	5
+BG		Ivanovo	Иваново			Q2721303	R1930888	5
+BG		Kainardzha	Кайнарджа			Q921737	R1931122	5
+BG		Kaloianovo	Калояново			Q2561213	R1955792	5
+BG		Kameno	Камено			Q2476879	R1937077	5
+BG		Kaolinovo	Каолиново			Q407827	R1934702	5
+BG		Kardzhali	Кърджали			Q2452987	R1952401	5
+BG		Karlovo	Карлово			Q2015223	R1955793	5
+BG		Karnobat	Карнобат			Q2476853	R1937078	5
+BG		Kaspichan	Каспичан			Q2609637	R1934703	5
+BG		Kavarna	Каварна			Q965588	R1933114	5
+BG		Kazanlak	Казанлък			Q1750050	R1947816	5
+BG		Kirkovo	Кирково			Q2619800	R1952402	5
+BG		Knezha	Кнежа			Q2721276	R1922473	5
+BG		Kocherinovo	Кочериново			Q944028	R1978250	5
+BG		Koprivshtitsa	Копривщица			Q4232394	R1955794	5
+BG		Kostenets	Костенец			Q2560787	R1978772	5
+BG		Kostinbrod	Костинброд			Q13554376	R1978773	5
+BG		Kotel	Котел			Q2609479	R1947817	5
+BG		Kovachevtsi	Ковачевци			Q2405644	R1978289	5
+BG		Kozlodui	Козлодуй			Q1032807	R1922250	5
+BG		Kresna	Кресна			Q2662531	R1978209	5
+BG		Krichim	Кричим			Q10632743	R1955795	5
+BG		Krivodol	Криводол			Q948145	R1922251	5
+BG		Krumovgrad	Крумовград			Q545555	R1952403	5
+BG		Krushari	Крушари			Q2561255	R1933115	5
+BG		Kubrat	Кубрат			Q2716750	R1931070	5
+BG		Kuklen	Куклен			Q1750685	R1955796	5
+BG		Kula	Кула			Q2715384	R1916763	5
+BG		Kyustendil	Кюстендил			Q1003231	R1978251	5
+BG		Laki	Лъки			Q2408601	R1955797	5
+BG		Lesichovo	Лесичово			Q1749195	R1974012	5
+BG		Letnitsa	Летница			Q2719387	R1922474	5
+BG		Levski	Левски			Q2561243	R1922475	5
+BG		Liaskovets	Лясковец			Q2609666	R1930838	5
+BG		Lom	Лом			Q288100	R1916936	5
+BG		Lovech	Ловеч			Q2596788	R1922476	5
+BG		Loznitsa	Лозница			Q405880	R1931095	5
+BG		Lubimets	Любимец			Q768987	R1947818	5
+BG		Lukovit	Луковит			Q2719438	R1922477	5
+BG		Madan	Мадан			Q1749535	R1974013	5
+BG		Madzharovo	Маджарово			Q2399931	R1947819	5
+BG		Maglizh	Мъглиж			Q2405076	R1947820	5
+BG		Makresh	Макреш			Q2715413	R1916764	5
+BG		Malko Tarnovo	Малко Търново			Q2606955	R1937058	5
+BG		Maritsa	Марица			Q162565	R1955798	5
+BG		Medkovets	Медковец			Q2609050	R1916937	5
+BG		Mezdra	Мездра			Q2426251	R1922252	5
+BG		Mineralni Bani	Минерални бани			Q2400676	R1947821	5
+BG		Mirkovo	Мирково			Q1750534	R1978774	5
+BG		Mizia	Мизия			Q1032677	R1922253	5
+BG		Momchilgrad	Момчилград			Q2401727	R1952404	5
+BG		Montana	Монтана			Q2016122	R1916938	5
+BG		Nedelino	Неделино			Q1749550	R1974014	5
+BG		Nesebar	Несебър			Q177345	R1937059	5
+BG		Nevestino	Невестино			Q2401796	R1978252	5
+BG		Nikola Kozlevo	Никола Козлево			Q15101410	R1934704	5
+BG		Nikolaevo	Николаево			Q535085	R1947822	5
+BG		Nikopol	Никопол			Q596766	R1922254	5
+BG		Nova Zagora	Нова Загора			Q1749545	R1947823	5
+BG		Novi Pazar	Нови пазар			Q2609377	R1934705	5
+BG		Novo Selo	Ново Село			Q576734	R1916765	5
+BG		Omurtag	Омуртаг			Q3882332	R1933103	5
+BG		Opaka	Опака			Q3882809	R1933104	5
+BG		Opan	Опан			Q2609370	R1947824	5
+BG		Oryahovo	Оряхово			Q2628864	R1922255	5
+BG		Panagiurishte	Панагюрище			Q2444212	R1974015	5
+BG		Parvomai	Първомай			Q2721288	R1955799	5
+BG		Pavel Bania	Павел баня			Q2405088	R1947825	5
+BG		Pavlikeni	Павликени			Q2715489	R1929747	5
+BG		Pazardzik	Пазарджик			Q764056	R1974016	5
+BG		Pernik	Перник			Q4351615	R1978290	5
+BG		Perushtitsa	Перущица			Q15101506	R1955800	5
+BG		Peshtera	Пещера			Q1749334	R1974017	5
+BG		Petrich	Петрич			Q2653369	R1978210	5
+BG		Pirdop	Пирдоп			Q2407089	R3255170	5
+BG		Pleven	Плевен			Q2657334	R1922478	5
+BG		Plovdiv	Пловдив			Q4365146	R1955801	5
+BG		Polski Trambesh	Полски Тръмбеш			Q2609698	R1930165	5
+BG		Pomorie	Поморие			Q2447996	R1937060	5
+BG		Popovo	Попово			Q3908413	R1933105	5
+BG		Pordim	Пордим			Q2721267	R1922479	5
+BG		Pravets	Правец			Q2012325	R1978775	5
+BG		Primorsko	Приморско			Q2607288	R1937061	5
+BG		Provadia	Провадия			Q2407014	R1934663	5
+BG		Radnevo	Раднево			Q1750036	R1947826	5
+BG		Radomir	Радомир			Q1749664	R1978291	5
+BG		Rakitovo	Ракитово			Q1749198	R1974018	5
+BG		Rakovski	Раковски			Q1750681	R1955802	5
+BG		Razgrad	Разград			Q2609683	R1931071	5
+BG		Razlog	Разлог			Q1570650	R1978211	5
+BG		Rila	Рила			Q2403120	R1978253	5
+BG		Rodopi	Родопи			Q1500386	R1955803	5
+BG		Roman	Роман			Q2723443	R1922256	5
+BG		Rudozem	Рудозем			Q2405118	R1974019	5
+BG		Ruen	Руен			Q2610872	R1937062	5
+BG		Ruse	Русе			Q2652929	R1930890	5
+BG		Ruzhintsi	Ружинци			Q2715178	R1916766	5
+BG		Sadovo	Садово			Q2408574	R1955804	5
+BG		Saedinenie	Съединение			Q523537	R1955805	5
+BG		Samokov	Самоков			Q2011302	R1978776	5
+BG		Samuil	Самуил			Q2609633	R1931093	5
+BG		Sandanski	Сандански			Q2653376	R1978212	5
+BG		Sapareva Bania	Сапарева баня			Q543012	R1978254	5
+BG		Sarnitsa	Сърница			Q19706485	R4673939	5
+BG		Satovcha	Сатовча			Q2997839	R1978213	5
+BG		Septemvri	Септември			Q1749330	R1974020	5
+BG		Sevlievo	Севлиево			Q2719895	R1929748	5
+BG		Shabla	Шабла			Q2548849	R1933116	5
+BG		Shumen	Шумен			Q2219814	R1934706	5
+BG		Silistra	Силистра			Q2219334	R1931123	5
+BG		Simeonovgrad	Симеоновград			Q2399949	R1947827	5
+BG		Simitli	Симитли			Q2722835	R1978214	5
+BG		Sitovo	Ситово			Q2609678	R1931124	5
+BG		Sliven	Сливен			Q4423406	R1947828	5
+BG		Slivnitsa	Сливница			Q2408489	R1978777	5
+BG		Slivo Pole	Сливо поле			Q2609442	R1930907	5
+BG		Smiadovo	Смядово			Q2609389	R1934707	5
+BG		Smolian	Смолян			Q1749684	R1974021	5
+BG		Sofia City	Столична			Q4442915	R7276261	5
+BG		Sopot	Сопот			Q2219349	R1955806	5
+BG		Sozopol	Созопол			Q2039413	R1937063	5
+BG		Sredets	Средец			Q1500384	R1937079	5
+BG		Stamboliiski	Стамболийски			Q1750926	R1955807	5
+BG		Stambolovo	Стамболово			Q2400143	R1947829	5
+BG		Stara Zagora	Стара Загора			Q534046	R1947830	5
+BG		Straldzha	Стралджа			Q2454975	R1947831	5
+BG		Strazhitsa	Стражица			Q959929	R1930167	5
+BG		Strelcha	Стрелча			Q1749338	R1974022	5
+BG		Strumiani	Струмяни			Q2722846	R1978215	5
+BG		Suhindol	Сухиндол			Q2609717	R1929749	5
+BG		Sungurlare	Сунгурларе			Q2398979	R1937064	5
+BG		Suvorovo	Суворово			Q2609434	R1934762	5
+BG		Svilengrad	Свиленград			Q2657322	R1947832	5
+BG		Svishtov	Свищов			Q600639	R1930878	5
+BG		Svoge	Своге			Q2715418	R1978778	5
+BG		Targovishte	Търговище			Q3515689	R1933106	5
+BG		Tervel	Тервел			Q680608	R1933117	5
+BG		Teteven	Тетевен			Q2652918	R1922480	5
+BG		Topolovgrad	Тополовград			Q2444114	R1947834	5
+BG		Tran	Трън			Q2404637	R1978292	5
+BG		Trekliano	Трекляно			Q2609076	R1978255	5
+BG		Triavna	Трявна			Q568005	R1930839	5
+BG		Troian	Троян			Q2652936	R1922481	5
+BG		Tsar Kaloian	Цар Калоян			Q2609383	R1931072	5
+BG		Tsarevo	Царево			Q2721122	R1937065	5
+BG		Tsenovo	Ценово			Q2609662	R1930195	5
+BG		Tundzha	Тунджа			Q20432553	R1947835	5
+BG		Tutrakan	Тутракан			Q2609628	R1931096	5
+BG		Tvarditsa	Твърдица			Q1749531	R1947836	5
+BG		Ugarchin	Угърчин			Q2561155	R1922482	5
+BG		Valchedrum	Вълчедръм			Q1032683	R1916939	5
+BG		Valchi Dol	Вълчи дол			Q596101	R1933148	5
+BG		Varbitsa	Върбица			Q2609417	R1934708	5
+BG		Varna	Варна			Q748965	R1404291	5
+BG		Varshets	Вършец			Q2608803	R1916940	5
+BG		Veliki Preslav	Велики Преслав			Q2219326	R1934709	5
+BG		Veliko Tarnovo	Велико Търново			Q2991314	R1930858	5
+BG		Velingrad	Велинград			Q655383	R1974023	5
+BG		Venets	Венец			Q2609405	R1934710	5
+BG		Vetovo	Ветово			Q2716767	R1930891	5
+BG		Vetrino	Ветрино			Q2609648	R1934664	5
+BG		Vidin	Видин			Q263709	R1916767	5
+BG		Vratsa	Враца			Q2015244	R1922257	5
+BG		Yablanitsa	Ябланица			Q2719419	R1922471	5
+BG		Yakimovo	Якимово			Q2609055	R1916935	5
+BG		Yakoruda	Якоруда			Q775710	R1978208	5
+BG		Yambol	Ямбол			Q4537624	R4767886	5
+BG		Zavet	Завет			Q2716740	R1931073	5
+BG		Zemen	Земен			Q4191007	R1978293	5
+BG		Zlataritsa	Златарица			Q2609640	R1930840	5
+BG		Zlatitsa	Златица			Q2407916	R1978779	5
+BG		Zlatograd	Златоград			Q7497979	R1952405	5
+BG			Аспарухово			Q11283555	R16951215	6
+BG			Владислав Варненчик			Q11352221	R16951200	6
+BG			Западен			Q7988480	R7289746	6
+BG			Източен				R7289748	6
+BG			Младост			Q3657292	R16951190	6
+BG			Одесос			Q11292057	R16951188	6
+BG			Приморски			Q11335658	R16951189	6
+BG			Северен			Q7059194	R7289747	6
+BG			Тракия				R7289745	6
+BG			Централен			Q5062096	R7289744	6
+BG			Южен				R7289743	6
+BG		Bankia	Банкя			Q9305797	R3759425	6
+BG		Ilinden	Илинден			Q5998266	R3759426	6
+BG		Iskar	Искър			Q9305799	R3759427	6
+BG		Izgrev	Изгрев			Q6101953	R3759428	6
+BG		Krasna poliana	Красна поляна			Q6436209	R3759429	6
+BG		Krasno selo	Красно село			Q6436239	R3759430	6
+BG		Kremikovci	Кремиковци			Q9305801	R3759431	6
+BG		Liulin	Люлин			Q6710571	R3759432	6
+BG		Lozenets	Лозенец			Q3658292	R3759433	6
+BG		Mladost	Младост			Q11834092	R3759434	6
+BG		Nadejda	Надежда			Q3658044	R3759435	6
+BG		Novi Iskar	Нови Искър			Q9305803	R3759436	6
+BG		Oborishte	Оборище			Q3658289	R3759437	6
+BG		Ovcha kupel	Овча Купел			Q7113283	R3759438	6
+BG		Pancharevo	Панчарево			Q1027607	R3759439	6
+BG		Poduyane	Подуяне			Q7207186	R3759440	6
+BG		Serdika	Сердика			Q8014589	R3759441	6
+BG		Slatina	Слатина			Q7538927	R3759442	6
+BG		Sredec	Средец			Q7582432	R3759443	6
+BG		Studentski	Студентски			Q11834095	R3759444	6
+BG		Triadica	Триадица			Q3658300	R3759445	6
+BG		Vazrajdane	Възраждане			Q7917652	R3759446	6
+BG		Vitosha	Витоша			Q7937207	R3759447	6
+BG		Vrabnitsa	Връбница			Q8014749	R3759448	6
 BH	BH-13	Capital Governorate	محافظة العاصمة			Q528953	R3028094	4
 BH	BH-15	Muharraq Governorate	محافظة المحرق			Q375630	R3028095	4
 BH	BH-17	Northern Governorate	المحافظة الشمالية	4.0		Q840445	R2522303	4
@@ -6582,6 +6999,7 @@ CM			Vina			Q667019	R2750699	6
 CM			Wouri			Q769841	R2750984	6
 CN	CN-HK	Hong Kong	香港 Hong Kong	港		Q8646	R913110	3
 CN	CN-MO	Macau	澳門 Macau	澳		Q14773	R1867188	3
+CN		Palaung State	ပလောင်ပြည်နယ်				R17883478	3
 CN	CN-AH	Anhui	安徽省	皖		Q40956	R913011	4
 CN	CN-BJ	Beijing	北京市	京		Q956	R912940	4
 CN	CN-CQ	Chongqing	重庆市	渝		Q11725	R913069	4
@@ -6957,11 +7375,15 @@ CN		Ürümqi	乌鲁木齐市 ئۈرۈمچى			Q16959	R2752472	5
 CN			万家乡				R16253613	6
 CN			临沂高新技术产业开发区				R15446855	6
 CN			任泽区			Q1001408	R5673959	6
+CN			南唐乡				R17889574	6
+CN			南梁镇				R17889572	6
+CN			唐兴镇				R17889570	6
 CN			嘉模堂區 Nossa Senhora do Carmo			Q10345834	R5758865	6
 CN			大堂區 Sé				R12107627	6
 CN			扎赉诺尔区 ᠵᠠᠯᠠᠢᠨᠠᠭᠤᠷ ᠲᠣᠭᠣᠷᠢᠭ			Q11075879	R10587395	6
 CN			望德堂區 São Lázaro			Q1135657	R12107628	6
 CN			沂水县				R2813535	6
+CN			浇地乡				R17889571	6
 CN			淮阳区				R14371762	6
 CN			纸厂河镇				R16154833	6
 CN			聖方濟各堂區 São Francisco Xavier				R5758866	6
@@ -6969,6 +7391,7 @@ CN			花地瑪堂區 Nossa Senhora de Fátima			Q10300468	R9506156	6
 CN			街河市镇				R16252770	6
 CN			费县			Q1197998	R2813696	6
 CN			赣州蓉江新区				R5714965	6
+CN			里砦镇				R17889573	6
 CN			風順堂區 São Lourenço				R12107629	6
 CN		Abag Banner	阿巴嘎旗 ᠠᠪᠠᠭ᠎ᠠ ᠬᠣᠰᠢᠭᠤ			Q168131	R2753017	6
 CN		Acheng District	阿城区			Q145263	R2755756	6
@@ -7695,7 +8118,7 @@ CN		Hengshan District	恒山区			Q1197484	R2978850	6
 CN		Hengshan District	横山区			Q1201171	R3016344	6
 CN		Hengyang County	衡阳县			Q162588	R3156147	6
 CN		Heping County	和平县			Q1346610	R3241965	6
-CN		Heping District	和平区				R3286891	6
+CN		Heping District	和平区			Q707965	R3286891	6
 CN		Heping District	和平区			Q1362541	R3292239	6
 CN		Hepu County	合浦县			Q1268277	R3241955	6
 CN		Heqing County	鹤庆县			Q1200745	R2727736	6
@@ -8111,6 +8534,7 @@ CN		Lanshan District	岚山区			Q1197974	R5656079	6
 CN		Lantian County	蓝田县			Q1204238	R3226092	6
 CN		Lanxi	兰溪市			Q1023793	R4483294	6
 CN		Lanxi County	兰西县			Q379189	R2755369	6
+CN		Laobian District	老边区			Q268555	R5642662	6
 CN		Laocheng District	老城区			Q1152604	R3246481	6
 CN		Laohekou City	老河口市			Q1359204	R3216584	6
 CN		Laoling City	乐陵市			Q1026399	R3513344	6
@@ -8479,7 +8903,7 @@ CN		Nanhua County	南华县			Q1200795	R2727336	6
 CN		Nanjian Yi Autonomous County	南涧彝族自治县			Q546236	R2727739	6
 CN		Nanjiang County	南江县			Q1200064	R2787655	6
 CN		Nanjing County	南靖县			Q1338324	R3242116	6
-CN		Nankai District	南开区				R3286897	6
+CN		Nankai District	南开区			Q708155	R3286897	6
 CN		Nankang District	南康区			Q1335716	R3180937	6
 CN		Nanle County	南乐县			Q507655	R3060562	6
 CN		Nanling County	南陵县			Q1197961	R3262031	6
@@ -8990,7 +9414,6 @@ CN		Susong County	宿松县			Q1335469	R3220379	6
 CN		Suxian District	苏仙区			Q1338516	R3123968	6
 CN		Suyu District	宿豫区			Q1197794	R3293940	6
 CN		Suzhou District	肃州区			Q131962	R2707424	6
-CN		Suzhou Industrial Park	苏州工业园区			Q863462	R7363894	6
 CN		Sêrtar County	色达县 གསེར་ཐར་རྫོང།			Q1200165	R2785531	6
 CN		Sêrxü County	石渠县 སེར་ཤུལ་རྫོང།			Q1200157	R2785532	6
 CN		Tacheng City	塔城市 شاۋەشەك قالاسى			Q648696	R2751616	6
@@ -11136,90 +11559,90 @@ CR	CR-H	Heredia Province	Provincia de Heredia			Q502192	R3221947	4
 CR	CR-L	Limón Province	Provincia de Limón			Q642644	R3223056	4
 CR	CR-P	Puntarenas Province	Provincia de Puntarenas			Q502170	R3223028	4
 CR	CR-SJ	San Jose Province	Provincia de San José			Q647808	R3223004	4
-CR			Cantón Abangares			Q2517638	R6157166	6
-CR			Cantón Acosta			Q1935173	R6292178	6
-CR			Cantón Alajuela			Q2672761	R5369889	6
-CR			Cantón Alajuelita			Q200703	R5675713	6
-CR			Cantón Alvarado			Q2610378	R5685045	6
-CR			Cantón Aserrí			Q1935231	R6291877	6
-CR			Cantón Atenas			Q2406261	R5366458	6
-CR			Cantón Bagaces			Q647978	R6156048	6
-CR			Cantón Barva			Q2614093	R5670537	6
-CR			Cantón Belén			Q2613791	R5370093	6
-CR			Cantón Buenos Aires			Q2669006	R6268475	6
-CR			Cantón Carrillo			Q2517601	R5726574	6
-CR			Cantón Cartago			Q2185499	R5698504	6
-CR			Cantón Cañas			Q2225426	R6156366	6
-CR			Cantón Corredores			Q2610166	R6157583	6
-CR			Cantón Coto Brus			Q2610318	R6265593	6
-CR			Cantón Curridabat			Q1935162	R4068814	6
-CR			Cantón Desamparados			Q1444404	R6200736	6
-CR			Cantón Dota			Q1935243	R5695433	6
-CR			Cantón El Guarco			Q2614085	R5692182	6
-CR			Cantón Escazú			Q2221760	R4071270	6
-CR			Cantón Esparza			Q2610122	R5720555	6
-CR			Cantón Flores			Q2610307	R5370094	6
-CR			Cantón Garabito			Q970097	R5718795	6
-CR			Cantón Goicoechea			Q2406129	R5413776	6
-CR			Cantón Golfito			Q2610281	R6263891	6
-CR			Cantón Grecia			Q2594049	R5725181	6
-CR			Cantón Guatuso			Q1189935	R6193517	6
-CR			Cantón Guácimo			Q609975	R5700770	6
-CR			Cantón Heredia			Q2610288	R5730526	6
-CR			Cantón Hojancha			Q2518200	R6195113	6
-CR			Cantón Jiménez			Q2610255	R6195371	6
-CR			Cantón La Cruz			Q2518042	R5726504	6
-CR			Cantón La Unión			Q2610394	R5413515	6
-CR			Cantón León Cortés Castro			Q196346	R5677863	6
-CR			Cantón Liberia			Q31101	R5725526	6
-CR			Cantón Limón			Q2668993	R5708171	6
-CR			Cantón Los Chiles			Q1189266	R6193364	6
-CR			Cantón Matina			Q2669000	R5708069	6
-CR			Cantón Montes de Oca			Q2739710	R4073558	6
-CR			Cantón Montes de Oro			Q369259	R6150952	6
-CR			Cantón Monteverde			Q111444555	R12951635	6
-CR			Cantón Mora			Q1935206	R5723773	6
-CR			Cantón Moravia			Q1935256	R5415430	6
-CR			Cantón Nandayure			Q2518031	R6194683	6
-CR			Cantón Naranjo			Q2544794	R5900570	6
-CR			Cantón Nicoya			Q3656199	R6195190	6
-CR			Cantón Oreamuno			Q936794	R5675483	6
-CR			Cantón Orotina			Q891356	R5721071	6
-CR			Cantón Osa			Q2610114	R6196749	6
-CR			Cantón Palmares			Q2610139	R5654789	6
-CR			Cantón Paraíso			Q2618877	R6195322	6
-CR			Cantón Parrita			Q2610144	R6145859	6
-CR			Cantón Pococí			Q1852750	R5698591	6
-CR			Cantón Poás			Q2610373	R5659036	6
-CR			Cantón Puerto Jiménez			Q111444516	R14010855	6
-CR			Cantón Puntarenas			Q2610390	R6404570	6
-CR			Cantón Puriscal			Q196298	R6153333	6
-CR			Cantón Pérez Zeledón			Q196254	R6200642	6
-CR			Cantón Quepos			Q2610134	R6145706	6
-CR			Cantón Río Cuarto			Q16627164	R7105576	6
-CR			Cantón San Carlos			Q931244	R5992810	6
-CR			Cantón San Isidro			Q2610270	R5730657	6
-CR			Cantón San José			Q2536213	R4069041	6
-CR			Cantón San Mateo			Q1936056	R5722749	6
-CR			Cantón San Pablo			Q2610299	R5672742	6
-CR			Cantón San Rafael			Q587080	R5731159	6
-CR			Cantón San Ramón			Q1932227	R5994895	6
-CR			Cantón Santa Ana			Q1935190	R5657109	6
-CR			Cantón Santa Bárbara			Q2610157	R5668081	6
-CR			Cantón Santa Cruz			Q2291051	R6153858	6
-CR			Cantón Santo Domingo			Q2405941	R5729243	6
-CR			Cantón Sarapiquí			Q2610385	R5597651	6
-CR			Cantón Sarchí			Q2610105	R5657065	6
-CR			Cantón Siquirres			Q930152	R5703339	6
-CR			Cantón Talamanca			Q2669009	R5708170	6
-CR			Cantón Tarrazú			Q196260	R5697661	6
-CR			Cantón Tibás			Q426978	R5375374	6
-CR			Cantón Tilarán			Q2517654	R6157562	6
-CR			Cantón Turrialba			Q2610150	R6195387	6
-CR			Cantón Turrubares			Q196257	R5716966	6
-CR			Cantón Upala			Q2223674	R6193310	6
-CR			Cantón Vázquez de Coronado			Q1935116	R5416054	6
-CR			Cantón Zarcero			Q12856942	R5995231	6
+CR			Cantón de Abangares			Q2517638	R6157166	6
+CR			Cantón de Acosta			Q1935173	R6292178	6
+CR			Cantón de Alajuela			Q2672761	R5369889	6
+CR			Cantón de Alajuelita			Q200703	R5675713	6
+CR			Cantón de Alvarado			Q2610378	R5685045	6
+CR			Cantón de Aserrí			Q1935231	R6291877	6
+CR			Cantón de Atenas			Q2406261	R5366458	6
+CR			Cantón de Bagaces			Q647978	R6156048	6
+CR			Cantón de Barva			Q2614093	R5670537	6
+CR			Cantón de Belén			Q2613791	R5370093	6
+CR			Cantón de Buenos Aires			Q2669006	R6268475	6
+CR			Cantón de Carrillo			Q2517601	R5726574	6
+CR			Cantón de Cartago			Q2185499	R5698504	6
+CR			Cantón de Cañas			Q2225426	R6156366	6
+CR			Cantón de Corredores			Q2610166	R6157583	6
+CR			Cantón de Coto Brus			Q2610318	R6265593	6
+CR			Cantón de Curridabat			Q1935162	R4068814	6
+CR			Cantón de Desamparados			Q1444404	R6200736	6
+CR			Cantón de Dota			Q1935243	R5695433	6
+CR			Cantón de El Guarco			Q2614085	R5692182	6
+CR			Cantón de Escazú			Q2221760	R4071270	6
+CR			Cantón de Esparza			Q2610122	R5720555	6
+CR			Cantón de Flores			Q2610307	R5370094	6
+CR			Cantón de Garabito			Q970097	R5718795	6
+CR			Cantón de Goicoechea			Q2406129	R5413776	6
+CR			Cantón de Golfito			Q2610281	R6263891	6
+CR			Cantón de Grecia			Q2594049	R5725181	6
+CR			Cantón de Guatuso			Q1189935	R6193517	6
+CR			Cantón de Guácimo			Q609975	R5700770	6
+CR			Cantón de Heredia			Q2610288	R5730526	6
+CR			Cantón de Hojancha			Q2518200	R6195113	6
+CR			Cantón de Jiménez			Q2610255	R6195371	6
+CR			Cantón de La Cruz			Q2518042	R5726504	6
+CR			Cantón de La Unión			Q2610394	R5413515	6
+CR			Cantón de León Cortés Castro			Q196346	R5677863	6
+CR			Cantón de Liberia			Q31101	R5725526	6
+CR			Cantón de Limón			Q2668993	R5708171	6
+CR			Cantón de Los Chiles			Q1189266	R6193364	6
+CR			Cantón de Matina			Q2669000	R5708069	6
+CR			Cantón de Montes de Oca			Q2739710	R4073558	6
+CR			Cantón de Montes de Oro			Q369259	R6150952	6
+CR			Cantón de Monteverde			Q111444555	R12951635	6
+CR			Cantón de Mora			Q1935206	R5723773	6
+CR			Cantón de Moravia			Q1935256	R5415430	6
+CR			Cantón de Nandayure			Q2518031	R6194683	6
+CR			Cantón de Naranjo			Q2544794	R5900570	6
+CR			Cantón de Nicoya			Q3656199	R6195190	6
+CR			Cantón de Oreamuno			Q936794	R5675483	6
+CR			Cantón de Orotina			Q891356	R5721071	6
+CR			Cantón de Osa			Q2610114	R6196749	6
+CR			Cantón de Palmares			Q2610139	R5654789	6
+CR			Cantón de Paraíso			Q2618877	R6195322	6
+CR			Cantón de Parrita			Q2610144	R6145859	6
+CR			Cantón de Pococí			Q1852750	R5698591	6
+CR			Cantón de Poás			Q2610373	R5659036	6
+CR			Cantón de Puerto Jiménez			Q111444516	R14010855	6
+CR			Cantón de Puntarenas			Q2610390	R6404570	6
+CR			Cantón de Puriscal			Q196298	R6153333	6
+CR			Cantón de Pérez Zeledón			Q196254	R6200642	6
+CR			Cantón de Quepos			Q2610134	R6145706	6
+CR			Cantón de Río Cuarto			Q16627164	R7105576	6
+CR			Cantón de San Carlos			Q931244	R5992810	6
+CR			Cantón de San Isidro			Q2610270	R5730657	6
+CR			Cantón de San José			Q2536213	R4069041	6
+CR			Cantón de San Mateo			Q1936056	R5722749	6
+CR			Cantón de San Pablo			Q2610299	R5672742	6
+CR			Cantón de San Rafael			Q587080	R5731159	6
+CR			Cantón de San Ramón			Q1932227	R5994895	6
+CR			Cantón de Santa Ana			Q1935190	R5657109	6
+CR			Cantón de Santa Bárbara			Q2610157	R5668081	6
+CR			Cantón de Santa Cruz			Q2291051	R6153858	6
+CR			Cantón de Santo Domingo			Q2405941	R5729243	6
+CR			Cantón de Sarapiquí			Q2610385	R5597651	6
+CR			Cantón de Sarchí			Q2610105	R5657065	6
+CR			Cantón de Siquirres			Q930152	R5703339	6
+CR			Cantón de Talamanca			Q2669009	R5708170	6
+CR			Cantón de Tarrazú			Q196260	R5697661	6
+CR			Cantón de Tibás			Q426978	R5375374	6
+CR			Cantón de Tilarán			Q2517654	R6157562	6
+CR			Cantón de Turrialba			Q2610150	R6195387	6
+CR			Cantón de Turrubares			Q196257	R5716966	6
+CR			Cantón de Upala			Q2223674	R6193310	6
+CR			Cantón de Vázquez de Coronado			Q1935116	R5416054	6
+CR			Cantón de Zarcero			Q12856942	R5995231	6
 CU	CU-15		Artemisa			Q115325	R2576644	4
 CU	CU-09		Camagüey			Q215147	R1854630	4
 CU	CU-06		Cienfuegos			Q115444	R1854632	4
@@ -11938,6 +12361,104 @@ DK	DK-82	Central Denmark Region	Region Midtjylland	1082	DK04	Q26586	R1319935	4
 DK	DK-81	North Denmark Region	Region Nordjylland	1081	DK05	Q26067	R1319936	4
 DK	DK-85	Region Zealand	Region Sjælland	1085	DK02	Q26589	R1320370	4
 DK	DK-83	Region of Southern Denmark	Region Syddanmark	1083	DK03	Q26061	R1319978	4
+DK		Aabenraa Municipality	Aabenraa Kommune	580		Q21152	R1928466	7
+DK		Aalborg Municipality	Aalborg Kommune	851		Q300856	R2099194	7
+DK		Aarhus Municipality	Aarhus Kommune	751		Q240262	R1784663	7
+DK		Albertslund Municipality	Albertslund Kommune	165		Q493833	R2190242	7
+DK		Allerød Municipality	Allerød Kommune	201		Q499479	R2190809	7
+DK		Assens Municipality	Assens Kommune	420		Q27967	R2178091	7
+DK		Ballerup Municipality	Ballerup Kommune	151		Q257223	R2191541	7
+DK		Billund Municipality	Billund Kommune	530		Q27875	R1801753	7
+DK		Bornholm Regional Municipality	Bornholms Regionskommune	400		Q2598329	R2178270	7
+DK		Brøndby Municipality	Brøndby Kommune	153		Q484038	R2192190	7
+DK		Brønderslev Municipality	Brønderslev Kommune	810		Q511376	R2099125	7
+DK		Copenhagen Municipality	Københavns Kommune	101		Q504125	R2192363	7
+DK		Dragør Municipality	Dragør Kommune	155		Q838823	R2192257	7
+DK		Egedal Municipality	Egedal Kommune	240		Q505113	R2191512	7
+DK		Esbjerg Municipality	Esbjerg Kommune	561		Q645747	R1927177	7
+DK		Faaborg-Midtfyn Municipality	Faaborg-Midtfyn Kommune	430		Q27976	R2052179	7
+DK		Fanø Municipality	Fanø Kommune	563		Q493285	R1926825	7
+DK		Favrskov Municipality	Favrskov Kommune	710		Q512550	R1926217	7
+DK		Faxe Municipality	Faxe Kommune	320		Q505000	R2181377	7
+DK		Fredensborg Municipality	Fredensborg Kommune	210		Q503045	R2190810	7
+DK		Fredericia Municipality	Fredericia Kommune	607		Q21145	R1799261	7
+DK		Frederiksberg Municipality	Frederiksberg Kommune	147		Q2488464	R2186660	7
+DK		Frederikshavn Municipality	Frederikshavn Kommune	813		Q502168	R2077615	7
+DK		Frederikssund Municipality	Frederikssund Kommune	250		Q503232	R2190432	7
+DK		Furesø Municipality	Furesø Kommune	190		Q503138	R2191552	7
+DK		Gentofte Municipality	Gentofte Kommune	157		Q500076	R2182231	7
+DK		Gladsaxe Municipality	Gladsaxe Kommune	159		Q484018	R2186643	7
+DK		Glostrup Municipality	Glostrup Kommune	161		Q21006	R2190423	7
+DK		Greve Municipality	Greve Kommune	253		Q504977	R2180074	7
+DK		Gribskov Municipality	Gribskov Kommune	270		Q494827	R2186270	7
+DK		Guldborgsund Municipality	Guldborgsund Kommune	376		Q510997	R2171069	7
+DK		Haderslev Municipality	Haderslev Kommune	510		Q21143	R1927271	7
+DK		Halsnæs Municipality	Halsnæs Kommune	260		Q505130	R2183213	7
+DK		Hedensted Municipality	Hedensted Kommune	766		Q515986	R1614531	7
+DK		Helsingør Municipality	Helsingør Kommune	217		Q511546	R2183329	7
+DK		Herlev Municipality	Herlev Kommune	163		Q164490	R2191207	7
+DK		Herning Municipality	Herning Kommune	657		Q506877	R1927508	7
+DK		Hillerød Municipality	Hillerød Kommune	219		Q221394	R2190536	7
+DK		Hjørring Municipality	Hjørring Kommune	860		Q511214	R2098067	7
+DK		Holbæk Municipality	Holbæk Kommune	316		Q503159	R2181932	7
+DK		Holstebro Municipality	Holstebro Kommune	661		Q506109	R1927494	7
+DK		Horsens Municipality	Horsens Kommune	615		Q512064	R1614621	7
+DK		Hvidovre Municipality	Hvidovre Kommune	167		Q512562	R2192198	7
+DK		Høje-Taastrup Municipality	Høje-Taastrup Kommune	169		Q499400	R2189104	7
+DK		Hørsholm Municipality	Hørsholm Kommune	223		Q512540	R2190811	7
+DK		Ikast-Brande Municipality	Ikast-Brande Kommune	756		Q512595	R1805401	7
+DK		Ishøj Municipality	Ishøj Kommune	183		Q502040	R2187055	7
+DK		Jammerbugt Municipality	Jammerbugt Kommune	849		Q503222	R2098963	7
+DK		Kalundborg Municipality	Kalundborg Kommune	326		Q204976	R2182002	7
+DK		Kerteminde Municipality	Kerteminde Kommune	440		Q612488	R2171010	7
+DK		Kolding Municipality	Kolding Kommune	621		Q21101	R1819983	7
+DK		Køge Municipality	Køge Kommune	259		Q504664	R2181308	7
+DK		Langeland Municipality	Langeland Kommune	482		Q506647	R2096607	7
+DK		Lejre Municipality	Lejre Kommune	350		Q505369	R2181225	7
+DK		Lemvig Municipality	Lemvig Kommune	665		Q502644	R1927043	7
+DK		Lolland Municipality	Lolland Kommune	360		Q670153	R2171050	7
+DK		Lyngby-Taarbæk Municipality	Lyngby-Taarbæk Kommune	173		Q493826	R2183062	7
+DK		Læsø Municipality	Læsø Kommune	825		Q498457	R2097968	7
+DK		Mariagerfjord Municipality	Mariagerfjord Kommune	846		Q512528	R2099390	7
+DK		Middelfart Municipality	Middelfart Kommune	410		Q21140	R2178063	7
+DK		Morsø Municipality	Morsø Kommune	773		Q502770	R2095234	7
+DK		Naestved Municipality	Næstved Kommune	370		Q506716	R2181494	7
+DK		Norddjurs Municipality	Norddjurs Kommune	707		Q505156	R1926320	7
+DK		Nordfyn Municipality	Nordfyns Kommune	480		Q20770	R2178137	7
+DK		Nyborg Municipality	Nyborg Kommune	450		Q30013	R2077936	7
+DK		Odder Municipality	Odder Kommune	727		Q500058	R1614622	7
+DK		Odense Municipality	Odense Kommune	461		Q21146	R2178124	7
+DK		Odsherred Municipality	Odsherred Kommune	306		Q1425064	R2180212	7
+DK		Randers Municipality	Randers Kommune	730		Q512457	R1926381	7
+DK		Rebild Municipality	Rebild Kommune	840		Q499896	R2099375	7
+DK		Ringkøbing-Skjern Municipality	Ringkøbing-Skjern Kommune	760		Q514777	R1927503	7
+DK		Ringsted Municipality	Ringsted Kommune	329		Q503116	R2181892	7
+DK		Roskilde Municipality	Roskilde Kommune	265		Q510810	R2180326	7
+DK		Rudersdal Municipality	Rudersdal Kommune	230		Q511949	R2191577	7
+DK		Rødovre Municipality	Rødovre Kommune	175		Q503097	R2191218	7
+DK		Samsø Municipality	Samsø Kommune	741		Q513256	R1933205	7
+DK		Silkeborg Municipality	Silkeborg Kommune	740		Q505151	R1926837	7
+DK		Skanderborg Municipality	Skanderborg Kommune	746		Q7725510	R1784660	7
+DK		Skive Municipality	Skive Kommune	779		Q503108	R1926905	7
+DK		Slagelse Municipality	Slagelse Kommune	330		Q29927	R2181847	7
+DK		Solrød Municipality	Solrød Kommune	269		Q499469	R2180143	7
+DK		Sorø Municipality	Sorø Kommune	340		Q21151	R2181974	7
+DK		Stevns Municipality	Stevns Kommune	336		Q503153	R2077580	7
+DK		Struer Municipality	Struer Kommune	671		Q503227	R1927247	7
+DK		Svendborg Municipality	Svendborg Kommune	479		Q21182	R2069804	7
+DK		Syddjurs Municipality	Syddjurs Kommune	706		Q512581	R1926255	7
+DK		Sønderborg Municipality	Sønderborg Kommune	540		Q21108	R1928254	7
+DK		Thisted Municipality	Thisted Kommune	787		Q7715809	R2930285	7
+DK		Tårnby Municipality	Tårnby Kommune	185		Q282496	R2192292	7
+DK		Tønder Municipality	Tønder Kommune	550		Q3162907	R1928515	7
+DK		Vallensbæk Municipality	Vallensbæk Kommune	187		Q514844	R2187129	7
+DK		Varde Municipality	Varde Kommune	573		Q21142	R1926826	7
+DK		Vejen Municipality	Vejen Kommune	575		Q21150	R1927241	7
+DK		Vejle Municipality	Vejle Kommune	630		Q28150	R1618492	7
+DK		Vesthimmerland Municipality	Vesthimmerlands Kommune	820		Q511975	R2099325	7
+DK		Viborg Municipality	Viborg Kommune	791		Q502962	R1926898	7
+DK		Vordingborg Municipality	Vordingborg Kommune	390		Q183572	R2171256	7
+DK		Ærø Municipality	Ærø Kommune	492		Q21104	R2096457	7
 DM	DM-03		Saint David Parish			Q1431129	R2314472	4
 DM	DM-04		Saint George Parish			Q617801	R1793745	4
 DM	DM-05		Saint John Parish			Q1476285	R2315070	4
@@ -12136,64 +12657,64 @@ DO			Villa Vásquez			Q1770880	R7167186	6
 DO			Yaguate			Q4022373	R7159850	6
 DO			Yamasá			Q4022462	R7405676	6
 DO		アト・マジョール州	Hato Mayor				R7405683	6
-DZ	DZ-01	Adrar	Adrar	1		Q188166	R1258650	4
-DZ	DZ-16	Algiers	Alger	16		Q141026	R157062	4
-DZ	DZ-23	Annaba	Annaba	23		Q213944	R1455599	4
-DZ	DZ-44	Aïn Defla	Aïn Defla	44		Q168953	R1283678	4
-DZ	DZ-46	Aïn Témouchent	Aïn Témouchent	46		Q233670	R1259188	4
-DZ	DZ-05	Batna	Batna	5		Q215452	R1278748	4
-DZ	DZ-08	Bechar	Béchar	8		Q215467	R1258647	4
-DZ	DZ-06	Bejaia	Béjaïa	6		Q233665	R1278765	4
-DZ	DZ-52	Beni Abbes	Béni Abbès	52		Q21606902	R6824843	4
-DZ	DZ-07	Biskra	Biskra	7		Q458402	R1280072	4
-DZ	DZ-09	Blida	Blida	9		Q233637	R1283683	4
-DZ	DZ-50	Bordj Badji Mokhtar	Bordj Badji Mokhtar	50		Q76592938	R6528163	4
-DZ	DZ-34	Bordj Bou Arreridj	Bordj Bou Arreridj	34		Q266411	R1278766	4
-DZ	DZ-10	Bouira	Bouira	10		Q233655	R1283093	4
-DZ	DZ-35	Boumerdes	Boumerdès	35		Q236752	R1283608	4
-DZ	DZ-02	Chlef	Chlef	2		Q231752	R1283740	4
-DZ	DZ-25	Constantine	Constantine	25		Q232043	R1273368	4
-DZ	DZ-56	Djanet	Djanet	56		Q77101547	R6825876	4
-DZ	DZ-17	Djelfa	Djelfa	17		Q233233	R1280073	4
-DZ	DZ-32	El Bayadh	El Bayadh	32		Q235703	R1258649	4
-DZ	DZ-57	El M'Ghair	El M'Ghair	57		Q77103173	R6825874	4
-DZ	DZ-58	El Menia	El Meniaa	58		Q76520264	R6825901	4
-DZ	DZ-39	El Oued	El Oued	39		Q233651	R1280071	4
-DZ	DZ-36	El Tarf	El Tarf	36		Q236788	R1455600	4
-DZ	DZ-47	Ghardaia	Ghardaïa	47		Q17601	R1279666	4
-DZ	DZ-24	Guelma	Guelma	24		Q235727	R1273369	4
-DZ	DZ-33	Illizi	Illizi	33		Q233659	R1279816	4
-DZ	DZ-54	In Guezzam	In Guezzam	54		Q77102475	R6825881	4
-DZ	DZ-53	In Salah	In Salah	53		Q76593022	R6824900	4
-DZ	DZ-18	Jijel	Jijel	18		Q235718	R1278746	4
-DZ	DZ-40	Khenchela	Khenchela	40		Q213950	R1280466	4
-DZ	DZ-03	Laghouat	Laghouat	3		Q231748	R1280081	4
-DZ	DZ-28	M'Sila	M'Sila	28		Q240870	R1278767	4
-DZ	DZ-29	Mascara	Mascara	29		Q236776	R1259190	4
-DZ	DZ-43	Mila	Mila	43		Q235723	R1273544	4
-DZ	DZ-27	Mostaganem	Mostaganem	27		Q221445	R1259191	4
-DZ	DZ-26	Médéa	Médéa	26		Q235810	R1282111	4
-DZ	DZ-45	Naâma	Naâma ⵏⵄⴰⵎⴰ النعامة	45		Q233675	R1258648	4
-DZ	DZ-31	Oran	Oran	31		Q231331	R1259187	4
-DZ	DZ-30	Ouargla	Ouargla	30		Q235709	R1279811	4
-DZ	DZ-51	Ouled Djellal	Ouled Djellal	51		Q77105251	R10489092	4
-DZ	DZ-04	Oum El Bouaghi	Oum El Bouaghi	4		Q235705	R1278749	4
-DZ	DZ-48	Relizane	Relizane	48		Q236758	R1282091	4
-DZ	DZ-20	Saïda	Saïda	20		Q233640	R1281260	4
-DZ	DZ-19	Setif	Sétif	19		Q237164	R1278747	4
-DZ	DZ-22	Sidi Bel Abbès	Sidi Bel Abbès	22		Q235714	R1259189	4
-DZ	DZ-21	Skikda	Skikda	21		Q234227	R1273552	4
-DZ	DZ-41	Souk Ahras	Souk Ahras	41		Q236772	R1283457	4
-DZ	DZ-11	Tamanrasset	Tamanrasset	11		Q229467	R1279667	4
-DZ	DZ-14	Tiaret	Tiaret	14		Q233258	R1281404	4
-DZ	DZ-49	Timimoun Province	Timimoune	49		Q21606903	R6528164	4
-DZ	DZ-37	Tinduf	Tindouf	37		Q231151	R1258651	4
-DZ	DZ-42	Tipaza	Tipaza	42		Q235814	R1286213	4
-DZ	DZ-38	Tissemsilt	Tissemsilt	38		Q235805	R1282090	4
-DZ	DZ-15	Tizi Ouzou	Tizi Ouzou	15		Q233645	R1283601	4
-DZ	DZ-13	Tlemcen	Tlemcen ⵜⵍⴻⵎⵙⴻⵏ تلمسان	13		Q233632	R1280702	4
-DZ	DZ-55	Touggourt	Touggourt	55		Q77103880	R6822397	4
-DZ	DZ-12	Tébessa	Tébessa	12		Q267224	R1280465	4
+DZ	DZ-01	Adrar	Adrar	1.0		Q188166	R1258650	4
+DZ	DZ-16	Algiers	Alger	16.0		Q141026	R157062	4
+DZ	DZ-23	Annaba	Annaba	23.0		Q213944	R1455599	4
+DZ	DZ-44	Aïn Defla	Aïn Defla	44.0		Q168953	R1283678	4
+DZ	DZ-46	Aïn Témouchent	Aïn Témouchent	46.0		Q233670	R1259188	4
+DZ	DZ-05	Batna	Batna	5.0		Q215452	R1278748	4
+DZ	DZ-08	Bechar	Béchar	8.0		Q215467	R1258647	4
+DZ	DZ-06	Bejaia	Béjaïa	6.0		Q233665	R1278765	4
+DZ	DZ-52	Beni Abbes	Béni Abbès	52.0		Q21606902	R6824843	4
+DZ	DZ-07	Biskra	Biskra	7.0		Q458402	R1280072	4
+DZ	DZ-09	Blida	Blida	9.0		Q233637	R1283683	4
+DZ	DZ-50	Bordj Badji Mokhtar	Bordj Badji Mokhtar	50.0		Q76592938	R6528163	4
+DZ	DZ-34	Bordj Bou Arreridj	Bordj Bou Arreridj	34.0		Q266411	R1278766	4
+DZ	DZ-10	Bouira	Bouira	10.0		Q233655	R1283093	4
+DZ	DZ-35	Boumerdes	Boumerdès	35.0		Q236752	R1283608	4
+DZ	DZ-02	Chlef	Chlef	2.0		Q231752	R1283740	4
+DZ	DZ-25	Constantine	Constantine	25.0		Q232043	R1273368	4
+DZ	DZ-56	Djanet	Djanet	56.0		Q77101547	R6825876	4
+DZ	DZ-17	Djelfa	Djelfa	17.0		Q233233	R1280073	4
+DZ	DZ-32	El Bayadh	El Bayadh	32.0		Q235703	R1258649	4
+DZ	DZ-57	El M'Ghair	El M'Ghair	57.0		Q77103173	R6825874	4
+DZ	DZ-58	El Menia	El Meniaa	58.0		Q76520264	R6825901	4
+DZ	DZ-39	El Oued	El Oued	39.0		Q233651	R1280071	4
+DZ	DZ-36	El Tarf	El Tarf	36.0		Q236788	R1455600	4
+DZ	DZ-47	Ghardaia	Ghardaïa	47.0		Q17601	R1279666	4
+DZ	DZ-24	Guelma	Guelma	24.0		Q235727	R1273369	4
+DZ	DZ-33	Illizi	Illizi	33.0		Q233659	R1279816	4
+DZ	DZ-54	In Guezzam	In Guezzam	54.0		Q77102475	R6825881	4
+DZ	DZ-53	In Salah	In Salah	53.0		Q76593022	R6824900	4
+DZ	DZ-18	Jijel	Jijel	18.0		Q235718	R1278746	4
+DZ	DZ-40	Khenchela	Khenchela	40.0		Q213950	R1280466	4
+DZ	DZ-03	Laghouat	Laghouat	3.0		Q231748	R1280081	4
+DZ	DZ-28	M'Sila	M'Sila	28.0		Q240870	R1278767	4
+DZ	DZ-29	Mascara	Mascara	29.0		Q236776	R1259190	4
+DZ	DZ-43	Mila	Mila	43.0		Q235723	R1273544	4
+DZ	DZ-27	Mostaganem	Mostaganem	27.0		Q221445	R1259191	4
+DZ	DZ-26	Médéa	Médéa	26.0		Q235810	R1282111	4
+DZ	DZ-45	Naâma	Naâma ⵏⵄⴰⵎⴰ النعامة	45.0		Q233675	R1258648	4
+DZ	DZ-31	Oran	Oran	31.0		Q231331	R1259187	4
+DZ	DZ-30	Ouargla	Ouargla	30.0		Q235709	R1279811	4
+DZ	DZ-51	Ouled Djellal	Ouled Djellal	51.0		Q77105251	R10489092	4
+DZ	DZ-04	Oum El Bouaghi	Oum El Bouaghi	4.0		Q235705	R1278749	4
+DZ	DZ-48	Relizane	Relizane	48.0		Q236758	R1282091	4
+DZ	DZ-20	Saïda	Saïda	20.0		Q233640	R1281260	4
+DZ	DZ-19	Setif	Sétif	19.0		Q237164	R1278747	4
+DZ	DZ-22	Sidi Bel Abbès	Sidi Bel Abbès	22.0		Q235714	R1259189	4
+DZ	DZ-21	Skikda	Skikda	21.0		Q234227	R1273552	4
+DZ	DZ-41	Souk Ahras	Souk Ahras	41.0		Q236772	R1283457	4
+DZ	DZ-11	Tamanrasset	Tamanrasset	11.0		Q229467	R1279667	4
+DZ	DZ-14	Tiaret	Tiaret	14.0		Q233258	R1281404	4
+DZ	DZ-49	Timimoun Province	Timimoune	49.0		Q21606903	R6528164	4
+DZ	DZ-37	Tinduf	Tindouf	37.0		Q231151	R1258651	4
+DZ	DZ-42	Tipaza	Tipaza	42.0		Q235814	R1286213	4
+DZ	DZ-38	Tissemsilt	Tissemsilt	38.0		Q235805	R1282090	4
+DZ	DZ-15	Tizi Ouzou	Tizi Ouzou	15.0		Q233645	R1283601	4
+DZ	DZ-13	Tlemcen	Tlemcen ⵜⵍⴻⵎⵙⴻⵏ تلمسان	13.0		Q233632	R1280702	4
+DZ	DZ-55	Touggourt	Touggourt	55.0		Q77103880	R6822397	4
+DZ	DZ-12	Tébessa	Tébessa	12.0		Q267224	R1280465	4
 DZ			Daira Ben Azzouz				R6543262	6
 DZ		Abadla District	Daïra de Abadla			Q3019410	R6531119	6
 DZ		Abalessa District	Daïra Abalessa			Q12211075	R4175382	6
@@ -13481,6 +14002,7 @@ GB			West Yorkshire				R14212258	5
 GB			West of England			Q56840292	R14207403	5
 GB		Greater London	Greater London			Q23306	R175342	5
 GB	GB-ABE		Aberdeen City			Q36405	R1900654	6
+GB	GB-GLG		Baile Ghlaschu / Glasgow City			Q55934339	R1906767	6
 GB	GB-BAS		Bath and North East Somerset			Q810793	R81941	6
 GB	GB-BDF		Bedford			Q894077	R158396	6
 GB	GB-BGW		Blaenau Gwent			Q596885	R2750598	6
@@ -13493,7 +14015,7 @@ GB	GB-CHW		Cheshire West and Chester			Q1070591	R153488	6
 GB	GB-BST		City of Bristol			Q21693433	R57539	6
 GB	GB-LCE		City of Leicester			Q21683242	R162353	6
 GB	GB-MIK		City of Milton Keynes			Q894090	R172504	6
-GB	GB-CUL		Cumberland				R15684264	6
+GB			Cumberland				R15684264	6
 GB	GB-DAL		Darlington			Q1171024	R153377	6
 GB	GB-DBY		Derbyshire			Q11775003	R195384	6
 GB	GB-DOR		Dorset			Q55231693	R9448449	6
@@ -13501,7 +14023,6 @@ GB	GB-ELN		East Lothian			Q207257	R1920902	6
 GB	GB-ERY		East Riding of Yorkshire			Q21695028	R88083	6
 GB	GB-ESX		East Sussex			Q21694646	R92650	6
 GB	GB-ESS		Essex			Q21272241	R180904	6
-GB	GB-GLG		Glasgow City			Q55934339	R1906767	6
 GB	GB-GLS		Gloucestershire			Q21694733	R85103	6
 GB	GB-GWN		Gwynedd			Q109128	R297286	6
 GB	GB-HAL		Halton			Q376141	R147284	6
@@ -13539,7 +14060,7 @@ GB	GB-TFW		Telford and Wrekin			Q1425298	R167058	6
 GB	GB-WRT		Warrington			Q894095	R147278	6
 GB	GB-WNH		West Northamptonshire			Q60790129	R10792351	6
 GB	GB-WSX		West Sussex			Q23287	R113757	6
-GB	GB-WES		Westmorland and Furness				R15684265	6
+GB			Westmorland and Furness				R15684265	6
 GB	GB-WOR		Worcestershire			Q23135	R57581	6
 GB	GB-ABD	Aberdeenshire	Aberdeenshire			Q189912	R1900655	6
 GB	GB-ANS	Angus	Angus			Q202177	R1921172	6
@@ -14073,7 +14594,7 @@ GN	GN-NZ	Nzérékoré Prefecture	Nzérékoré			Q1471203	R3402448	6
 GN	GN-PI	Pita Prefecture	Préfecture de Pita			Q736507	R3308937	6
 GN	GN-TO	Tougué Prefecture	Préfecture de Tougué			Q1432094	R3214784	6
 GN	GN-YO	Yomou Prefecture	Yomou			Q623139	R3400656	6
-GP		Guadeloupe	Guadeloupe	971	FRY10	Q17012	R1047206	6
+GP		Guadeloupe	Guadeloupe	971.0	FRY10	Q17012	R1047206	6
 GQ	GQ-C		Región Continental			Q845368	R2793044	3
 GQ	GQ-I		Región Insular			Q3040071	R2793045	3
 GQ	GQ-AN		Annobón			Q3736616	R2793215	4
@@ -15284,7 +15805,6 @@ ID			Boyolali			Q10609	R9687052	5
 ID			Brebes			Q10610	R9686821	5
 ID			Bukittinggi			Q7248	R14954677	5
 ID			Buleleng			Q11495	R14322007	5
-ID			Bulukumba			Q14596	R13219216	5
 ID			Bulungan			Q14404	R9884462	5
 ID			Bungo			Q7373	R14940951	5
 ID			Buol			Q15813	R4273893	5
@@ -15333,6 +15853,7 @@ ID			Jembrana			Q11499	R14322006	5
 ID			Jeneponto			Q14602	R12537099	5
 ID			Jepara			Q10615	R9687056	5
 ID			Jombang			Q11082	R13851137	5
+ID			Kabupaten Kepulauan Selayar			Q14596	R13219216	5
 ID			Kabupaten Malang			Q11095	R9674152	5
 ID			Kabupaten Nabire			Q27708	R7754457	5
 ID			Kabupaten Tangerang			Q10123	R7641584	5
@@ -16131,6 +16652,7 @@ ID			Kecamatan Bebandem				R14264393	6
 ID			Kecamatan Benai				R10356608	6
 ID			Kecamatan Bengkalis				R10362137	6
 ID			Kecamatan Benteng				R9448475	6
+ID			Kecamatan Binawidya				R17889199	6
 ID			Kecamatan Bontoharu				R9448480	6
 ID			Kecamatan Bontomanai				R9448479	6
 ID			Kecamatan Bontosikuyu				R9448474	6
@@ -16179,6 +16701,7 @@ ID			Kecamatan Kuantan Mudik				R10356605	6
 ID			Kecamatan Kuantan Tengah			Q6489852	R10356607	6
 ID			Kecamatan Kubu				R10356315	6
 ID			Kecamatan Kubu				R14264388	6
+ID			Kecamatan Kulim				R8269824	6
 ID			Kecamatan Kunto Darussalam				R7834656	6
 ID			Kecamatan Lampasio			Q4195694	R4276759	6
 ID			Kecamatan Langgam			Q6542558	R10359137	6
@@ -16193,6 +16716,7 @@ ID			Kecamatan Mandah			Q26758277	R10360833	6
 ID			Kecamatan Mandau				R10362059	6
 ID			Kecamatan Manggis				R14264207	6
 ID			Kecamatan Mantikulore			Q12496789	R4278173	6
+ID			Kecamatan Marpoyan Damai				R17859274	6
 ID			Kecamatan Matawai La Pawu				R7237915	6
 ID			Kecamatan Medang Kampai				R10359432	6
 ID			Kecamatan Mempura				R11922373	6
@@ -16220,6 +16744,7 @@ ID			Kecamatan Pangkalan Kuras				R10359154	6
 ID			Kecamatan Pangkalan Lesung				R10359161	6
 ID			Kecamatan Pariangan				R17859563	6
 ID			Kecamatan Pasir Limau Kapas				R10356308	6
+ID			Kecamatan Payung Sekaki				R17890495	6
 ID			Kecamatan Pekaitan				R10356327	6
 ID			Kecamatan Pelalawan				R10359163	6
 ID			Kecamatan Pelangiran				R10360538	6
@@ -16239,6 +16764,7 @@ ID			Kecamatan Reteh				R10360817	6
 ID			Kecamatan Rimba Melintang				R10356057	6
 ID			Kecamatan Rindi				R7225885	6
 ID			Kecamatan Rokan IV Koto				R7834624	6
+ID			Kecamatan Rumbai Timur				R17872023	6
 ID			Kecamatan Rupat				R10362147	6
 ID			Kecamatan Rupat Utara				R10362128	6
 ID			Kecamatan Sabak Auh				R11922264	6
@@ -16276,6 +16802,7 @@ ID			Kecamatan Tembilahan				R10360096	6
 ID			Kecamatan Tembilahan Hulu				R10359972	6
 ID			Kecamatan Tempuling			Q6542809	R10359802	6
 ID			Kecamatan Tolitoli Utara			Q12521914	R4277116	6
+ID			Kecamatan Tuah Madani				R17889200	6
 ID			Kecamatan Tualang				R11922423	6
 ID			Kecamatan Ujung Batu				R7834540	6
 ID			Kecamatan Ukui				R10359155	6
@@ -16413,6 +16940,7 @@ ID			Leupung			Q2042350	R8930388	6
 ID			Leuser			Q9636298	R8922254	6
 ID			Lhoknga				R8930378	6
 ID			Lhoksukon			Q1968181	R5461563	6
+ID			Lhoong			Q26758473	R8930389	6
 ID			Libarek				R8681657	6
 ID			Limo			Q2096582	R14736407	6
 ID			Linge				R8931149	6
@@ -20085,7 +20613,6 @@ IN			Gudibanda			Q60213285	R10216525	6
 IN			Gudibande taluk			Q25566539	R4452729	6
 IN			Gudihathnur mandal			Q65318075	R9722274	6
 IN			Gudipala			Q60366754	R10240207	6
-IN			Gudipalli			Q5614701	R10240215	6
 IN			Gudivada			Q24908112	R10154525	6
 IN			Gudiyatham			Q123267322	R10325952	6
 IN			Gudlavalleru			Q48728342	R10154517	6
@@ -23367,7 +23894,6 @@ IN			Santhabommali			Q59834191	R10130153	6
 IN			Santhakaviti			Q59834189	R10130272	6
 IN			Santhamaguluru			Q60165583	R10164901	6
 IN			Santhanuthala Padu			Q60165581	R10164933	6
-IN			Santhipuram			Q60366801	R10240216	6
 IN			Santipur				R10370853	6
 IN			Santrampur Taluka			Q12944372	R9669124	6
 IN			Santuri				R10370447	6
@@ -24816,7 +25342,6 @@ IR		Boshruyeh County	شهرستان بشرویه			Q80860	R6554933	5
 IR		Bostanabad County	شهرستان بستان آباد			Q1291663	R6554929	5
 IR		Buin Zahra County	شهرستان بوئین زهرا			Q1291828	R6554949	5
 IR		Buin and Miandasht County	شهرستان بوئین و میاندشت			Q15624163	R6554950	5
-IR		Bukan County	شهرستان بوکان			Q1294493	R6554953	5
 IR		Bushehr County	شهرستان بوشهر			Q1568659	R6554952	5
 IR		Buyerahmad County	شهرستان بویراحمد			Q1278733	R6554954	5
 IR		Chabahar County	شهرستان چابهار			Q1278148	R6555275	5
@@ -26159,6 +26684,7 @@ IR		Basharyat District	بخش بشاریات			Q4866784	R6555380	6
 IR		Bavaleh District	بخش باوله				R13319535	6
 IR		Birjand County Central District	بخش مرکزی شهرستان بیرجند			Q4813765	R6556118	6
 IR		Bizineh Rud District	بخش بزینه رود			Q4811384	R6555376	6
+IR		Bukan County	شهرستان بوکان			Q1294493	R6554953	6
 IR		Bumehen District	بخش بومهن			Q16255839	R6555403	6
 IR		Bustan District	بخش بوستان			Q5060742	R6555400	6
 IR		Centeral Direction	بخش مرکزی شهرستان فیروزه				R6555789	6
@@ -26336,7 +26862,7 @@ IS			Hrunamannahreppur			Q1300938	R8817618	6
 IS			Hvalfjarðarsveit			Q278600	R8823263	6
 IS			Hveragerðisbær			Q1025701	R8485632	6
 IS			Hörgársveit	6515.0		Q1432846	R56084	6
-IS			Húnabyggð			Q112288159	R14239838	6
+IS			Húnabyggð og Skagabyggð				R17899474	6
 IS			Húnaþing vestra	5508.0		Q1652058	R56115	6
 IS			Kaldrananeshreppur			Q1722126	R56190	6
 IS			Kjósarhreppur			Q1744094	R8485922	6
@@ -26351,7 +26877,6 @@ IS			Reykhólahreppur			Q1727215	R56188	6
 IS			Reykjanesbær			Q652130	R8467955	6
 IS			Seltjarnarnesbær			Q214057	R2580606	6
 IS			Skaftárhreppur			Q2066213	R56208	6
-IS			Skagabyggð	5611.0		Q591081	R56106	6
 IS			Skagafjörður	5200.0		Q1549436	R56103	6
 IS			Skeiða- og Gnúpverjahreppur			Q1310512	R8813115	6
 IS			Skorradalshreppur			Q1314540	R8826192	6
@@ -26674,53 +27199,53 @@ JO		Um-Elqotain Sub-District	قضاء أم القطين			Q27126221	R13376124	6
 JO		Wadi Araba Sub-District	قضاء وادي عربة			Q27126198	R13376084	6
 JO		Wadi Essier Sub-District	ناحية وادي السير				R13376013	6
 JO		Zarqa Sub-District	قضاء الزرقاء			Q35182374	R13376139	6
-JP	JP-23	Aichi Prefecture	愛知県	230006		Q80434	R3560336	4
-JP	JP-05	Akita Prefecture	秋田県	50008		Q81863	R3791413	4
-JP	JP-02	Aomori Prefecture	青森県	20001		Q71699	R1834655	4
-JP	JP-12	Chiba Prefecture	千葉県	120006		Q80011	R2679957	4
-JP	JP-38	Ehime Prefecture	愛媛県	380008		Q123376	R3795063	4
-JP	JP-18	Fukui Prefecture	福井県	180009		Q133879	R357112	4
-JP	JP-40	Fukuoka Prefecture	福岡県	400009		Q123258	R1553735	4
-JP	JP-07	Fukushima Prefecture	福島県	70009		Q71707	R1800608	4
-JP	JP-21	Gifu Prefecture	岐阜県	210005		Q131277	R760746	4
-JP	JP-10	Gunma Prefecture	群馬県	100005		Q129499	R1851649	4
-JP	JP-34	Hiroshima Prefecture	広島県	340006		Q617375	R3218753	4
-JP	JP-01	Hokkaido Prefecture	北海道	10006		Q1037393	R3795658	4
-JP	JP-28	Hyogo Prefecture	兵庫県	280003		Q130290	R356912	4
-JP	JP-08	Ibaraki Prefecture	茨城県	80004		Q83273	R2682940	4
-JP	JP-17	Ishikawa Prefecture	石川県	170003		Q131281	R3794726	4
-JP	JP-03	Iwate Prefecture	岩手県	30007		Q48326	R3792412	4
-JP	JP-37	Kagawa Prefecture	香川県	370002		Q161454	R3795064	4
-JP	JP-46	Kagoshima Prefecture	鹿児島県	460001		Q15701	R1842186	4
-JP	JP-14	Kanagawa Prefecture	神奈川県	140007		Q127513	R2689487	4
-JP	JP-39	Kochi Prefecture	高知県	390003		Q134093	R3795031	4
-JP	JP-43	Kumamoto Prefecture	熊本県	430005		Q130308	R1842185	4
-JP	JP-26	Kyoto Prefecture	京都府	260002		Q120730	R2137477	4
-JP	JP-24	Mie Prefecture	三重県	240001		Q128196	R812190	4
-JP	JP-04	Miyagi Prefecture	宮城県	40002		Q47896	R3790801	4
-JP	JP-45	Miyazaki Prefecture	宮崎県	450006		Q130300	R1842184	4
-JP	JP-20	Nagano Prefecture	長野県	200000		Q127877	R3560284	4
-JP	JP-42	Nagasaki Prefecture	長崎県	420000		Q169376	R1842151	4
-JP	JP-29	Nara Prefecture	奈良県	290009		Q131287	R358631	4
-JP	JP-15	Niigata Prefecture	新潟県	150002		Q132705	R3559887	4
-JP	JP-44	Oita Prefecture	大分県	440001		Q133924	R356911	4
-JP	JP-33	Okayama Prefecture	岡山県	330001		Q132936	R3794962	4
-JP	JP-47	Okinawa Prefecture	沖縄県	470007		Q766445	R3795635	4
-JP	JP-27	Osaka Prefecture	大阪府	270008		Q122723	R341906	4
-JP	JP-41	Saga Prefecture	佐賀県	410004		Q160420	R1842150	4
-JP	JP-11	Saitama Prefecture	埼玉県	110001		Q128186	R1768185	4
-JP	JP-25	Shiga Prefecture	滋賀県	250007		Q131358	R357800	4
-JP	JP-32	Shimane Prefecture	島根県	320005		Q132751	R3346137	4
-JP	JP-22	Shizuoka Prefecture	静岡県	220001		Q131320	R3793581	4
-JP	JP-09	Tochigi Prefecture	栃木県	90000		Q44843	R1800742	4
-JP	JP-36	Tokushima Prefecture	徳島県	360007		Q160734	R3795000	4
-JP	JP-13	Tokyo	東京都	130001		Q1490	R1543125	4
-JP	JP-31	Tottori Prefecture	鳥取県	310000		Q133935	R3285636	4
-JP	JP-16	Toyama Prefecture	富山県	160008		Q132929	R3793529	4
-JP	JP-30	Wakayama Prefecture	和歌山県	300004		Q131314	R908959	4
-JP	JP-06	Yamagata Prefecture	山形県	60003		Q125863	R3790869	4
-JP	JP-35	Yamaguchi Prefecture	山口県	350001		Q127264	R4016543	4
-JP	JP-19	Yamanashi Prefecture	山梨県	190004		Q132720	R3578391	4
+JP	JP-23	Aichi Prefecture	愛知県	230006.0		Q80434	R3560336	4
+JP	JP-05	Akita Prefecture	秋田県	50008.0		Q81863	R3791413	4
+JP	JP-02	Aomori Prefecture	青森県	20001.0		Q71699	R1834655	4
+JP	JP-12	Chiba Prefecture	千葉県	120006.0		Q80011	R2679957	4
+JP	JP-38	Ehime Prefecture	愛媛県	380008.0		Q123376	R3795063	4
+JP	JP-18	Fukui Prefecture	福井県	180009.0		Q133879	R357112	4
+JP	JP-40	Fukuoka Prefecture	福岡県	400009.0		Q123258	R1553735	4
+JP	JP-07	Fukushima Prefecture	福島県	70009.0		Q71707	R1800608	4
+JP	JP-21	Gifu Prefecture	岐阜県	210005.0		Q131277	R760746	4
+JP	JP-10	Gunma Prefecture	群馬県	100005.0		Q129499	R1851649	4
+JP	JP-34	Hiroshima Prefecture	広島県	340006.0		Q617375	R3218753	4
+JP	JP-01	Hokkaido Prefecture	北海道	10006.0		Q1037393	R3795658	4
+JP	JP-28	Hyogo Prefecture	兵庫県	280003.0		Q130290	R356912	4
+JP	JP-08	Ibaraki Prefecture	茨城県	80004.0		Q83273	R2682940	4
+JP	JP-17	Ishikawa Prefecture	石川県	170003.0		Q131281	R3794726	4
+JP	JP-03	Iwate Prefecture	岩手県	30007.0		Q48326	R3792412	4
+JP	JP-37	Kagawa Prefecture	香川県	370002.0		Q161454	R3795064	4
+JP	JP-46	Kagoshima Prefecture	鹿児島県	460001.0		Q15701	R1842186	4
+JP	JP-14	Kanagawa Prefecture	神奈川県	140007.0		Q127513	R2689487	4
+JP	JP-39	Kochi Prefecture	高知県	390003.0		Q134093	R3795031	4
+JP	JP-43	Kumamoto Prefecture	熊本県	430005.0		Q130308	R1842185	4
+JP	JP-26	Kyoto Prefecture	京都府	260002.0		Q120730	R2137477	4
+JP	JP-24	Mie Prefecture	三重県	240001.0		Q128196	R812190	4
+JP	JP-04	Miyagi Prefecture	宮城県	40002.0		Q47896	R3790801	4
+JP	JP-45	Miyazaki Prefecture	宮崎県	450006.0		Q130300	R1842184	4
+JP	JP-20	Nagano Prefecture	長野県	200000.0		Q127877	R3560284	4
+JP	JP-42	Nagasaki Prefecture	長崎県	420000.0		Q169376	R1842151	4
+JP	JP-29	Nara Prefecture	奈良県	290009.0		Q131287	R358631	4
+JP	JP-15	Niigata Prefecture	新潟県	150002.0		Q132705	R3559887	4
+JP	JP-44	Oita Prefecture	大分県	440001.0		Q133924	R356911	4
+JP	JP-33	Okayama Prefecture	岡山県	330001.0		Q132936	R3794962	4
+JP	JP-47	Okinawa Prefecture	沖縄県	470007.0		Q766445	R3795635	4
+JP	JP-27	Osaka Prefecture	大阪府	270008.0		Q122723	R341906	4
+JP	JP-41	Saga Prefecture	佐賀県	410004.0		Q160420	R1842150	4
+JP	JP-11	Saitama Prefecture	埼玉県	110001.0		Q128186	R1768185	4
+JP	JP-25	Shiga Prefecture	滋賀県	250007.0		Q131358	R357800	4
+JP	JP-32	Shimane Prefecture	島根県	320005.0		Q132751	R3346137	4
+JP	JP-22	Shizuoka Prefecture	静岡県	220001.0		Q131320	R3793581	4
+JP	JP-09	Tochigi Prefecture	栃木県	90000.0		Q44843	R1800742	4
+JP	JP-36	Tokushima Prefecture	徳島県	360007.0		Q160734	R3795000	4
+JP	JP-13	Tokyo	東京都	130001.0		Q1490	R1543125	4
+JP	JP-31	Tottori Prefecture	鳥取県	310000.0		Q133935	R3285636	4
+JP	JP-16	Toyama Prefecture	富山県	160008.0		Q132929	R3793529	4
+JP	JP-30	Wakayama Prefecture	和歌山県	300004.0		Q131314	R908959	4
+JP	JP-06	Yamagata Prefecture	山形県	60003.0		Q125863	R3790869	4
+JP	JP-35	Yamaguchi Prefecture	山口県	350001.0		Q127264	R4016543	4
+JP	JP-19	Yamanashi Prefecture	山梨県	190004.0		Q132720	R3578391	4
 JP		Hidaka Subprefecture	日高振興局			Q1137954	R4099310	5
 JP		Hiyama Subprefecture	檜山振興局			Q1142537	R4105032	5
 JP		Iburi Subprefecture	胆振総合振興局			Q1141552	R4099318	5
@@ -26850,8 +27375,8 @@ JP		Kaiso County	海草郡			Q1130990	R3317913	6
 JP		Kako County	加古郡			Q1042066	R900531	6
 JP		Kameda County	亀田郡			Q1185393	R4088014	6
 JP		Kami County	加美郡				R3800428	6
-JP		Kami-Ina County	上伊那郡			Q1155054	R4764386	6
 JP		Kamihei County	上閉伊郡			Q1131901	R4126625	6
+JP		Kamiina District	上伊那郡			Q1155054	R4764386	6
 JP		Kamiiso County	上磯郡				R4088020	6
 JP		Kamikawa County	上川郡(十勝国)			Q1134139	R4071461	6
 JP		Kamikawa County	上川郡(天塩国)				R4071442	6
@@ -26887,7 +27412,7 @@ JP		Kesen County	気仙郡			Q1131906	R4126689	6
 JP		Kikuchi County	菊池郡				R4002644	6
 JP		Kimotsuki County	肝属郡				R3983325	6
 JP		Kishima County	杵島郡			Q1044239	R4017988	6
-JP		Kiso County	木曽郡			Q1348570	R4768540	6
+JP		Kiso District	木曽郡			Q1348570	R4768540	6
 JP		Kita County	喜多郡			Q1206404	R4051214	6
 JP		Kita County	木田郡			Q1155929	R4051446	6
 JP		Kita-Azumi County	北安曇郡			Q1155067	R4768638	6
@@ -28081,7 +28606,7 @@ KR		Yuseong-gu	유성구			Q50431	R3890428	6
 KW	KW-AH	Ahmadi	الاحمدي			Q552354	R4579477	4
 KW	KW-KU	Al Asimah	العاصمة			Q1046645	R4579478	4
 KW	KW-FA	Farwaniya	الفروانية			Q1072757	R4579479	4
-KW	KW-HA	Hawalli	حولي			Q747432	R4579480	4
+KW	KW-HA	Hawalli	حولي			Q747432	R17903691	4
 KW	KW-JA	Jahra	الجهراء			Q405701	R4579481	4
 KW	KW-MU	Mubarak Al-Kabeer	مبارك الكبير			Q913370	R4579482	4
 KW		Bar Al-Jahra Governorate	بر محافظة الجهراء				R17789118	6
@@ -28771,66 +29296,66 @@ LT	LT-TA	Taurage County	Tauragės apskritis		LT027	Q188960	R1307305	4
 LT	LT-TE	Telsiai County	Telšių apskritis		LT028	Q188963	R1211025	4
 LT	LT-UT	Utena County	Utenos apskritis		LT029	Q188659	R966958	4
 LT	LT-VL	Vilnius County	Vilniaus apskritis		LT01;LT011	Q188061	R977317	4
-LT	LT-01		Akmenės rajono savivaldybė	32		Q1023041	R1307304	5
-LT	LT-02		Alytaus miesto savivaldybė	11		Q3685407	R1085091	5
-LT	LT-04		Anykščių rajono savivaldybė	34		Q2089772	R1002204	5
-LT	LT-06		Biržų rajono savivaldybė	36		Q763504	R1111074	5
-LT	LT-07		Druskininkų savivaldybė	15		Q669649	R1076928	5
-LT	LT-09		Ignalinos rajono savivaldybė	45		Q2069330	R966363	5
-LT	LT-10		Jonavos rajono savivaldybė	46		Q1351768	R1447848	5
-LT	LT-11		Joniškio rajono savivaldybė	47		Q610133	R1256235	5
-LT	LT-12		Jurbarko rajono savivaldybė	94		Q2089815	R1518458	5
-LT	LT-13		Kaišiadorių rajono savivaldybė	49		Q2069320	R1518453	5
-LT	LT-15		Kauno miesto savivaldybė	19		Q928938	R1067534	5
-LT	LT-17		Kazlų Rūdos savivaldybė	58		Q1461972	R974207	5
-LT	LT-19		Kelmės rajono savivaldybė	54		Q1387044	R1307307	5
-LT	LT-23		Kupiškio rajono savivaldybė	57		Q2089791	R1111075	5
-LT	LT-18		Kėdainių rajono savivaldybė	53		Q46786	R1518457	5
-LT	LT-24		Lazdijų rajono savivaldybė	59		Q2069342	R1082822	5
-LT	LT-26		Mažeikių rajono savivaldybė	61		Q313132	R1211023	5
-LT	LT-27		Molėtų rajono savivaldybė	62		Q2089785	R1002203	5
-LT	LT-28		Neringos savivaldybė	23		Q9305847	R1078733	5
-LT	LT-29		Pagėgių savivaldybė	63		Q2283574	R1002044	5
-LT	LT-30		Pakruojo rajono savivaldybė	65		Q1657116	R1256234	5
-LT	LT-31		Palangos miesto savivaldybė	25		Q3685410	R1022101	5
-LT	LT-32		Panevėžio miesto savivaldybė	27		Q3685412	R968945	5
-LT	LT-33		Panevėžio rajono savivaldybė	66		Q1351758	R1028505	5
-LT	LT-34		Pasvalio rajono savivaldybė	67		Q1461920	R1130030	5
-LT	LT-35		Plungės rajono savivaldybė	68		Q404943	R1360452	5
-LT	LT-37		Radviliškio rajono savivaldybė	71		Q1755961	R1307306	5
-LT	LT-38		Raseinių rajono savivaldybė	72		Q2069355	R1476170	5
-LT	LT-39		Rietavo savivaldybė	74		Q712011	R1129075	5
-LT	LT-40		Rokiškio rajono savivaldybė	73		Q766969	R1111073	5
-LT	LT-48		Skuodo rajono savivaldybė	75		Q219115	R1203042	5
-LT	LT-50		Tauragės rajono savivaldybė	77		Q2071640	R1479204	5
-LT	LT-51		Telšių rajono savivaldybė	78		Q588916	R1360453	5
-LT	LT-52		Trakų rajono savivaldybė	79		Q1987743	R1016309	5
-LT	LT-54		Utenos rajono savivaldybė	82		Q2089798	R966642	5
-LT	LT-55		Varėnos rajono savivaldybė	38		Q1351747	R1076929	5
-LT	LT-58		Vilniaus rajono savivaldybė	41		Q118903	R977316	5
-LT	LT-59		Visagino savivaldybė	30		Q2558824	R966362	5
-LT	LT-60		Zarasų rajono savivaldybė	43		Q664415	R966544	5
-LT	LT-41		Šakių rajono savivaldybė	84		Q2021307	R966581	5
-LT	LT-42		Šalčininkų rajono savivaldybė	85		Q1799182	R1016307	5
-LT	LT-43		Šiaulių miesto savivaldybė	29		Q4993831	R968826	5
-LT	LT-44		Šiaulių rajono savivaldybė	91		Q1417346	R1256236	5
-LT	LT-45		Šilalės rajono savivaldybė	87		Q677400	R1518454	5
-LT	LT-47		Širvintų rajono savivaldybė	89		Q58882	R1016308	5
-LT	LT-49		Švenčionių rajono savivaldybė	86		Q1813849	R967318	5
-LT	LT-03	Alytus District Municipality	Alytaus rajono savivaldybė	33		Q769940	R1085089	5
-LT	LT-05	Birštonas Municipality	Birštono savivaldybė	12		Q2015893	R3855485	5
-LT	LT-08	Elektrėnai Municipality	Elektrėnų savivaldybė	42		Q2089777	R968950	5
-LT	LT-14	Kalvarija Municipality	Kalvarijos savivaldybė	48		Q1461987	R974208	5
-LT	LT-16	Kaunas District Municipality	Kauno rajono savivaldybė	52		Q1351722	R974219	5
-LT	LT-20	Klaipėda City Municipality	Klaipėdos miesto savivaldybė	21		Q16456513	R1014347	5
-LT	LT-21	Klaipėda District Municipality	Klaipėdos rajono savivaldybė	55		Q141132	R1203043	5
-LT	LT-22	Kretinga District Municipality	Kretingos rajono savivaldybė	56		Q156560	R1022102	5
-LT	LT-25	Marijampolė Municipality	Marijampolės savivaldybė	18		Q1931377	R974204	5
-LT	LT-36	Prienai District Municipality	Prienų rajono savivaldybė	69		Q47090	R1312644	5
-LT	LT-53	Ukmerge District Municipality	Ukmergės rajono savivaldybė	81		Q68929	R1027570	5
-LT	LT-56	Vilkaviškis District Municipality	Vilkaviškio rajono savivaldybė	39		Q2021318	R966580	5
-LT	LT-57	Vilnius city municipality	Vilniaus miesto savivaldybė	13		Q923117	R968952	5
-LT	LT-46	Šilutė District Municipality	Šilutės rajono savivaldybė	88		Q282098	R1203041	5
+LT	LT-01		Akmenės rajono savivaldybė	32.0		Q1023041	R1307304	5
+LT	LT-02		Alytaus miesto savivaldybė	11.0		Q3685407	R1085091	5
+LT	LT-04		Anykščių rajono savivaldybė	34.0		Q2089772	R1002204	5
+LT	LT-06		Biržų rajono savivaldybė	36.0		Q763504	R1111074	5
+LT	LT-07		Druskininkų savivaldybė	15.0		Q669649	R1076928	5
+LT	LT-09		Ignalinos rajono savivaldybė	45.0		Q2069330	R966363	5
+LT	LT-10		Jonavos rajono savivaldybė	46.0		Q1351768	R1447848	5
+LT	LT-11		Joniškio rajono savivaldybė	47.0		Q610133	R1256235	5
+LT	LT-12		Jurbarko rajono savivaldybė	94.0		Q2089815	R1518458	5
+LT	LT-13		Kaišiadorių rajono savivaldybė	49.0		Q2069320	R1518453	5
+LT	LT-15		Kauno miesto savivaldybė	19.0		Q928938	R1067534	5
+LT	LT-17		Kazlų Rūdos savivaldybė	58.0		Q1461972	R974207	5
+LT	LT-19		Kelmės rajono savivaldybė	54.0		Q1387044	R1307307	5
+LT	LT-23		Kupiškio rajono savivaldybė	57.0		Q2089791	R1111075	5
+LT	LT-18		Kėdainių rajono savivaldybė	53.0		Q46786	R1518457	5
+LT	LT-24		Lazdijų rajono savivaldybė	59.0		Q2069342	R1082822	5
+LT	LT-26		Mažeikių rajono savivaldybė	61.0		Q313132	R1211023	5
+LT	LT-27		Molėtų rajono savivaldybė	62.0		Q2089785	R1002203	5
+LT	LT-28		Neringos savivaldybė	23.0		Q9305847	R1078733	5
+LT	LT-29		Pagėgių savivaldybė	63.0		Q2283574	R1002044	5
+LT	LT-30		Pakruojo rajono savivaldybė	65.0		Q1657116	R1256234	5
+LT	LT-31		Palangos miesto savivaldybė	25.0		Q3685410	R1022101	5
+LT	LT-32		Panevėžio miesto savivaldybė	27.0		Q3685412	R968945	5
+LT	LT-33		Panevėžio rajono savivaldybė	66.0		Q1351758	R1028505	5
+LT	LT-34		Pasvalio rajono savivaldybė	67.0		Q1461920	R1130030	5
+LT	LT-35		Plungės rajono savivaldybė	68.0		Q404943	R1360452	5
+LT	LT-37		Radviliškio rajono savivaldybė	71.0		Q1755961	R1307306	5
+LT	LT-38		Raseinių rajono savivaldybė	72.0		Q2069355	R1476170	5
+LT	LT-39		Rietavo savivaldybė	74.0		Q712011	R1129075	5
+LT	LT-40		Rokiškio rajono savivaldybė	73.0		Q766969	R1111073	5
+LT	LT-48		Skuodo rajono savivaldybė	75.0		Q219115	R1203042	5
+LT	LT-50		Tauragės rajono savivaldybė	77.0		Q2071640	R1479204	5
+LT	LT-51		Telšių rajono savivaldybė	78.0		Q588916	R1360453	5
+LT	LT-52		Trakų rajono savivaldybė	79.0		Q1987743	R1016309	5
+LT	LT-54		Utenos rajono savivaldybė	82.0		Q2089798	R966642	5
+LT	LT-55		Varėnos rajono savivaldybė	38.0		Q1351747	R1076929	5
+LT	LT-58		Vilniaus rajono savivaldybė	41.0		Q118903	R977316	5
+LT	LT-59		Visagino savivaldybė	30.0		Q2558824	R966362	5
+LT	LT-60		Zarasų rajono savivaldybė	43.0		Q664415	R966544	5
+LT	LT-41		Šakių rajono savivaldybė	84.0		Q2021307	R966581	5
+LT	LT-42		Šalčininkų rajono savivaldybė	85.0		Q1799182	R1016307	5
+LT	LT-43		Šiaulių miesto savivaldybė	29.0		Q4993831	R968826	5
+LT	LT-44		Šiaulių rajono savivaldybė	91.0		Q1417346	R1256236	5
+LT	LT-45		Šilalės rajono savivaldybė	87.0		Q677400	R1518454	5
+LT	LT-47		Širvintų rajono savivaldybė	89.0		Q58882	R1016308	5
+LT	LT-49		Švenčionių rajono savivaldybė	86.0		Q1813849	R967318	5
+LT	LT-03	Alytus District Municipality	Alytaus rajono savivaldybė	33.0		Q769940	R1085089	5
+LT	LT-05	Birštonas Municipality	Birštono savivaldybė	12.0		Q2015893	R3855485	5
+LT	LT-08	Elektrėnai Municipality	Elektrėnų savivaldybė	42.0		Q2089777	R968950	5
+LT	LT-14	Kalvarija Municipality	Kalvarijos savivaldybė	48.0		Q1461987	R974208	5
+LT	LT-16	Kaunas District Municipality	Kauno rajono savivaldybė	52.0		Q1351722	R974219	5
+LT	LT-20	Klaipėda City Municipality	Klaipėdos miesto savivaldybė	21.0		Q16456513	R1014347	5
+LT	LT-21	Klaipėda District Municipality	Klaipėdos rajono savivaldybė	55.0		Q141132	R1203043	5
+LT	LT-22	Kretinga District Municipality	Kretingos rajono savivaldybė	56.0		Q156560	R1022102	5
+LT	LT-25	Marijampolė Municipality	Marijampolės savivaldybė	18.0		Q1931377	R974204	5
+LT	LT-36	Prienai District Municipality	Prienų rajono savivaldybė	69.0		Q47090	R1312644	5
+LT	LT-53	Ukmerge District Municipality	Ukmergės rajono savivaldybė	81.0		Q68929	R1027570	5
+LT	LT-56	Vilkaviškis District Municipality	Vilkaviškio rajono savivaldybė	39.0		Q2021318	R966580	5
+LT	LT-57	Vilnius city municipality	Vilniaus miesto savivaldybė	13.0		Q923117	R968952	5
+LT	LT-46	Šilutė District Municipality	Šilutės rajono savivaldybė	88.0		Q282098	R1203041	5
 LT			Adutiškio seniūnija			Q9293199	R3413100	6
 LT			Agluonėnų seniūnija			Q4056986	R3613224	6
 LT			Akademijos seniūnija			Q12647174	R3538397	6
@@ -29418,18 +29943,18 @@ LY	LY-SR	Sirte	سرت			Q26417	R2060185	4
 LY	LY-TB	Tripoli	طرابلس			Q32837	R2060186	4
 LY	LY-WD	Wadi al Hayaa	وادي الحياة			Q48233	R2060187	4
 LY	LY-WS	Wadi al Shatii	وادي الشاطئ			Q48232	R2060188	4
-MA	MA-05	Béni Mellal-Khénifra	Béni Mellal-Khénifra ⴰⵢⵜ ⵎⵍⵍⴰⵍ-ⵅⵏⵉⴼⵕⴰ بني ملال-خنيفرة	5		Q19953016	R4734547	4
-MA	MA-06	Casablanca-Settat	Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات	6		Q19843788	R2424085	4
-MA	MA-12	Dakhla-Oued Ed-Dahab	Dakhla-Oued Ed-Dahab ⴷⴰⵅⵍⴰ-ⵡⴰⴷ ⴷⴰⵀⴰⴱ الداخلة-وادي الذهب	12		Q21235104	R3406823	4
-MA	MA-08	Drâa-Tafilalet	Drâa-Tafilalet ⴷⴰⵔⵄⴰ-ⵜⴰⴼⵉⵍⴰⵍⵜ درعة تافيلالت	8		Q19950954	R2424034	4
-MA	MA-03	Fez-Meknes	Fès-Meknès ⴼⴰⵙ-ⵎⴽⵏⴰⵙ فاس-مكناس	3		Q19951027	R4730909	4
-MA	MA-10	Guelmim-Oued Noun	Guelmim-Oued Noun ⵜⴰⵙⴳⴰ-ⵡⴰⴷ ⵏⵓⵏ كلميم وادي نون	10		Q19951051	R2424040	4
-MA	MA-11	Laâyoune-Sakia El Hamra	Laâyoune-Sakia El Hamra ⵍⵄⵢⵓⵏ-ⵙⴰⵇⵢⴰ ⵍⵃⴰⵎⵔⴰ العيون الساقية الحمراء	11		Q19951088	R2424260	4
-MA	MA-07	Marrakech-Safi	Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي	7		Q19951125	R2424086	4
-MA	MA-02	Oriental	Oriental ⵜⴰⵏⴳⵎⵓⴹⵜ الشرقية	2		Q23048167	R1719443	4
-MA	MA-04	Rabat-Salé-Kénitra	Rabat-Salé-Kénitra ⵔⴱⴰⵟ-ⵙⵍⴰ-ⵇⵏⵉⵟⵔⴰ الرباط-سلا-القنيطرة	4		Q19951239	R4730737	4
-MA	MA-09	Souss-Massa	Souss-Massa ⵙⵓⵙⵙ-ⵎⴰⵙⵙⴰ سوس-ماسة	9		Q20652586	R2424036	4
-MA	MA-01	Tangier-Tetouan-Al Hoceima	Tanger-Tétouan-Al Hoceïma ⵟⴰⵏⵊ-ⵟⵉⵜⴰⵡⵉⵏ-ⵍⵃⵓⵙⵉⵎⴰ طنجة تطوان الحسيمة	1		Q19951300	R1592819	4
+MA	MA-05	Béni Mellal-Khénifra	Béni Mellal-Khénifra ⴰⵢⵜ ⵎⵍⵍⴰⵍ-ⵅⵏⵉⴼⵕⴰ بني ملال-خنيفرة	5.0		Q19953016	R4734547	4
+MA	MA-06	Casablanca-Settat	Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات	6.0		Q19843788	R2424085	4
+MA	MA-12	Dakhla-Oued Ed-Dahab	Dakhla-Oued Ed-Dahab ⴷⴰⵅⵍⴰ-ⵡⴰⴷ ⴷⴰⵀⴰⴱ الداخلة-وادي الذهب	12.0		Q21235104	R3406823	4
+MA	MA-08	Drâa-Tafilalet	Drâa-Tafilalet ⴷⴰⵔⵄⴰ-ⵜⴰⴼⵉⵍⴰⵍⵜ درعة تافيلالت	8.0		Q19950954	R2424034	4
+MA	MA-03	Fez-Meknes	Fès-Meknès ⴼⴰⵙ-ⵎⴽⵏⴰⵙ فاس-مكناس	3.0		Q19951027	R4730909	4
+MA	MA-10	Guelmim-Oued Noun	Guelmim-Oued Noun ⵜⴰⵙⴳⴰ-ⵡⴰⴷ ⵏⵓⵏ كلميم وادي نون	10.0		Q19951051	R2424040	4
+MA	MA-11	Laâyoune-Sakia El Hamra	Laâyoune-Sakia El Hamra ⵍⵄⵢⵓⵏ-ⵙⴰⵇⵢⴰ ⵍⵃⴰⵎⵔⴰ العيون الساقية الحمراء	11.0		Q19951088	R2424260	4
+MA	MA-07	Marrakech-Safi	Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي	7.0		Q19951125	R2424086	4
+MA	MA-02	Oriental	Oriental ⵜⴰⵏⴳⵎⵓⴹⵜ الشرقية	2.0		Q23048167	R1719443	4
+MA	MA-04	Rabat-Salé-Kénitra	Rabat-Salé-Kénitra ⵔⴱⴰⵟ-ⵙⵍⴰ-ⵇⵏⵉⵟⵔⴰ الرباط-سلا-القنيطرة	4.0		Q19951239	R4730737	4
+MA	MA-09	Souss-Massa	Souss-Massa ⵙⵓⵙⵙ-ⵎⴰⵙⵙⴰ سوس-ماسة	9.0		Q20652586	R2424036	4
+MA	MA-01	Tangier-Tetouan-Al Hoceima	Tanger-Tétouan-Al Hoceïma ⵟⴰⵏⵊ-ⵟⵉⵜⴰⵡⵉⵏ-ⵍⵃⵓⵙⵉⵎⴰ طنجة تطوان الحسيمة	1.0		Q19951300	R1592819	4
 MA	MA-AGD	Agadir Ida-Outanane Prefecture	Préfecture d'Agadir Ida-Outanane ⵍⵄⴰⵎⴰⵍⴰ ⵏ ⴰⴳⴰⴷⵉⵔ ⵉⴷⴰ ⵡⵜⴰⵏⴰⵏ عمالة أكادير إدا وتنان				R1712795	5
 MA	MA-BEM	Ait Mellal Province	Province de Beni Mellal إقليم بني ملال			Q1019461	R1709116	5
 MA	MA-HAO	Al Haouz Province	Province d'Al Haouz ⵜⴰⵙⴳⴰ ⵏ ⵍⵃⵓⵣ إقليم الحوز			Q2150989	R2430105	5
@@ -30069,28 +30594,8 @@ MG			District de Vohipeno				R17560653	6
 MG			Marolambo				R2501783	6
 MG		District of Mananjary	District de Mananjary			Q3031457	R17345716	6
 MG		District of Nosy Varika	District de Nosy Varika			Q946166	R17345715	6
-MH	MH-ALL	Ailinglaplap	Aelōñḷapḷap			Q405165	R3825898	4
-MH	MH-ALK	Ailuk	Aelok			Q405378	R3825897	4
-MH	MH-ARN	Arno	Arṇo			Q694057	R3825899	4
-MH	MH-AUR	Aur	Aur			Q260549	R3825900	4
-MH	MH-EBO	Ebon	Epoon			Q152754	R3825901	4
-MH	MH-JAB	Jabat	Jebat			Q697805	R3825979	4
-MH	MH-JAL	Jaluit	Jālwōj			Q168576	R3825980	4
-MH	MH-KIL	Kili	Kōle			Q697832	R3825982	4
-MH	MH-KWA	Kwajalein	Kuwajleen			Q309172	R3825981	4
-MH	MH-LAE	Lae	Lae			Q741121	R3825983	4
-MH	MH-LIB	Lib	Ellep			Q376862	R3825978	4
-MH	MH-LIK	Likiep	Likiep			Q518353	R3825984	4
-MH	MH-MAJ	Majuro	Mājro			Q12919	R3825987	4
-MH	MH-MAL	Maloelap	Ṃaḷoeḷap			Q567926	R3825988	4
-MH	MH-MEJ	Mejit	Mājej			Q703543	R3825986	4
-MH	MH-MIL	Mili	Mile			Q700051	R3825985	4
-MH	MH-NMU	Namu	Naṃo			Q703627	R3825990	4
-MH	MH-RON	Rongelap	Roñḷap			Q542619	R3825991	4
-MH	MH-UJA	Ujae	Ujae			Q697802	R3825992	4
-MH	MH-UTI	Utirik	Utrōk			Q700015	R3825993	4
-MH	MH-WTH	Wotho	Wōtto			Q175931	R3825995	4
-MH	MH-WTJ	Wotje	Wōjjā			Q518210	R3825994	4
+MH	MH-L	Ralik Chain	Rālik			Q697840	R7240959	4
+MH	MH-T	Ratak Chain	Ratak			Q700048	R7240960	4
 MK		Eastern Region	Источен СР		MK002	Q1465731	R2572069	4
 MK		Northeastern Region	Североисточен СР		MK007	Q2077026	R2570958	4
 MK		Pelagonia Region	Пелагониски СР		MK005	Q1461478	R2572701	4
@@ -30160,8 +30665,9 @@ ML		Yanfolila Cercle	Cercle de Yanfolila			Q631684	R3083945	6
 ML		Yorosso Cercle	Cercle de Yorosso			Q1537735	R3083946	6
 ML		Youwarou Cercle	Cercle de Youwarou			Q1816412	R3084285	6
 ML		Yélimané Cercle	Yélimané			Q944313	R3083710	6
-MM		Shan State Eastern Special Region 4	掸邦东部第四特区			Q6899419	R16742701	3
-MM		Special Region 1 of the Union of Myanmar	缅甸联邦第一特区			Q1317388	R16991276	3
+MM		Eastern Shan State Special Region 4	掸邦东部第四特区			Q6899419	R16742701	3
+MM		Palaung State	ပလောင်ပြည်နယ်				R17883478	3
+MM		Special Region 1	第一特区			Q1317388	R16991276	3
 MM		Wa State	ဝပြည်နယ် 佤邦			Q2306303	R9399863	3
 MM	MM-07	Ayeyarwady	ဧရာဝတီတိုင်းဒေသကြီး			Q47047	R5996473	4
 MM	MM-02	Bago Region	ပဲခူးတိုင်းဒေသကြီး			Q800124	R5996474	4
@@ -30180,20 +30686,16 @@ MM	MM-05	Tanintharyi Region	တနင်္သာရီတိုင်း			Q843
 MM		Wa State (Northern Region)	ဝပြည်နယ် မြောက်ပိုင်း 北佤				R9399861	4
 MM		Wa State Southern region	ဝပြည်နယ် တောင်ပိုင်း 南佤			Q127038600	R9399860	4
 MM	MM-06	Yangon	ရန်ကုန်တိုင်းဒေသကြီး			Q856781	R5996487	4
-MM			Champhai			Q1965256	R2029067	5
 MM		Danu Self-Administered Zone	ဓနုကိုယ်ပိုင်အုပ်ချုပ်ခွင့်ရဒေသ			Q2701995	R7200536	5
 MM		East Bago Region	ပဲခူးတိုင်းဒေသကြီး အရှေ့ခြမ်း				R5996488	5
 MM		East Shan State	ရှမ်းပြည်နယ် အရှေ့ပိုင်း				R5996490	5
 MM		Naga Self-Administered Zone	နာဂ ကိုယ်ပိုင်အုပ်ချုပ်ခွင့်ရ ဒေသ			Q2701988	R7183862	5
 MM		North Shan State	ရှမ်းပြည်နယ်မြောက်ပိုင်း				R5996491	5
-MM		Pa Laung Self-Administered Zone	ပလောင်ကိုယ်ပိုင်အုပ်ချုပ်ခွင့်ရဒေသ			Q2613737	R7200810	5
 MM		Pa'O Self-Administered Zone	ပအိုဝ်းကိုယ်ပိုင်အုပ်ချုပ်ခွင့်ရဒေသ			Q2614061	R7200537	5
 MM		South Shan State	ရှမ်းပြည်နယ်တောင်ပိုင်း				R5996492	5
 MM		West Bago Region	ပဲခူးတိုင်းဒေသကြီး အနောက်ခြမ်း				R5996489	5
-MM			Khawbung				R10081135	6
 MM			Wa State Tangyang District				R17826180	6
 MM			勐拉县			Q124034383	R16742698	6
-MM			南板县			Q124034062	R16742700	6
 MM			色勒县			Q124034363	R16742699	6
 MM		Hopang County	Ho Pang 富邦县			Q126598970	R14006889	6
 MM		Hsenwi County	木邦县			Q127545635	R17020741	6
@@ -30201,11 +30703,12 @@ MM		Kokang County	果敢县			Q127004837	R17020740	6
 MM		Kutkai County	贵概县			Q127545457	R17020742	6
 MM		Laukkaing City	老街市			Q6498277	R17632959	6
 MM		Mangleen County	Mang' Leen' 勐能县			Q15889046	R14035206	6
-MM		Meungbawg County	Meung' Bawg 勐波县			Q124048834	R14039309	6
-MM		Meungmhau County	Meung Mhau 勐冒县			Q126598991	R14007121	6
+MM		Meungmau County	Meung' Mau 勐冒县			Q126598991	R14007121	6
+MM		Meungpawg County	Meung' Pawg 勐波县			Q124048834	R14039309	6
 MM		Mong Hsat District	မိုင်းဆတ်ခရိုင်			Q15255093	R5996531	6
 MM		Mong Ko	勐古县			Q124268900	R17020743	6
 MM		Mong Yang Township (de facto)	မိုင်းယန်းမြို့နယ် (အမှန်တကယ်)			Q117006399	R17021660	6
+MM		Nim Pan District	南板县			Q124034062	R16742700	6
 MM		Yangon	Yangon			Q37995	R6004094	6
 MN	MN-073	Arkhangai	Архангай ᠠᠷᠤᠬᠠᠩᠭ᠋ᠠᠢ			Q207809	R270075	4
 MN	MN-071	Bayan-Ölgii	Баян-Өлгий ᠪᠠᠶ᠋ᠠᠨ ᠥᠯᠦᠭᠡᠢ			Q191792	R3382266	4
@@ -30229,6 +30732,7 @@ MN	MN-046	Uvs	Увс ᠤᠪᠰᠤ			Q192942	R270059	4
 MN	MN-057	Zavkhan	Завхан ᠵᠠᠪᠬᠠᠨ			Q167764	R4074177	4
 MN	MN-053	Ömnögovi	Өмнөговь ᠡᠮᠦᠨᠡᠭᠣᠪᠢ			Q235579	R270051	4
 MN	MN-055	Övörkhangai	Өвөрхангай ᠥᠪᠦᠷᠬᠠᠩᠭ᠋ᠠᠢ			Q234713	R270074	4
+MN			Хонгор ᠬᠣᠩᠭ᠋ᠤᠷ			Q3874412	R7302215	6
 MN		Adaatsag	Адаацаг ᠠᠳᠠᠭᠠᠴᠠᠭ			Q3404341	R7297805	6
 MN		Airag	Айраг ᠠᠶᠢᠷᠠᠭ			Q3396440	R7304619	6
 MN		Alag-Erdene	Алаг-Эрдэнэ ᠠᠯᠠᠭ ᠡᠷᠳᠡᠨᠢ			Q2607722	R7305550	6
@@ -30403,7 +30907,6 @@ MN		Khashaat	Хашаат ᠬᠠᠰᠢᠶ᠋ᠠᠲᠤ			Q2093510	R7302542	6
 MN		Kherlen	Хэрлэн ᠬᠡᠷᠦᠯᠦᠨ			Q3404364	R7304530	6
 MN		Kherlen	Хэрлэн ᠬᠡᠷᠦᠯᠦᠨ			Q6401352	R7308140	6
 MN		Khishig-Öndör	Хишиг-Өндөр ᠬᠢᠰᠢᠭ ᠥᠨᠳᠦᠷ			Q2606152	R7302591	6
-MN		Khongor	Хонгор ᠬᠣᠩᠭ᠋ᠤᠷ			Q3874412	R7302215	6
 MN		Khotont	Хотонт ᠬᠣᠲᠤᠩᠲᠤ			Q2089849	R7302540	6
 MN		Khovd	Ховд ᠬᠣᠪᠳᠤ				R7305294	6
 MN		Khovd	Ховд ᠬᠣᠪᠳᠤ			Q3874779	R7304943	6
@@ -34978,88 +35481,88 @@ PA	PA-NB	Ngäbe-Buglé	Ngäbe-Buglé			Q1129783	R5740663	4
 PA	PA-10	Panamá Oeste	Panamá Oeste			Q16250688	R5740664	4
 PA	PA-8	Panamá Province	Provincia de Panamá			Q557506	R5740665	4
 PA	PA-9	Veraguas	Veraguas			Q593137	R5740666	4
-PA			Distrito Aguadulce				R8434677	6
-PA			Distrito Alanje				R8389576	6
-PA			Distrito Almirante				R8394712	6
-PA			Distrito Antón				R8433063	6
-PA			Distrito Arraiján				R8421612	6
-PA			Distrito Atalaya			Q1650993	R8450549	6
-PA			Distrito Balboa			Q2216400	R8389373	6
-PA			Distrito Barú			Q522183	R8389496	6
-PA			Distrito Besikó			Q3710719	R8467388	6
-PA			Distrito Bocas del Toro				R8394593	6
-PA			Distrito Boquerón				R8395537	6
-PA			Distrito Boquete				R8400067	6
-PA			Distrito Bugaba				R8397703	6
-PA			Distrito Calobre			Q921735	R8466104	6
-PA			Distrito Capira				R8421491	6
-PA			Distrito Cañazas			Q1651005	R8466271	6
-PA			Distrito Chagres			Q2786644	R8420882	6
-PA			Distrito Chame				R8421374	6
-PA			Distrito Changuinola				R8392157	6
-PA			Distrito Chepigana			Q1651404	R8419895	6
-PA			Distrito Chepo			Q2215925	R8419314	6
-PA			Distrito Chimán				R8419471	6
-PA			Distrito Chiriquí Grande				R8394839	6
-PA			Distrito Chitré			Q2216071	R8436344	6
-PA			Distrito Colón				R8421155	6
-PA			Distrito Cémaco			Q3710848	R8408712	6
-PA			Distrito David				R8398055	6
-PA			Distrito Dolega				R8398180	6
-PA			Distrito Donoso			Q2217007	R8421106	6
-PA			Distrito Gaigirgordub				R9341674	6
-PA			Distrito Gualaca				R8403218	6
-PA			Distrito Guararé				R8434804	6
-PA			Distrito Jirondai				R8468046	6
-PA			Distrito Kankintú			Q2659227	R8468032	6
-PA			Distrito Kusapín				R8467991	6
-PA			Distrito La Chorrera			Q2217021	R8421533	6
-PA			Distrito La Mesa			Q2216424	R8465805	6
-PA			Distrito La Pintada				R8434415	6
-PA			Distrito Las Minas				R8450390	6
-PA			Distrito Las Palmas			Q1650981	R8466220	6
-PA			Distrito Las Tablas			Q2217049	R8435498	6
-PA			Distrito Los Pozos				R8449954	6
-PA			Distrito Los Santos				R8434756	6
-PA			Distrito Macaracas				R8435463	6
-PA			Distrito Mariato			Q3711142	R8450641	6
-PA			Distrito Mironó			Q598049	R8467451	6
-PA			Distrito Montijo			Q1650967	R8450653	6
-PA			Distrito Müna			Q656667	R8467530	6
-PA			Distrito Natá				R8434006	6
-PA			Distrito Nole Duima			Q3711257	R8467471	6
-PA			Distrito Ocú				R8450442	6
-PA			Distrito Olá				R8434350	6
-PA			Distrito Omar Torrijos Herrera				R8421025	6
-PA			Distrito Panamá				R8415626	6
-PA			Distrito Parita				R8436377	6
-PA			Distrito Pedasí				R8435890	6
-PA			Distrito Penonomé				R8434519	6
-PA			Distrito Pesé				R8450026	6
-PA			Distrito Pinogana			Q2216562	R8419943	6
-PA			Distrito Pocrí			Q6420907	R8435754	6
-PA			Distrito Portobelo			Q1650732	R8420745	6
-PA			Distrito Remedios				R8402973	6
-PA			Distrito Renacimiento			Q2216549	R8391689	6
-PA			Distrito Río de Jesús				R8450750	6
-PA			Distrito Sambú			Q3711428	R8408620	6
-PA			Distrito San Carlos			Q2072542	R8421297	6
-PA			Distrito San Francisco				R8466018	6
-PA			Distrito San Félix				R8402832	6
-PA			Distrito San Lorenzo				R8400470	6
-PA			Distrito San Miguelito			Q932699	R8389079	6
-PA			Distrito Santa Catalina				R8467968	6
-PA			Distrito Santa Fe			Q51284700	R8419717	6
-PA			Distrito Santa Fé			Q3711449	R8466174	6
-PA			Distrito Santa Isabel				R8417547	6
-PA			Distrito Santa María				R8436357	6
-PA			Distrito Santiago			Q3711454	R8465843	6
-PA			Distrito Soná			Q1651000	R8465742	6
-PA			Distrito Taboga			Q21065817	R8410053	6
-PA			Distrito Tierras Altas			Q21065819	R8397730	6
-PA			Distrito Tolé				R8403130	6
-PA			Distrito Tonosí				R8436142	6
-PA			Distrito Ñürüm			Q3711636	R8467888	6
+PA			Distrito Especial Omar Torrijos Herrera			Q49685881	R8421025	6
+PA			Distrito de Aguadulce			Q2216595	R8434677	6
+PA			Distrito de Alanje			Q8193110	R8389576	6
+PA			Distrito de Almirante			Q2074220	R8394712	6
+PA			Distrito de Antón			Q2216997	R8433063	6
+PA			Distrito de Arraiján			Q2216621	R8421612	6
+PA			Distrito de Atalaya			Q1650993	R8450549	6
+PA			Distrito de Balboa			Q2216400	R8389373	6
+PA			Distrito de Barú			Q522183	R8389496	6
+PA			Distrito de Besikó			Q3710719	R8467388	6
+PA			Distrito de Bocas del Toro			Q2702428	R8394593	6
+PA			Distrito de Boquerón			Q2216576	R8395537	6
+PA			Distrito de Boquete			Q893253	R8400067	6
+PA			Distrito de Bugaba			Q955035	R8397703	6
+PA			Distrito de Calobre			Q921735	R8466104	6
+PA			Distrito de Capira			Q2216086	R8421491	6
+PA			Distrito de Cañazas			Q1651005	R8466271	6
+PA			Distrito de Chagres			Q2786644	R8420882	6
+PA			Distrito de Chame			Q431342	R8421374	6
+PA			Distrito de Changuinola			Q2216073	R8392157	6
+PA			Distrito de Chepigana			Q1651404	R8419895	6
+PA			Distrito de Chepo			Q2215925	R8419314	6
+PA			Distrito de Chimán			Q2216594	R8419471	6
+PA			Distrito de Chiriquí Grande			Q515794	R8394839	6
+PA			Distrito de Chitré			Q2216071	R8436344	6
+PA			Distrito de Colón			Q2071684	R8421155	6
+PA			Distrito de Cémaco			Q3710848	R8408712	6
+PA			Distrito de David			Q2215578	R8398055	6
+PA			Distrito de Dolega			Q2216989	R8398180	6
+PA			Distrito de Donoso			Q2217007	R8421106	6
+PA			Distrito de Gaigirgordub				R9341674	6
+PA			Distrito de Gualaca			Q2216432	R8403218	6
+PA			Distrito de Guararé			Q3544497	R8434804	6
+PA			Distrito de Jirondai			Q17635339	R8468046	6
+PA			Distrito de Kankintú			Q2659227	R8468032	6
+PA			Distrito de Kusapín			Q751010	R8467991	6
+PA			Distrito de La Chorrera			Q2217021	R8421533	6
+PA			Distrito de La Mesa			Q2216424	R8465805	6
+PA			Distrito de La Pintada			Q2215435	R8434415	6
+PA			Distrito de Las Minas			Q2216080	R8450390	6
+PA			Distrito de Las Palmas			Q1650981	R8466220	6
+PA			Distrito de Las Tablas			Q2217049	R8435498	6
+PA			Distrito de Los Pozos			Q2217030	R8449954	6
+PA			Distrito de Los Santos			Q2216602	R8434756	6
+PA			Distrito de Macaracas			Q2216055	R8435463	6
+PA			Distrito de Mariato			Q3711142	R8450641	6
+PA			Distrito de Mironó			Q598049	R8467451	6
+PA			Distrito de Montijo			Q1650967	R8450653	6
+PA			Distrito de Müna			Q656667	R8467530	6
+PA			Distrito de Natá			Q2215891	R8434006	6
+PA			Distrito de Nole Duima			Q3711257	R8467471	6
+PA			Distrito de Ocú			Q2216607	R8450442	6
+PA			Distrito de Olá			Q2217017	R8434350	6
+PA			Distrito de Panamá			Q2216411	R8415626	6
+PA			Distrito de Parita			Q2216637	R8436377	6
+PA			Distrito de Pedasí			Q2216610	R8435890	6
+PA			Distrito de Penonomé			Q2216569	R8434519	6
+PA			Distrito de Pesé			Q2217039	R8450026	6
+PA			Distrito de Pinogana			Q2216562	R8419943	6
+PA			Distrito de Pocrí			Q2216539	R8435754	6
+PA			Distrito de Portobelo			Q1650732	R8420745	6
+PA			Distrito de Remedios			Q2216582	R8402973	6
+PA			Distrito de Renacimiento			Q2216549	R8391689	6
+PA			Distrito de Río de Jesús			Q1650989	R8450750	6
+PA			Distrito de Sambú			Q3711428	R8408620	6
+PA			Distrito de San Carlos			Q2072542	R8421297	6
+PA			Distrito de San Francisco			Q2073037	R8466018	6
+PA			Distrito de San Félix			Q2217004	R8402832	6
+PA			Distrito de San Lorenzo			Q2071697	R8400470	6
+PA			Distrito de San Miguelito			Q932699	R8389079	6
+PA			Distrito de Santa Catalina			Q17629454	R8467968	6
+PA			Distrito de Santa Fe			Q3711449	R8466174	6
+PA			Distrito de Santa Fe			Q51284700	R8419717	6
+PA			Distrito de Santa Isabel			Q3585237	R8417547	6
+PA			Distrito de Santa María			Q3711451	R8436357	6
+PA			Distrito de Santiago			Q3711454	R8465843	6
+PA			Distrito de Soná			Q1651000	R8465742	6
+PA			Distrito de Taboga			Q2072534	R8410053	6
+PA			Distrito de Tierras Altas			Q21065819	R8397730	6
+PA			Distrito de Tolé			Q1014642	R8403130	6
+PA			Distrito de Tonosí			Q2216393	R8436142	6
+PA			Distrito de Ñürüm			Q3711636	R8467888	6
 PE	PE-CAL		Callao			Q2634400	R1944657	4
 PE	PE-AMA	Amazonas	Amazonas			Q201162	R1973462	4
 PE	PE-ANC	Ancash	Ancash			Q205089	R1953170	4
@@ -35405,6 +35908,7 @@ PH	PH-NUE	Nueva Ecija	Nueva Ecija	304900000.0		Q13865	R52306	4
 PH	PH-MDC	Occidental Mindoro	Occidental Mindoro	1705100000.0		Q13867	R1506320	4
 PH	PH-MDR	Oriental Mindoro	Oriental Mindoro	1705200000.0		Q13868	R1506328	4
 PH	PH-PLW	Palawan	Palawan	1705300000.0		Q13869	R1506669	4
+PH	PH-PAM	Pampanga	Pampanga	305400000.0		Q13870	R1504669	4
 PH	PH-PAN	Pangasinan	Pangasinan	105500000.0		Q13871	R1504701	4
 PH	PH-QUE	Quezon	Quezon	405600000.0		Q13872	R1504500	4
 PH	PH-RIZ	Rizal	Rizal	405800000.0		Q13874	R1504641	4
@@ -36998,48 +37502,48 @@ QA	QA-MS	Ash Shamal	الشمال			Q310872	R27335	4
 QA	QA-DA	Doha	الدوحة			Q3861	R27332	4
 QA	QA-US	Umm Salal	أم صلال			Q990414	R27328	4
 RE		Réunion	La Réunion	974.0	FRY40	Q17070	R77601	6
-RO	RO-AB		Alba		RO121	Q45868	R194271	4
-RO	RO-AR		Arad		RO421	Q179559	R2248721	4
-RO	RO-AG		Argeș		RO311	Q179567	R2261315	4
-RO	RO-BC		Bacău		RO211	Q179779	R2248681	4
-RO	RO-BH		Bihor		RO111	Q179588	R91731	4
-RO	RO-BN		Bistrița-Năsăud		RO112	Q181513	R55466	4
-RO	RO-BT		Botoșani		RO212	Q178861	R2256729	4
-RO	RO-BV		Brașov		RO122	Q182614	R2248612	4
-RO	RO-BR		Brăila		RO221	Q188503	R2355512	4
-RO	RO-BZ		Buzău		RO222	Q185309	R2355511	4
-RO	RO-CS		Caraș-Severin		RO422	Q187925	R2366873	4
-RO	RO-CJ		Cluj		RO113	Q182624	R91733	4
-RO	RO-CT		Constanța		RO223	Q188505	R2367022	4
-RO	RO-CV		Covasna		RO123	Q188959	R2248621	4
-RO	RO-CL		Călărași		RO312	Q188948	R2367015	4
-RO	RO-DJ		Dolj		RO411	Q191065	R2366970	4
-RO	RO-DB		Dâmbovița		RO313	Q188797	R2355471	4
-RO	RO-GR		Giurgiu		RO314	Q193055	R2366987	4
-RO	RO-GJ		Gorj		RO412	Q190406	R2261275	4
-RO	RO-HR		Harghita		RO124	Q190702	R2248660	4
-RO	RO-HD		Hunedoara		RO423	Q191071	R2248737	4
-RO	RO-IL		Ialomița		RO315	Q193044	R2355517	4
-RO	RO-IS		Iași		RO213	Q182888	R2256747	4
-RO	RO-IF		Ilfov		RO322	Q191670	R2366996	4
-RO	RO-MM		Maramureș		RO114	Q188813	R72481	4
-RO	RO-MH		Mehedinți		RO413	Q191717	R2366962	4
-RO	RO-MS		Mureș		RO125	Q190711	R2248573	4
-RO	RO-NT		Neamț		RO214	Q188661	R2248675	4
-RO	RO-OT		Olt		RO414	Q188945	R2366978	4
-RO	RO-PH		Prahova		RO316	Q188665	R2355507	4
-RO	RO-SM		Satu Mare		RO115	Q165459	R72482	4
-RO	RO-SB		Sibiu		RO126	Q184797	R2248586	4
-RO	RO-SJ		Sălaj		RO116	Q190690	R91685	4
-RO	RO-TR		Teleorman		RO317	Q191653	R2366986	4
-RO	RO-TM		Timiș		RO424	Q185586	R2366863	4
-RO	RO-VN		Vrancea		RO226	Q182778	R2260187	4
-RO	RO-VL		Vâlcea		RO415	Q186838	R2261289	4
+RO	RO-AB	Alba	Alba		RO121	Q45868	R194271	4
+RO	RO-AR	Arad	Arad		RO421	Q179559	R2248721	4
+RO	RO-AG	Argeș	Argeș		RO311	Q179567	R2261315	4
+RO	RO-BC	Bacău	Bacău		RO211	Q179779	R2248681	4
+RO	RO-BH	Bihor	Bihor		RO111	Q179588	R91731	4
+RO	RO-BN	Bistrița-Năsăud	Bistrița-Năsăud		RO112	Q181513	R55466	4
+RO	RO-BT	Botoșani	Botoșani		RO212	Q178861	R2256729	4
+RO	RO-BV	Brașov	Brașov		RO122	Q182614	R2248612	4
+RO	RO-BR	Brăila	Brăila		RO221	Q188503	R2355512	4
 RO	RO-B	Bucharest	București		RO321	Q19660	R377733	4
+RO	RO-BZ	Buzău	Buzău		RO222	Q185309	R2355511	4
+RO	RO-CS	Caraș-Severin	Caraș-Severin		RO422	Q187925	R2366873	4
+RO	RO-CJ	Cluj	Cluj		RO113	Q182624	R91733	4
+RO	RO-CT	Constanța	Constanța		RO223	Q188505	R2367022	4
+RO	RO-CV	Covasna	Covasna		RO123	Q188959	R2248621	4
+RO	RO-CL	Călărași	Călărași		RO312	Q188948	R2367015	4
+RO	RO-DJ	Dolj	Dolj		RO411	Q191065	R2366970	4
+RO	RO-DB	Dâmbovița	Dâmbovița		RO313	Q188797	R2355471	4
 RO	RO-GL	Galați	Galați		RO224	Q188796	R2260192	4
+RO	RO-GR	Giurgiu	Giurgiu		RO314	Q193055	R2366987	4
+RO	RO-GJ	Gorj	Gorj		RO412	Q190406	R2261275	4
+RO	RO-HR	Harghita	Harghita		RO124	Q190702	R2248660	4
+RO	RO-HD	Hunedoara	Hunedoara		RO423	Q191071	R2248737	4
+RO	RO-IL	Ialomița	Ialomița		RO315	Q193044	R2355517	4
+RO	RO-IS	Iași	Iași		RO213	Q182888	R2256747	4
+RO	RO-IF	Ilfov	Ilfov		RO322	Q191670	R2366996	4
+RO	RO-MM	Maramureș	Maramureș		RO114	Q188813	R72481	4
+RO	RO-MH	Mehedinți	Mehedinți		RO413	Q191717	R2366962	4
+RO	RO-MS	Mureș	Mureș		RO125	Q190711	R2248573	4
+RO	RO-NT	Neamț	Neamț		RO214	Q188661	R2248675	4
+RO	RO-OT	Olt	Olt		RO414	Q188945	R2366978	4
+RO	RO-PH	Prahova	Prahova		RO316	Q188665	R2355507	4
+RO	RO-SM	Satu Mare	Satu Mare		RO115	Q165459	R72482	4
+RO	RO-SB	Sibiu	Sibiu		RO126	Q184797	R2248586	4
 RO	RO-SV	Suceava	Suceava		RO215	Q181209	R2077868	4
+RO	RO-SJ	Sălaj	Sălaj		RO116	Q190690	R91685	4
+RO	RO-TR	Teleorman	Teleorman		RO317	Q191653	R2366986	4
+RO	RO-TM	Timiș	Timiș		RO424	Q185586	R2366863	4
 RO	RO-TL	Tulcea	Tulcea		RO225	Q191078	R2367044	4
 RO	RO-VS	Vaslui	Vaslui		RO216	Q167199	R2256753	4
+RO	RO-VN	Vrancea	Vrancea		RO226	Q182778	R2260187	4
+RO	RO-VL	Vâlcea	Vâlcea		RO415	Q186838	R2261289	4
 RS		Central Serbia	Централна Србија			Q190773	R1658166	4
 RS		District of Mitrovica	Rajoni i Mitrovicës / Kosovskomitrovački okrug			Q1046673	R6898597	4
 RS	RS-VO	Vojvodina	Војводина			Q44749	R1279074	4
@@ -37253,6 +37757,7 @@ RU			Дальнереченский городской округ			Q17333484	R1
 RU			Даровской район			Q1973876	R382775	6
 RU			Джанкойский городской совет			Q2371777	R2865835	6
 RU			Дмитровский район			Q1761017	R1462542	6
+RU			Довжанський район			Q2216869	R1751376	6
 RU			Домбаровский район			Q1651664	R1395087	6
 RU			Дубовский район			Q1774073	R1561754	6
 RU			Егорлыкский район			Q2006326	R1553914	6
@@ -39418,7 +39923,6 @@ RU		Yagodninsky Urban District	Ягоднинский муниципальный
 RU		Yakovlevsky District	Яковлевский городской округ			Q1768315	R1645370	6
 RU		Yakovlevsky District	Яковлевский муниципальный округ			Q3831496	R1645107	6
 RU		Yakshur-Bodyinsky District	Якшур-Бодьинский район			Q1068326	R956115	6
-RU		Yakutsk	Городской округ Якутск			Q6610	R5325621	6
 RU		Yakutsk Urban District	городской округ Якутск			Q18405912	R1444344	6
 RU		Yalchiksky District	Яльчикский муниципальный округ			Q2626785	R1761238	6
 RU		Yalta city municipality	Ялтинский городской совет			Q2629652	R1574578	6
@@ -39604,6 +40108,7 @@ SA		Ahad Rufaydah	محافظة احد رفيدة			Q399837	R12436471	6
 SA		Al Aflaj	محافظة الافلاج			Q85870241	R12423673	6
 SA		Al Ahsa Governorate	محافظة الأحساء			Q4702167	R12400642	6
 SA		Al Aqiq	محافظة العقيق			Q65040831	R12429802	6
+SA		Al Ardhiyat	محافظة العرضيات			Q12239237	R12429530	6
 SA		Al Aridah	محافظة العارضه				R12430379	6
 SA		Al Asyah	محافظة الأسياح			Q12183456	R12406844	6
 SA		Al Aydabi	محافظة العيدابى				R12430373	6
@@ -39644,7 +40149,6 @@ SA		Al Quwayiyah	محافظة القويعيه			Q3545549	R12423672	6
 SA		Al Taif	محافظة الطائف			Q97303218	R12429515	6
 SA		Al Udayd Governorate	محافظة العديد			Q20422294	R12400864	6
 SA		Al Ula	محافظة العلا			Q104672565	R12429012	6
-SA		Al Urdiyat	محافظة العرضيات			Q12239237	R12429530	6
 SA		Al Uwayqilah	محافظة العويقيله			Q12190591	R12413341	6
 SA		Al Wajh	محافظة الوجه			Q27251	R12420156	6
 SA		Al ddayer	محافظة الدائر			Q97291914	R12430378	6
@@ -40185,7 +40689,7 @@ SS	SS-JG	Jonglei	Jonglei			Q488904	R2190481	4
 SS	SS-LK	Lakes	Lakes			Q491096	R2190480	4
 SS	SS-BN	Northern Bahr el Ghazal	Northern Bahr el Ghazal			Q491111	R2190520	4
 SS		Ruweng Administrative Area	Ruweng			Q25101090	R13550743	4
-SS	SS-UY	Unity	Unity			Q319965	R2190519	4
+SS		Unity	Unity			Q319965	R2190519	4
 SS	SS-NU	Upper Nile	Upper Nile			Q487702	R2190518	4
 SS	SS-WR	Warrap	Warab			Q491138	R2190521	4
 SS	SS-BW	Western Bahr el Ghazal State	Western Bahr el Ghazal			Q332095	R2190484	4
@@ -45103,6 +45607,7 @@ UA		Kramatorsk Raion	Краматорський район			Q97495623	R11978037
 UA		Krasnohrad Raion	Красноградський район			Q102467294	R11803998	6
 UA		Krasnohvardiiske Raion	Красногвардейский район			Q2420522	R1754554	6
 UA		Krasnoperekopsk Raion	Красноперекопский район			Q2237970	R1754555	6
+UA		Krasnosulinsky District	Красносулинский район			Q2217449	R1517228	6
 UA		Kremenchuk Raion	Кременчуцький район			Q103852125	R11823799	6
 UA		Kremenets Raion	Кременецький район			Q102436424	R11918336	6
 UA		Kropyvnytskyi Raion	Кропивницький район			Q103801438	R11851422	6
@@ -49669,11 +50174,11 @@ VN		Lộc Ninh District	Huyện Lộc Ninh			Q6711776	R7090786	6
 VN		Lục Nam District	Huyện Lục Nam			Q1924548	R6921174	6
 VN		Lục Ngạn District	Huyện Lục Ngạn			Q2226906	R6917071	6
 VN		Lục Yên District	Huyện Lục Yên			Q6695817	R7097662	6
-VN		M'Drắk District	Huyện M'Drắk			Q10788943	R7075067	6
 VN		Mai Châu District	Huyện Mai Châu			Q6735119	R7120254	6
 VN		Mai Sơn District	Huyện Mai Sơn			Q10789962	R7120938	6
 VN		Mang Thít District	Huyện Mang Thít			Q6748576	R7151380	6
 VN		Mang Yang District	Huyện Mang Yang			Q6748577	R7073871	6
+VN		Mdrắk District	Huyện Mdrắk			Q10788943	R7075067	6
 VN		Me Linh District	Huyện Mê Linh			Q1048241	R7114823	6
 VN		Minh Hóa District	Huyện Minh Hóa			Q2673199	R7040317	6
 VN		Minh Long District	Huyện Minh Long			Q6864876	R2518223	6

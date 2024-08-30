@@ -5,7 +5,6 @@ from pathlib import Path
 
 from epinorm.error import UserError
 
-
 class DataSource(Enum):
     EMPRESI = "empresi"
     GENBANK = "genbank"
@@ -55,8 +54,15 @@ PACKAGE_DIR = Path(__file__).parent
 SCRIPT_DIR = PACKAGE_DIR / "scripts"
 REF_DATA_DIR = PACKAGE_DIR / "data"
 WORK_DIR = get_work_dir()
-COUNTRIES_DATA = PACKAGE_DIR / "data" / "countries.csv"
-ADMIN_LEVELS_DATA = PACKAGE_DIR / "data" / "administrative_units.tsv"
+
+HOST_SPECIES_FILE = REF_DATA_DIR / "ncbi_host_species.csv"
+PATHOGEN_SPECIES_FILE = REF_DATA_DIR / "ncbi_pathogen_species.csv"
+
+COUNTRIES_FILE = REF_DATA_DIR / "countries.csv"
+ADMIN_UNITS_FILE = REF_DATA_DIR / "administrative_units.tsv"
+ADMIN_LEVEL_1_FILE = REF_DATA_DIR / "admin_level_1.csv"
+NUTS_2024_FILE = REF_DATA_DIR / "nuts_2024.csv"
+NUTS_COORDINATES_FILE = REF_DATA_DIR / "NUTS_LB_2021_4326.geojson"
 
 # ROOT_DIR = PACKAGE_DIR.parent
 # DATA_DIR = ROOT_DIR / "data"
@@ -69,29 +75,71 @@ ADMIN_LEVELS_DATA = PACKAGE_DIR / "data" / "administrative_units.tsv"
 COUNTRIES_EXCEPTIONS = {
     "Russia" : "RU",
     "Bolivia" : "BO",
+    "Plurinational State of Bolivia" : "BO",
     "Bonaire" : "BQ",
     "Bosnia" : "BA",
     "Iran" : "IR",
+    "Islamic Republic of Iran" : "IR",
     "North Korea" : "KP",
     "North-Korea" : "KP",
+    "Democratic People's Republic of Korea" : "KP",
     "South Korea" : "KR",
     "South-Korea" : "KR",
+    "Republic of Korea" : "KR",
     "Moldova" : "MD",
+    "Republic of Moldova": "MD",
     "Netherlands" : "NL",
+    "Kingdom of the Netherlands" : "NL",
+    "Micronesia": "FM",
+    "Federated States of Micronesia": "FM",
     "Palestine" : "PS",
+    "State of Palestine" : "PS",
     "Taiwan" : "TW",
+    "Province of China Taiwan" : "TW",
     "Tanzania" : "TZ",
+    "United Republic of Tanzania" : "TZ",
     "United Kingdom" : "GB",
     "UK" : "GB",
     "United States" : "US",
     "US" : "US",
     "Venezuela" : "VE",
-    "Vietnam" : "VN"
+    "Vietnam" : "VN",
+    "Democratic Republic of the Congo" : "CG",
 }
 
-# these are countries that have a low admin level (for instance 3) but we don't want to use that for the
-# output column "admin_level_1"
-MIN_ADMIN_EXCEPTIONS = {
-    "France" : 4,
-    "China" : 4
+# some countries don't use their contry code in their nuts code
+# for instance greece with country code GR uses EL as country code
+NUTS_CODE_TO_COUNTRY_EXCEPTIONS = {
+    "EL" : "GR"
+}
+
+# there are hardcoded exceptions for the "admin_level_1.csv" file
+ADMIN_LEVEL_1_EXCEPTIONS = {
+
+    # there were too many entries in the datasets with nuts level 1.
+    # if we had chosen a lower level then we would drop too many rows
+    "FR" : {"nuts_level": 1, "osm_level": 4},
+
+    # the nuts level 3 divide the nuts level 2 into very few areas, that don't
+    # have a osm_id. The administrative units within 2 are too small compared to the nuts level 3
+    "NL" : {"nuts_level": 2, "osm_level": 4},
+    "DK" : {"nuts_level": 2, "osm_level": 4},
+    "AT" : {"nuts_level": 2, "osm_level": 4},
+    "PL" : {"nuts_level": 2, "osm_level": 4},
+
+    # these countries are very small, their nuts codes doesn't contain precise information.
+    # we remove their nuts level and only keep osm_level
+    "CY" : {"nuts_level": 4, "osm_level": 3},
+    "MT" : {"nuts_level": 4, "osm_level": 4},
+    "LU" : {"nuts_level": 4, "osm_level": 6},
+
+    # osm doesn't yet contain the nuts codes for those countries
+    "PT" : {"nuts_level": 3, "osm_level": 6},
+    "EE" : {"nuts_level": 3, "osm_level": 6},
+    "IE" : {"nuts_level": 3, "osm_level": 5},
+    "GR" : {"nuts_level": 3, "osm_level": 6},
+    "LV" : {"nuts_level": 3, "osm_level": 4},
+
+    # China has 3 as min admin level, but we prefer 4
+    "CN" : {"nuts_level": None, "osm_level": 4},
 }
