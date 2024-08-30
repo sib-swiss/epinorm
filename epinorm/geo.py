@@ -164,7 +164,7 @@ class NominatimGeocoder(Geocoder):
     def get_admin_level_1(self, address_details, admin_level_sought=None):
         """Get the administrative level 1 name from a complex address."""
 
-        if admin_level_sought is not None: # we are looking for a specific admin_level
+        if admin_level_sought: # we are looking for a specific admin_level
             for entry in address_details:
                 if entry.get("admin_level", -1) == admin_level_sought:
                     return (entry["localname"], self.create_feature_id(entry["osm_type"], entry["osm_id"]))

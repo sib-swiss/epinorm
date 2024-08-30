@@ -143,9 +143,9 @@ class SQLiteCache(Cache):
                 polygon
             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """
-        to_save = feature.copy() # we must make copy to make sure we don't change the original one
-        to_save["address"] = json.dumps(to_save["address"]) # list can't be saved directly, so we must convert them to string
-        cursor.execute(statement, tuple(to_save.values()))
+        modified_feature = feature.copy() # we must make copy to make sure we don't change the one of the caller of this method
+        modified_feature["address"] = json.dumps(modified_feature["address"]) # list can't be saved directly, so we must convert them to string
+        cursor.execute(statement, tuple(modified_feature.values()))
         if term and term_type:
             statement = """
                 INSERT OR IGNORE INTO feature_index (
@@ -154,7 +154,7 @@ class SQLiteCache(Cache):
                     feature_id
                 ) VALUES (?, ?, ?)
             """
-            cursor.execute(statement, (term, term_type, to_save.get("id")))
+            cursor.execute(statement, (term, term_type, modified_feature.get("id")))
         cursor.close()
         self._commit_transaction()
 

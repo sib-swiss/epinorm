@@ -10,10 +10,9 @@ from transliterate.exceptions import LanguageDetectionError
 
 from epinorm.geo import NominatimGeocoder
 from epinorm.config import (
-    REF_DATA_DIR, 
     COUNTRIES_FILE, 
     COUNTRIES_EXCEPTIONS, 
-    ADMIN_LEVELS_FILE,
+    ADMIN_UNITS_FILE,
     ADMIN_LEVEL_1_FILE,
     NUTS_CODE_TO_COUNTRY_EXCEPTIONS,
     NUTS_COORDINATES_FILE,
@@ -90,7 +89,7 @@ def get_admin_levels_table():
 
     # * now map country code to its admin levels
     code_to_admin = {}
-    for country_code, rows_country in pd.read_table(ADMIN_LEVELS_FILE).groupby("iso3166_1_code"):
+    for country_code, rows_country in pd.read_table(ADMIN_UNITS_FILE).groupby("iso3166_1_code"):
 
         code_to_admin[country_code] = []
         for _, row in rows_country.iterrows():
@@ -163,7 +162,7 @@ def get_nuts_to_admin_level_1():
     { nuts_code : { name: str, id: str } }
     """
 
-    admin_units = pd.read_table(ADMIN_LEVELS_FILE)
+    admin_units = pd.read_table(ADMIN_UNITS_FILE)
     admin_units = admin_units.replace(np.nan, None) # its easier to deal with None
 
     nuts_to_admin_level_1 = {}
@@ -218,6 +217,9 @@ class DataHandler:
         self._data.to_csv(
             output_file, sep=OUTPUT_FILE_SEPARATOR, quoting=QUOTE_NONE, index=False
         )
+
+    def _empty_column(self):
+        return np.full(len(self._data), None)
 
     def save_geometries(self, output_dir):
         cache = self._geocoder.get_cache()
@@ -354,12 +356,12 @@ class EmpresiDataHandler(DataHandler):
         admin_level_1_table = admin_level_1_table.replace(np.nan, None) # so its easier to deal with those values
 
         # output columns
-        locality_names = np.full(len(self._data), None)
-        locality_ids = np.full(len(self._data), None)
-        admin_level_1_names = np.full(len(self._data), None)
-        admin_level_1_ids = np.full(len(self._data), None)
-        country_names = np.full(len(self._data), None)
-        country_ids = np.full(len(self._data), None)
+        locality_names = self._empty_column()
+        locality_ids = self._empty_column()
+        admin_level_1_names = self._empty_column()
+        admin_level_1_ids = self._empty_column()
+        country_names = self._empty_column()
+        country_ids = self._empty_column()
 
         for i, row in self._data.iterrows():
 
@@ -618,12 +620,12 @@ class GenBankDataHandler(DataHandler):
         country_to_code.update(COUNTRIES_EXCEPTIONS) # add the exceptions
 
         # initialise to zero all output columns
-        country_names = np.full(len(self._data), None) 
-        country_ids = np.full(len(self._data), None) 
-        admin_level_1s = np.full(len(self._data), None) 
-        admin_level_1_ids = np.full(len(self._data), None) 
-        localities = np.full(len(self._data), None) 
-        locality_osm_ids = np.full(len(self._data), None) 
+        country_names = self._empty_column() 
+        country_ids = self._empty_column()
+        admin_level_1s = self._empty_column()
+        admin_level_1_ids = self._empty_column()
+        localities = self._empty_column()
+        locality_osm_ids = self._empty_column()
 
         for i, row in self._data.iterrows():
             
@@ -866,10 +868,10 @@ class ECDCDataHandler(DataHandler):
         nuts_to_admin_level_1 = get_nuts_to_admin_level_1()
 
         # these are the columns we will fill in
-        country_names = np.full(len(self._data), None) 
-        country_ids = np.full(len(self._data), None)
-        admin_level_1_names = np.full(len(self._data), None) 
-        admin_level_1_ids = np.full(len(self._data), None)
+        country_names = self._empty_column()
+        country_ids = self._empty_column()
+        admin_level_1_names = self._empty_column()
+        admin_level_1_ids = self._empty_column()
 
         for i, row in self._data.iterrows():
 

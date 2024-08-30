@@ -58,11 +58,11 @@ WORK_DIR = get_work_dir()
 HOST_SPECIES_FILE = REF_DATA_DIR / "ncbi_host_species.csv"
 PATHOGEN_SPECIES_FILE = REF_DATA_DIR / "ncbi_pathogen_species.csv"
 
-COUNTRIES_FILE = PACKAGE_DIR / "data" / "countries.csv"
-ADMIN_LEVELS_FILE = PACKAGE_DIR / "data" / "administrative_units.tsv"
-ADMIN_LEVEL_1_FILE = PACKAGE_DIR / "data" / "admin_level_1.csv"
-NUTS_2024_FILE = PACKAGE_DIR / "data" / "nuts_2024.csv"
-NUTS_COORDINATES_FILE = PACKAGE_DIR / "data" / "NUTS_LB_2021_4326.geojson"
+COUNTRIES_FILE = REF_DATA_DIR / "countries.csv"
+ADMIN_UNITS_FILE = REF_DATA_DIR / "administrative_units.tsv"
+ADMIN_LEVEL_1_FILE = REF_DATA_DIR / "admin_level_1.csv"
+NUTS_2024_FILE = REF_DATA_DIR / "nuts_2024.csv"
+NUTS_COORDINATES_FILE = REF_DATA_DIR / "NUTS_LB_2021_4326.geojson"
 
 # ROOT_DIR = PACKAGE_DIR.parent
 # DATA_DIR = ROOT_DIR / "data"
