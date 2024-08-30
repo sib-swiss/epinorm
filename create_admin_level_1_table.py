@@ -8,9 +8,10 @@ import pandas as pd
 from epinorm.config import (
     ADMIN_LEVEL_1_FILE,
     COUNTRIES_FILE,
-    ADMIN_LEVELS_FILE,
+    ADMIN_UNITS_FILE,
     NUTS_2024_FILE,
-    ADMIN_LEVEL_1_EXCEPTIONS
+    ADMIN_LEVEL_1_EXCEPTIONS,
+    NUTS_CODE_TO_COUNTRY_EXCEPTIONS
 )
 
 def main():
@@ -20,11 +21,11 @@ def main():
     countries = pd.read_csv(COUNTRIES_FILE)
     df["country_code"] = countries["alpha_2"].dropna()
 
-    # this is used for reference, we want to know which countries have nuts codes
+    # this is used for reference, we want to know which countries (country code) that have nuts codes
     countries_with_nuts = set(pd.read_csv(NUTS_2024_FILE)["Country code"].dropna())
-    countries_with_nuts.add("GR") # greece is encoded as 'EL' for some reason in file 
+    countries_with_nuts.update(NUTS_CODE_TO_COUNTRY_EXCEPTIONS.values()) # exceptions
 
-    admin_units = pd.read_table(ADMIN_LEVELS_FILE)
+    admin_units = pd.read_table(ADMIN_UNITS_FILE)
 
     # now for each country code try to match the nuts level with its osm_level in the admin_units file
     for i, row in df.iterrows():
@@ -35,14 +36,14 @@ def main():
             df.loc[i, "osm_level"] = ADMIN_LEVEL_1_EXCEPTIONS[row["country_code"]]["osm_level"]
             continue
 
+        admin_units_country = admin_units[admin_units["iso3166_1_code"] == row["country_code"]]
+        if len(admin_units_country) == 0:
+            # we don't know anything about this country (should be small insignificant countries)
+            continue
+
         # it is a EU country
         if row["country_code"] in countries_with_nuts:
             df.loc[i, "nuts_level"] = 3 # default value
-
-            admin_units_country = admin_units[admin_units["iso3166_1_code"] == row["country_code"]]
-            if len(admin_units_country) == 0:
-                # we don't know anything about this country (should be small insignificant countries)
-                continue
 
             rows_with_nuts_code = admin_units_country[admin_units_country["nuts_code"].notna()]
             rows_with_nuts_code_level = rows_with_nuts_code[rows_with_nuts_code["nuts_code"].apply( \
@@ -55,11 +56,6 @@ def main():
         
         # it is a non-EU country
         else:
-
-            admin_units_country = admin_units[admin_units["iso3166_1_code"] == row["country_code"]]
-            if len(admin_units_country) == 0: 
-                # we don't know anything about this country (should be small insignificant countries)
-                continue
 
             # we use the less precise admin level (closest to the country)
             df.loc[i, "osm_level"] = min(admin_units_country["admin_level"])
